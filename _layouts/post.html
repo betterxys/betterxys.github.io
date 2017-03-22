@@ -17,7 +17,7 @@ layout: default
                 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
               -->
               <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{site.url}}">{{ page.author }}</a></div>
-              <div class="meta">Email: {{ page.email }}</div>
+              <div class="meta">Email: {{ site.email }}</div>
               <br />
             </header>
             <article class="post-content">
