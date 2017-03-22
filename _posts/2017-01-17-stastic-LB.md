@@ -12,10 +12,6 @@ tag: 时间序列
 * content
 {:toc}
 
-
-# Solve 'no module named ljungbox' when using pypr.stattest #
-E-mail: xiaoyongsheng@hotmail.com  
-------
 Here are 2 different way to realize Ljung Box test<sup>[1][2][[3]](https://en.wikipedia.org/wiki/Ljung%E2%80%93Box_test)</sup>:
     
 ## 1. statsmodels.stats.diagnostic.acorr_ljungbox<sup>[[5]](http://statsmodels.sourceforge.net/0.6.0/generated/statsmodels.stats.diagnostic.acorr_ljungbox.html "[5]")</sup> ##

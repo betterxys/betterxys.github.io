@@ -12,10 +12,9 @@ tag: 虚拟机
 * content
 {:toc}
 
+[本文参考自CSDN博客](http://blog.csdn.net/pangjiawei19/article/details/50905359)
 
-# VMWare虚拟机设置静态IP #
-
-[参考自CSDN博客](http://blog.csdn.net/pangjiawei19/article/details/50905359)
+-----
 
 ## windows -> network connections ##
 

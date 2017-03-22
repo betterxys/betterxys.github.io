@@ -12,8 +12,10 @@ tag: 虚拟机
 * content
 {:toc}
 
-# 总体思路 #
-[参考自科学网博客](http://blog.sciencenet.cn/blog-430991-507041.html)  
+[本文参考自科学网博客](http://blog.sciencenet.cn/blog-430991-507041.html)  
+
+----
+
 &emsp;&emsp;将宿主计算机的物理网卡与VMnet8共享，VMnet8充当路由器，而VM中的虚拟计算机通过DHCP自动获得在某一个IP段内的IP地址，这些虚拟机都通过路由器(VMnet8)连接的IP与物理网卡上的Internet连接。
 
 ## windows -> network connections ##
