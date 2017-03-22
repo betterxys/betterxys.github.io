@@ -42,11 +42,15 @@ Prophet不仅能够解决上述两个问题，更是将重点放到了“forecas
 2. python开源库  
  时间序列预测方法开源库基本都是R语言的开源库（如下三个都是及其经典的时间序列预测开源项目），很少有python的开源库，如今Facebook的Prophet弥补了这个不足，同时提供python和R接口。
  - Rob Hyndman的R语言开源库：forecast：http://robjhyndman.com/software/forecast/   
- > 【论文】Hyndman R J, Khandakar Y. Automatic time series for forecasting: the forecast package for R[R]. Monash University, Department of Econometrics and Business Statistics, 2007.  
+ 
+  > 【论文】Hyndman R J, Khandakar Y. Automatic time series for forecasting: the forecast package for R[R]. Monash University, Department of Econometrics and Business Statistics, 2007.  
  - Google的R语言开源库：CausalImpact：https://google.github.io/CausalImpact/  
- > 【论文】Brodersen K H, Gallusser F, Koehler J, et al. Inferring causal impact using Bayesian structural time-series models[J]. The Annals of Applied Statistics, 2015, 9(1): 247-274.  
+ 
+  > 【论文】Brodersen K H, Gallusser F, Koehler J, et al. Inferring causal impact using Bayesian structural time-series models[J]. The Annals of Applied Statistics, 2015, 9(1): 247-274.  
+
  - Twitter的R语言开源库：AnomalyDetection：https://github.com/twitter/AnomalyDetection  
- > 【博客】https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series
+
+  > 【博客】https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series
 
 3. 合理、精准的预测  
  提供了ARIMA、指数平滑等众多时间序列的预测方法以供选择；
