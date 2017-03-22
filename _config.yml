@@ -1,15 +1,15 @@
 # Site settings
-name: Less Or More
+name: Xiao Yongsheng
 email: xiaoyongsheng@hotmail.com
 author: Xiao
 url: http://betterxys.github.io
 resume_site: ''
 github: https://github.com/betterxys/
 baseurl: ""
-description: Actually, less is more!
-# meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-# banner: 学而不思则罔，思而不学则殆。
+description: It's always better if you have people to share it with!
+meta_description: 肖永生;个人博客;
+motto: 等我找到合适的放在这.
+banner: 不找了找不到了。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
@@ -18,7 +18,7 @@ paginate: 10
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: betterxys
-highlighter: Pygments
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
