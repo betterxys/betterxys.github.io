@@ -4,12 +4,12 @@ title: 使用RNN之LSTM进行时序预测
 date: 2017-03-24
 By: xiaoyongsheng
 categories: Machine_Learning
-tag: rnn lstm timeSeries TensorFlow
+tag: TensorFlow
+
+---  
 
 * content
 {: toc}
-
----
 
 # 本文目标  
 对于时间序列的预测是金融、经济等等领域广泛的需求，本文以一组价格数据为例对该组价格时序采用LSTM进行预测，以观察其效果。  

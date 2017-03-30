@@ -20,6 +20,7 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: betterxys
 highlighter: rouge
 
+gems: [jekyll-paginate]
 # Build settings
 # markdown: kramdown
 
