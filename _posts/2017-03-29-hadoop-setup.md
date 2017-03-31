@@ -2,7 +2,7 @@
 layout: post
 title: Hadoop配置解析
 date: 2017-03-29
-By: xiaoyongsheng
+author: xiaoyongsheng
 categories: hadoop
 tag: hadoop
 

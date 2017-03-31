@@ -2,6 +2,7 @@
 layout: post
 title: 使用RNN之LSTM进行时序预测
 date: 2017-03-24
+author: xiaoyongsheng
 By: xiaoyongsheng
 categories: Machine_Learning
 tag: TensorFlow
