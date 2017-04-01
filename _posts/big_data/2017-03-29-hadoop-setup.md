@@ -305,7 +305,23 @@ bin/mapred --daemon stop historyserver
 这个时候...喜剧的一幕出现了！！！  
 测试环境部署者的理解是错的，可是他做对了！Secondary NameNode确实是用以辅助NameNode的启动，但是他们占用的内存大小类似，所以确实是应该分别部署在两台机器上的！  
 
-事实证明，我是错的，在查看journal nodes的作用时（本文3.2），才发现这里的两个nn都是NameNode，这是一种实现HDFS高可用的方式，其中一台nameNode处于active状态，管理HDFS，另外一台处于standby状态，作为热备。所以本平台并未专门设置secondarynameNode，而是采用默认配置。
+事实证明，我是错的，在查看journal nodes的作用时（本文3.2），才发现这里的两个nn都是NameNode，这是一种实现HDFS高可用的方式，其中一台nameNode处于active状态，管理HDFS，另外一台处于standby状态，作为热备。所以本平台并未专门设置secondarynameNode，而是采用默认配置。  
+
+---
+2017/4/1  
+现在补充hadoop测试环境配置信息：  
+
+机器名称| ip|物理cpu个数|逻辑cpu个数|内存|存储空间  
+   ---  |---|    ---    |    ---    |--- |  --- 
+nn-spk-1  | 192.168.6.231 | 4 | 8 | 12G | 46G  
+nn-spk-2  | 192.168.6.232 | 4 | 8 | 12G | 46G
+nn-spk-3  | 192.168.6.233 | 4 | 8 | 12G | 46G
+
+
+*如何查看配置信息，返回主页参考另外一篇[《linux-常用命令》]()*  
+
+
+---
 
 ## 3. 问题解析
 
