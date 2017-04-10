@@ -17,7 +17,7 @@ tag: hadoop
 
 ## 2. HDFS HA模式介绍  
 
- 在对HDFS HA展开介绍前，首先要清楚其来龙去脉，[简书文章：《hadoop生态圈介绍》](http://www.jianshu.com/p/c3a834e45ae3)一文当中，作者分析的较为清晰；对HDFS HA模式的介绍，强烈推荐[IBM的开源文档:《Hadoop NameNode 高可用 (High Availability) 实现解析》]  (https://www.ibm.com/developerworks/cn/opensource/os-cn-hadoop-name-node/)。
+ 在对HDFS HA展开介绍前，首先要清楚其来龙去脉，[简书文章：《hadoop生态圈介绍》](http://www.jianshu.com/p/c3a834e45ae3)一文当中，作者分析的较为清晰；对HDFS HA模式的介绍，强烈推荐[IBM的开源文档:《Hadoop NameNode 高可用 (High Availability) 实现解析》](https://www.ibm.com/developerworks/cn/opensource/os-cn-hadoop-name-node/)。
 
 ### 2.1 Hadoop集群模式介绍  
 
