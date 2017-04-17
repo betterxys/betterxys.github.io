@@ -3,8 +3,8 @@ layout: post
 title: Spark配置解析
 date: 2017-04-01
 author: xiaoyongsheng
-categories: Spark
-tag: Spark
+categories: spark
+tag: spark
 
 ---
 
@@ -13,14 +13,14 @@ tag: Spark
 
 ---
 
-## 背景介绍  
+## 1. 背景介绍  
 
 Spark<sup>[1]</sup>在Hadoop的HDFS和YARN之上构建，发展至今已经到了Spark 2.1.0, 内置组件包括：MLlib, Spark Streaming, 和 Graph X, 提供Java、Scala、Python和R接口，笔者是python用户，据说以后spark可以直接通过PyPI进行安装，那就真没谁了！
 
 测试系统安装的是Spark-1.5.2
 
 
-## Spark 运行模式   
+## 2. Spark 运行模式   
 
 Spark现有的运行模式包括三种(2.1.0的官方文档如是说)：  
 
@@ -57,7 +57,7 @@ Spark现有的运行模式包括三种(2.1.0的官方文档如是说)：
     YARN Cluster模式下，spark应用受YARN管辖，与客户端没有直接联系；而YARN client模式下spark应用是通过客户端进程运行，YARN此时仅负责底层资源调度；
 
 
-## Spark 基础概念
+## 3. Spark 基础概念
 
 不论任何模式，Spark的工作流程基本类似: SparkContext是程序运行的总入口，在SparkContext的初始化过程中，Spark会分别创建 **DAGScheduler作业调度** 和 **TaskSchedule任务调度** 两级调度模块；
 
@@ -105,7 +105,7 @@ Spark现有的运行模式包括三种(2.1.0的官方文档如是说)：
 
 
 
-## Spark 基本工作流程  
+## 4. Spark 基本工作流程  
 
 
 ![spark cluster components](http://i.imgur.com/3JW62W0.png)  
@@ -115,6 +115,13 @@ Spark现有的运行模式包括三种(2.1.0的官方文档如是说)：
 
 ![spark scheduler](http://i.imgur.com/J3FesTK.png)  
 *图片来自[4][5]两篇博客，是本人找到的最为形象的spark作业调度流程图, 感谢此图作者*
+
+## 5. Spark分布式集群配置方法  
+
+其实本文原本的目的就是分析其安装配置方法，结果跑偏了，现在补充回来。  
+
+Spark集群会有一个master节点，其余都是worker节点，配置及其简单，还是自行参考kakasyw的文章[《Spark 开发环境搭建（五）- Scala和Spark安装》](http://www.jianshu.com/p/09143312dd94)
+
 
 ---
 
