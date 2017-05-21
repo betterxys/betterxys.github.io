@@ -32,4 +32,4 @@ markdown: kramdown
 #     input: GFM
 
 mermaid:
-  src: 'C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/jekyll-mermaid-1.0.0/src/mermaid.js'
+  src: '/styles/js/mermaid.min.js'
