@@ -3,7 +3,7 @@ layout: post
 title: linux-常用命令
 date: 2017-04-01
 author: xiaoyongsheng
-categories: Linux
+categories: linux
 tag: linux
 
 ---

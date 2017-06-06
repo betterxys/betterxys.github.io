@@ -5,8 +5,8 @@ date:  2016-06-03
 author: xiaoyongsheng
 By: xiaoyongsheng
 email: xiaoyongsheng@hotmail.com
-categories: Linux
-tag: Linux
+categories: linux
+tag: linux
 ---
 
 * content
