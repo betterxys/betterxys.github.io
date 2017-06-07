@@ -78,17 +78,7 @@ This is a [reference style link][linkid] to a page. And [this]
 [linkid]: www.google.com
 
 
---------------------------
 
-{% mermaid %}
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-{% endmermaid %}
-
-----------------------
 
 这是怎么了
 
