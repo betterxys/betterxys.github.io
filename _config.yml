@@ -22,7 +22,7 @@ highlighter: rouge
 
 # gems: [jekyll-paginate]
 gems: ['jekyll-paginate', 'jekyll-mermaid']
-# mermaid: true
+mermaid: true
 # Build settings
 markdown: kramdown
 
