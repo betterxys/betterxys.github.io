@@ -21,7 +21,7 @@ github_username: betterxys
 highlighter: rouge
 
 # gems: [jekyll-paginate]
-gems: ['jekyll-paginate', 'jekyll-mermaid']
+plugins: ['jekyll-paginate', 'jekyll-mermaid']
 # mermaid: true
 # Build settings
 markdown: kramdown
