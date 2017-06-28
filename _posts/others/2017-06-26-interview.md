@@ -3,7 +3,6 @@ layout: post
 title: 面试题目 
 date:  2017-06-26
 author: xiaoyongsheng
-By: xiaoyongsheng
 categories: interview
 tag: 面试
 ---
