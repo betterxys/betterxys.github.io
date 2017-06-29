@@ -7,7 +7,7 @@ def upstairs(n):
 
 def step(n):
     """step by step like the pace of the devil.
-    
+
     Params:
         n:   total steps.
 
@@ -27,4 +27,3 @@ def step(n):
 if __name__ == '__main__':
     for i in range(10):
         upstairs(i)
-

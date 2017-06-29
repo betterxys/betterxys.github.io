@@ -7,5 +7,12 @@ def insert_sort(in_list):
                 in_list[j], in_list[j+1] = in_list[j+1], in_list[j]
     return in_list
 
-a = insert_sort([6,3,2,7])
-print(a)
+
+def quick_sort(in_list):
+    pass
+
+
+
+if __name__ == '__main__':
+    test_list = [6,3,3,2,7]
+    print(insert_sort(test_list))
