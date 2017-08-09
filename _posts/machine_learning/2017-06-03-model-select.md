@@ -94,7 +94,66 @@ $$ F_\beta: \frac{1}{F_\beta} = \frac{1}{1+\beta^2} (\frac{1}{P} + \frac{\beta^2
  - $$L_2$$ ： 各分量平方和的平方根; 倾向于各分量取值均衡(期望系数尽量小,但非零),非零分量个数尽量稠密;
 
 
+## 4 算法的适用场景
+
+算法不说千千万万也差不多了，那么到底什么时候采用什么算法才会有比较好的结果呢？这个当然没有定论，但肯定是值得探讨的。
+
+### 4.1 没有免费的午餐
+
+在接触机器学习之初，我的导师曾经跟我说过，你没办法说哪个模型最好，只有最适合你这份数据的，此后，我又接触到"no freee lunch"[^2][^3]这种说法，简单来说就是模型的最终期望性能与算法无关！所以我心目中对此也好不怀疑，是骡子是马，拉出来溜溜就行了，所有能用的算法都跑一遍，哪个表现好，就用哪个呗，让事实说话不是更有说服力嘛！  
+但在经历了这么多的面试之后，我的这种想法有些变化了，以上说法其实是指单纯的对比这些算法那个好哪个差是没有意义的，但不同的数据必然会有更合适的算法存在，所以本节要总结前人的经验。
+
+### 4.2 不同场景的适用算法
+
+不同的数据会有不同的适用算法，所以需要对数据有所区分，图像、声音等富文本文件必然是采用深度学习无疑，CNN和RNN才是他们的主战场，本节只讨论结构化数据。结构化的数据以二维表的形式存在，分为行和列，所以可供划分的依据有：行的数量、列的数量、列的数据属性、预测目标等，scikit-learn给出了一张辅助选择的路线图。
+
+![](/styles/images/1708/ml_map.png)
+
+sk-learn的这张图是这么划分的:
+
+- 样本集低于50条样本，请回家好好睡一觉；
+- 分类：
+    + 小样本
+        * 优先使用Linear-SVC
+        * 其次考虑 naive bayes(文本)、KNN
+        * 最终是SVC和Ensemble Classifier
+    + 大样本
+        * 优先使用SGD Classifier(线性模型的一种)
+        * 其次考虑kernel approximation(特征转换的方式，更像是降维？)
+- 聚类
+    + 半监督
+        * 大样本 
+            - MiniBatch Kmeans
+        * 小样本 
+            - 优先考虑Kmeans
+            - Spectral Cluster / GMM
+    + 无监督
+        * 大样本
+            - 臣妾做不到啊
+        * 小样本
+            - MeanShift
+            - VBGMM
+- 回归：
+    + 大样本
+        * SGD Regressor
+    + 小样本
+        * 维度较少
+            - Lasso / ElasticNet
+        * 维度较多
+            - RidgeRegression / SVR(linear)
+            - EnsembleRegressors / SVR(RBF)
+- 降维：
+    + PCA
+    + 大样本
+        * kernel approximation
+    + 小样本
+        * Isomap / Spectral Embedding
+        * LLE
+
+
 ## 参考资料  
 
 [^1]: 周志华.机器学习[M].清华大学出版社,2016.  
 [^2]: 机器学习中的范数规则化之（一）L0、L1与L2范数:http://blog.csdn.net/zouxy09/article/details/24971995.  
+[^3]: No free lunch theorem. (2017). En.wikipedia.org. Retrieved 4 August 2017, from https://en.wikipedia.org/wiki/No_free_lunch_theorem
+[^4]: Choosing the right estimator — scikit-learn 0.18.2 documentation. (2017). Scikit-learn.org. Retrieved 4 August 2017, from http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
