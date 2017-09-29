@@ -9,7 +9,7 @@ baseurl: ""
 description: It's always better if you have people to share it with!
 meta_description: 肖永生;个人博客;
 motto: 等我找到合适的放在这.
-banner: 不找了找不到了。
+banner: 假如一个人活在无法抗拒的痛苦当中，就会把这种痛苦看作幸福。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
