@@ -13,6 +13,23 @@ tag: linux
 
 ---
 
+## 压缩文件
+
+```
+# .gz
+gzip -d file.gz
+
+```
+
+
+## md5校验
+
+```
+md5sum day_* > criteomd5.md5
+md5sum -c criteomd5.md5
+```
+
+
 ## virtualenv[^1]
 
 ```shell
