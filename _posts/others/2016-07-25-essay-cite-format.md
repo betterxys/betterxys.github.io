@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 参考文献格式汇总
+title: 文献引用格式汇总
 date:  2016-07-25
 author: xiaoyongsheng
 By: xiaoyongsheng
@@ -11,6 +11,8 @@ tag: 格式规范
 
 * content
 {:toc}
+
+## 参考文献引用格式
 
 ### 专著 ###
 [序号] 主要责任者．文献题名[M]．出版地：出版者，出版年：页码．
@@ -79,3 +81,14 @@ tag: 格式规范
 > 磁带：MT
 > 磁盘：MK
 > 光盘：CD
+
+
+## github上面的图片和页面超链接引用
+
+### github上面的图片
+
+`https://raw.githubusercontent.com/betterxys/ctr/master/figs/PNN.png`
+
+### github上面的html文件
+
+`http://htmlpreview.github.io/?https://github.com/betterxys/ctr/blob/master/survey/fnn.html`
