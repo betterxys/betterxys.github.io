@@ -87,7 +87,12 @@ tag: 格式规范
 
 ### github上面的图片
 
-`https://raw.githubusercontent.com/betterxys/ctr/master/figs/PNN.png`
+```
+https://raw.githubusercontent.com/betterxys/ctr/master/figs/PNN.png
+or
+
+https://betterxys.github.io/styles/images/ctrfigs/WDL_struc.png
+```
 
 ### github上面的html文件
 

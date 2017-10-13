@@ -18,7 +18,6 @@ tag: linux
 ```
 # .gz
 gzip -d file.gz
-
 ```
 
 
