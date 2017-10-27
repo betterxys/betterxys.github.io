@@ -17,6 +17,7 @@ tag: Python
 
 ```python
 from matplotlib import dates
+from matplotlib.ticker import  FormatStrFormatter 
 
 # 横坐标日期格式
 fig = plt.figure()
@@ -25,6 +26,10 @@ ax = fig.add_subplot(1, 1, 1)
 ax.plot(xdata, ydata, 'g-')
 ax.set_xticklabels(ax.xaxis.get_majorticklabels(), rotation=45)  # 手动设置标签旋转, 注意顺序
 ax.xaxis.set_major_formatter(dates.DateFormatter('%Y-%m'))
+
+fmt = FormatStrFormatter('%1.1f') #设置x轴标签文本的格式
+ax.xaxis.set_major_formatter(fmt)
+
 ax.set_title('title_name')
 plt.tight_layout()
 plt.savefig('test.png', dpi=200)

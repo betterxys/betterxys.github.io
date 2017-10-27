@@ -13,6 +13,14 @@ tag: linux
 
 ---
 
+## CTLR win/linux 格式转换
+
+win 下的文件格式转换为 unix 格式；
+
+```
+dos2unix $file_name
+```
+
 ## 压缩文件
 
 ```
