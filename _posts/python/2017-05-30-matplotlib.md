@@ -24,11 +24,17 @@ fig = plt.figure()
 fig.autofmt_xdate()  # 简单的自动优化
 ax = fig.add_subplot(1, 1, 1)
 ax.plot(xdata, ydata, 'g-')
-ax.set_xticklabels(ax.xaxis.get_majorticklabels(), rotation=45)  # 手动设置标签旋转, 注意顺序
+# 手动设置标签旋转, 注意顺序
+ax.set_xticklabels(ax.xaxis.get_majorticklabels(), rotation=45)
 ax.xaxis.set_major_formatter(dates.DateFormatter('%Y-%m'))
 
-fmt = FormatStrFormatter('%1.1f') #设置x轴标签文本的格式
+#设置x轴标签文本的格式
+fmt = FormatStrFormatter('%1.1f') 
 ax.xaxis.set_major_formatter(fmt)
+
+#去掉边框  
+ax.spines['top'].set_visible(False)  
+ax.spines['right'].set_visible(False)  
 
 ax.set_title('title_name')
 plt.tight_layout()
