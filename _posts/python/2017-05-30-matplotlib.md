@@ -17,7 +17,7 @@ tag: Python
 
 ```python
 from matplotlib import dates
-from matplotlib.ticker import  FormatStrFormatter 
+from matplotlib.ticker import  FormatStrFormatter
 
 # 横坐标日期格式
 fig = plt.figure()
@@ -29,7 +29,7 @@ ax.set_xticklabels(ax.xaxis.get_majorticklabels(), rotation=45)
 ax.xaxis.set_major_formatter(dates.DateFormatter('%Y-%m'))
 
 #设置x轴标签文本的格式
-fmt = FormatStrFormatter('%1.1f') 
+fmt = FormatStrFormatter('%1.1f')
 ax.xaxis.set_major_formatter(fmt)
 
 #去掉边框  
