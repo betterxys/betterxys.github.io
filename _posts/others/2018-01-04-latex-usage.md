@@ -42,7 +42,7 @@ tag: latex
 作者仔细查看了相关资料和本人电脑（ubuntu）中的配置信息，Linux系统支持的中文字体并不丰富，所以本人将win的字体全部拷贝到linux下，但经查看，仿宋字体并没有加粗的设置，也就是说该字体天然不支持加粗操作，可能也是由于这个原因，模板中的`\bfseries`操作未能达到加粗效果，本人采用的解决方案是通过伪加粗的方式对仿宋进行加粗。
 
 ```
-% 添加加粗仿宋
+ 添加加粗仿宋
 \setCJKfamilyfont{fs}[AutoFakeBold=3]{FangSong} 
 \newcommand{\fs}{\CJKfamily{fs}}
 ```
@@ -56,7 +56,7 @@ tag: latex
 {\setlength\abovedisplayskip{1pt plus 3pt minus 7pt} 
 \setlength\belowdisplayskip{1pt plus 3pt minus 7pt} 
 \begin{align}\label{eq:ctr_form}
-\text{历史点击率} = \frac{\text{总点击次数}}{\text{总展示次数}} \times 100%
+\text{历史点击率} = \frac{\text{总点击次数}}{\text{总展示次数}} \times 100
 \end{align}
 }
 ```
@@ -101,12 +101,11 @@ tag: latex
 
 
 ```
-% 图目录
-\renewcommand\listoffigures{%
-    \if@openright\cleardoublepage\else\clearpage\fi%
+\renewcommand\listoffigures{
+    \if@openright\cleardoublepage\else\clearpage\fi
     \chapter{\listfigurename}
     \let\oldnumberline\numberline
-    \renewcommand{\numberline}{\figurename~\oldnumberline}%
+    \renewcommand{\numberline}{\figurename~\oldnumberline}
     \@starttoc{lof}}
 
 \renewcommand*\l@figure{
