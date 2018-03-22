@@ -5,7 +5,7 @@ layout: default
   <div class="row">
     <div class="col-md-3">
       <div class="sidebar hidden-print" role="complementary">
-        {% include lefttree.html %} 
+        {% include lefttree.html %}
       </div>
     </div>
     <div class="col-md-9" role="main">
@@ -16,8 +16,10 @@ layout: default
               <!--
                 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
               -->
-              <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{site.url}}">{{ page.author }}</a></div>
-              <div class="meta">Email: {{ site.email }}</div>
+              <!-- <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{site.url}}">{{ page.author }}</a></div> -->
+              <!-- <div class="meta">Email: {{ site.email }}</div> -->
+              <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{site.url}}"> xiaoyongsheng </a></div>
+              <div class="meta">Email: xiaoyongsheng@hotmail.com</div>
               <br />
             </header>
             <article class="post-content">
@@ -28,7 +30,7 @@ layout: default
       <div class="panel docs-content">
         <article class="post-content">
           <div class="wrapper">
-            {% include LessOrMore/comments %} 
+            {% include LessOrMore/comments %}
           </div>
         </article>
       </div>
