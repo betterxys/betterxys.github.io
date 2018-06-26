@@ -10,7 +10,9 @@ tag: spark
 * content
 {: toc}
 
-## 1. 数据读写
+## 数据读写
+
+### 读
 
 ```scala
 fp = "@file_path"
@@ -25,6 +27,35 @@ val df = spark.read.format("csv").option("header", "true").load(fp)
 df.printSchema()
 df.createOrReplaceTempView("tmp")
 ```
+
+### 写
+
+```scala
+user_resume.repartition(1).write.format("csv").option("header", "true").save("/user/yongsheng.xiao/recommendation/data/data.csv)
+```
+
+### 从 HDFS 获取数据
+
+```shell
+hdfs dfs -get $file_path
+```
+
+
+## 数据类型
+
+### RDD的交集、差集、并集
+
+```scala
+// init rdd, if not rdd, convert to rdd by .rdd
+val rdd1 = sc.parallelize(List("a", "b","c"))
+val rdd2 = sc.parallelize(List("e", "d","c"))
+
+//operation
+rdd1.union(rdd2).collect
+rdd1.intersection(rdd2).collect
+rdd1.subtract(rdd2).collect
+```
+
 
 
 ---
