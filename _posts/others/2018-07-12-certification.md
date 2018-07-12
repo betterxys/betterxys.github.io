@@ -64,9 +64,9 @@ categories: Others
 
 ## Reference
 
-[^1]: *聊聊常见的实名认证*. (2018). *简书*. Retrieved 12 July 2018, from https://www.jianshu.com/p/cd4ac184f751
+[^1]: 聊聊常见的实名认证. (2018). 简书. Retrieved 12 July 2018, from https://www.jianshu.com/p/cd4ac184f751
 [^2]: 全国公民身份证号码查询服务中心. (2018). Nciic.com.cn. Retrieved 12 July 2018, from http://www.nciic.com.cn/framework/gongzuo/ilkjbckkhfilbbnnldnjnnnkpcfpcodb.jsp
-[^3]: *一张照片让你背负现金贷的债，你还在随意发验证照吗？*. (2018). *Xw.qq.com*. Retrieved 12 July 2018, from https://xw.qq.com/cmsid/20180413A0QWIE00
+[^3]: *一张照片让你背负现金贷的债，你还在随意发验证照吗？ (2018). Xw.qq.com*. Retrieved 12 July 2018, from https://xw.qq.com/cmsid/20180413A0QWIE00
 [^4]: 芝麻信用商家服务平台(2018). *B.zmxy.com.cn*. Retrieved 12 July 2018, from https://b.zmxy.com.cn/technology/technicalAuths.htm
 [^5]: *干货丨互联网常见实名认证方式介绍 | 人人都是产品经理*. (2018). *Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/351836.html
 [^6]: *干货丨身份证号码编码规则及其应用 | 人人都是产品经理*. (2018). *Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/350196.html
