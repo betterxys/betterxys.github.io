@@ -68,6 +68,6 @@ categories: Others
 [^2]: 全国公民身份证号码查询服务中心. (2018). Nciic.com.cn. Retrieved 12 July 2018, from http://www.nciic.com.cn/framework/gongzuo/ilkjbckkhfilbbnnldnjnnnkpcfpcodb.jsp
 [^3]: *一张照片让你背负现金贷的债，你还在随意发验证照吗？ (2018). Xw.qq.com*. Retrieved 12 July 2018, from https://xw.qq.com/cmsid/20180413A0QWIE00
 [^4]: 芝麻信用商家服务平台(2018). *B.zmxy.com.cn*. Retrieved 12 July 2018, from https://b.zmxy.com.cn/technology/technicalAuths.htm
-[^5]: *干货丨互联网常见实名认证方式介绍 | 人人都是产品经理. (2018). Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/351836.html
-[^6]: *干货丨身份证号码编码规则及其应用 | 人人都是产品经理. (2018). Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/350196.html
+[^5]: *干货丨互联网常见实名认证方式介绍 人人都是产品经理. (2018). Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/351836.html
+[^6]: *干货丨身份证号码编码规则及其应用 人人都是产品经理. (2018). Woshipm.com*. Retrieved 12 July 2018, from http://www.woshipm.com/pmd/350196.html
 [^7]: *未绑定快捷支付，手机上通过支付宝进行实名认证的流程 (2018). Cshall.alipay.com*. Retrieved 12 July 2018, from https://cshall.alipay.com/lab/help_detail.htm?help_id=559829
