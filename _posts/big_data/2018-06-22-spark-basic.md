@@ -15,13 +15,16 @@ tag: spark
 ### 读
 
 ```scala
-fp = "@file_path"
+val fp = "@file_path"
 
 // read parquet
 val df = spark.read.parquet(fp)
 
 // read csv
 val df = spark.read.format("csv").option("header", "true").load(fp)
+
+//print rdd content
+myRDD.take(n).foreach(println)
 
 // create view
 df.printSchema()
@@ -32,6 +35,85 @@ df.createOrReplaceTempView("tmp")
 
 ```scala
 user_resume.repartition(1).write.format("csv").option("header", "true").save("/user/yongsheng.xiao/recommendation/data/data.csv)
+```
+
+### 查询
+
+```scala
+// select distinct rows
+df.distinct.count()
+
+// Select only the "name" column
+df.select("name").show()
+// +-------+
+// |   name|
+// +-------+
+// |Michael|
+// |   Andy|
+// | Justin|
+// +-------+
+​
+// Select everybody, but increment the age by 1
+df.select($"name", $"age" + 1).show()
+// +-------+---------+
+// |   name|(age + 1)|
+// +-------+---------+
+// |Michael|     null|
+// |   Andy|       31|
+// | Justin|       20|
+// +-------+---------+
+​
+// Select people older than 21
+df.filter($"age" > 21).show()
+// +---+----+
+// |age|name|
+// +---+----+
+// | 30|Andy|
+// +---+----+
+​
+// Count people by age
+df.groupBy("age").count().show()
+// +----+-----+
+// | age|count|
+// +----+-----+
+// |  19|    1|
+// |null|    1|
+// |  30|    1|
+// +----+-----+
+​
+// Register the DataFrame as a SQL temporary view
+df.createOrReplaceTempView("people")
+​
+val sqlDF = spark.sql("SELECT * FROM people")
+sqlDF.show()
+// +----+-------+
+// | age|   name|
+// +----+-------+
+// |null|Michael|
+// |  30|   Andy|
+// |  19| Justin|
+// +----+-------+
+​
+// SQL can be run over a temporary view created using DataFrames
+val results = spark.sql("SELECT name FROM people")
+​
+// The results of SQL queries are DataFrames and support all the normal RDD operations
+// The columns of a row in the result can be accessed by field index or by field name
+results.map(attributes => "Name: " + attributes(0)).show()
+// +-------------+
+// |        value|
+// +-------------+
+// |Name: Michael|
+// |   Name: Andy|
+// | Name: Justin|
+// +-------------+
+​
+// In 1.3.x, in order for the grouping column "department" to show up,
+// it must be included explicitly as part of the agg function call.
+df.groupBy("department").agg($"department", max("age"), sum("expense"))
+​
+// In 1.4+, grouping column "department" is included automatically.
+df.groupBy("department").agg(max("age"), sum("expense"))
 ```
 
 ### 从 HDFS 获取数据
