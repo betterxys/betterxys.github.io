@@ -23,6 +23,16 @@ val df = spark.read.parquet(fp)
 // read csv
 val df = spark.read.format("csv").option("header", "true").load(fp)
 
+
+//import spark context
+import org.apache.hadoop.io._
+import com.hadoop.mapreduce._
+import org.apache.spark.sql.functions._
+
+//hdfs lzo -> rdd -> dataframe
+var rdd = sc.newAPIHadoopFile[LongWritable, Text, LzoTextInputFormat]("/esdata/lzo/vehicle_collection_info/20161230/*")       
+df = spark.read.json(rdd.values.map(_.toString))   
+
 //print rdd content
 myRDD.take(n).foreach(println)
 
