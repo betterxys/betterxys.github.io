@@ -124,6 +124,14 @@ df.groupBy("department").agg($"department", max("age"), sum("expense"))
 ​
 // In 1.4+, grouping column "department" is included automatically.
 df.groupBy("department").agg(max("age"), sum("expense"))
+
+
+// 通过指定字符拆分一行为多行
+val multi_df = rst.withColumn("inner",split(col("address"),"、|,|，|;")).withColumn("mult",explode(col("inner")))
+
+// 字符替换
+import org.apache.spark.sql.functions.regexp_replace
+val droplink_df = multi_df.withColumn("rst_loc", regexp_replace(col("mult"), ",| |-|/", "")).select("rst_loc").dropDuplicates()
 ```
 
 ### 从 HDFS 获取数据
@@ -148,6 +156,16 @@ rdd1.intersection(rdd2).collect
 rdd1.subtract(rdd2).collect
 ```
 
+### dataSet的去重合并
+
+```scala
+val a = df.select("address").dropDuplicates()
+val b = df.select("expectLocation").dropDuplicates()
+val c = df.select("resident").dropDuplicates()
+val d = df.select("permanentResidence").dropDuplicates()
+
+val rst = a.union(b).union(c).union(d)
+```
 
 
 ---
