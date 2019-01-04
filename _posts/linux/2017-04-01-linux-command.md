@@ -97,6 +97,24 @@ git branch -a # 查看所有分支
 git checkout $branchname
 ```
 
+### github配置
+
+
+```shell
+ssh-keygen -t rsa -b 4096 -C "betterxys@gmail.com" -f id_rsa.github
+pbcopy < ~/.ssh/id_rsa.github.pub
+
+# paste to github config
+
+git clone git@github.com:betterxys/betterxys.github.io.git
+git remote add origin git@github.com:betterxys/betterxys.github.io.git
+git push origin master
+
+# vi ./ssh/config
+Host github.com
+  Preferredauthentications publickey
+  IdentityFile ~/.ssh/id_rsa.github
+```
 
 
 ## 参考资料  
