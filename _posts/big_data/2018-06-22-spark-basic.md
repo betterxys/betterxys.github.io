@@ -81,6 +81,11 @@ df.filter($"age" > 21).show()
 // | 30|Andy|
 // +---+----+
 ​
+
+// filter in array
+ulti_df.filter($"singal_school".isin(cname:_*)).count()
+
+
 // Count people by age
 df.groupBy("age").count().show()
 // +----+-----+
