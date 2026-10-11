@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 行业早报 · 2026-10-11</title>
-<meta name="description" content="2026年10月11日（周日）AI 行业早报：行业动态、本周 X 观点抽象、关键主张正反辨析、播客新集。">
+<title>AI 行业早报 · 2026-10-11 · v2</title>
+<meta name="description" content="2026年10月11日（周日）AI 行业早报 v2：行业动态、X 共识主张与正反辨析合并、播客深写。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -97,6 +97,7 @@
   .pill.view { background: var(--violet-soft); border-color: #d8c9f5; color: var(--violet); }
   .pill.cast { background: #fff4e8; border-color: #f0d2b0; color: #9a4e00; }
   .pill.debate { background: #14120f; border-color: #14120f; color: #f6f4ef; }
+  .pill.v2 { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   h1 {
     font-family: var(--serif);
@@ -159,6 +160,11 @@
     letter-spacing: -.015em;
   }
   .sec-head p { margin: 0; color: var(--muted); font-size: 13px; }
+  .subhead {
+    font-family: var(--serif); font-size: 18px; margin: 22px 0 12px;
+    letter-spacing: -.01em;
+  }
+  .subhead span { color: var(--muted); font-size: 13px; font-family: var(--font); font-weight: 500; margin-left: 8px; }
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
@@ -205,41 +211,47 @@
   }
   .sources a:hover { background: var(--accent-soft); color: var(--accent); text-decoration: none; }
 
-  .theme {
+  .week5 {
     background: var(--bg-elev);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    padding: 14px 14px 10px;
+    box-shadow: var(--shadow);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+  .week5 h3 {
+    margin: 0 0 10px; font-size: 13px; text-transform: uppercase;
+    letter-spacing: .06em; color: var(--muted);
+  }
+  .week5 ol { margin: 0; padding-left: 20px; color: var(--ink-2); font-size: 13.5px; }
+  .week5 li { margin: 6px 0; }
+  .week5 b { color: var(--ink); }
+
+  /* Consensus cards (merged X) */
+  .consensus {
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 17px;
     box-shadow: var(--shadow);
   }
-  .theme-h {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 8px; margin-bottom: 10px; padding-bottom: 8px;
-    border-bottom: 1px solid var(--line);
+  .consensus .claim {
+    margin: 0 0 8px; font-size: 15px; line-height: 1.4; letter-spacing: -.01em;
   }
-  .theme-h h3 { margin: 0; font-size: 14px; }
-  .theme-h .tag { font-size: 11px; color: var(--muted); }
-  .abstract {
-    font-size: 13.5px; color: var(--ink-2); margin: 0 0 10px; line-height: 1.5;
+  .consensus .note {
+    margin: 0 0 10px; font-size: 13px; color: var(--ink-2); line-height: 1.5;
   }
-  .xpost {
-    display: grid; grid-template-columns: 110px 1fr auto;
-    gap: 8px; align-items: start;
-    padding: 8px 0; border-top: 1px dashed var(--line);
-    font-size: 13px;
+  .echo {
+    display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center;
+    font-size: 12.5px; color: var(--muted);
   }
-  .xpost:first-of-type { border-top: 0; }
-  .handle { font-weight: 700; font-size: 12.5px; color: var(--ink); white-space: nowrap; }
-  .handle a { color: inherit; }
-  .quote { color: var(--ink-2); line-height: 1.45; }
-  .xlink {
-    font-size: 11.5px; font-weight: 600; color: var(--accent);
-    white-space: nowrap; padding-top: 1px;
+  .echo b { color: var(--ink-2); font-weight: 600; }
+  .echo a {
+    font-weight: 600; color: var(--ink-2);
+    background: var(--bg-soft); border: 1px solid var(--line);
+    padding: 2px 8px; border-radius: 999px; font-size: 12px;
   }
-  @media (max-width: 700px) {
-    .xpost { grid-template-columns: 1fr auto; }
-    .handle { grid-column: 1 / -1; }
-  }
+  .echo a:hover { background: var(--accent-soft); color: var(--accent); text-decoration: none; }
 
   details.silent {
     margin-top: 14px;
@@ -281,14 +293,15 @@
   .debate-claim h3 {
     margin: 0; font-size: 16px; line-height: 1.35; letter-spacing: -.01em;
   }
+  .debate-claim .ptr {
+    margin: 8px 0 0; font-size: 12.5px; color: var(--muted);
+  }
   .debate-body {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 0;
   }
   @media (max-width: 780px) { .debate-body { grid-template-columns: 1fr; } }
-  .side {
-    padding: 14px 16px 16px;
-  }
+  .side { padding: 14px 16px 16px; }
   .side.pro { background: var(--pro-soft); border-right: 1px solid var(--line); }
   .side.con { background: var(--con-soft); }
   @media (max-width: 780px) {
@@ -302,9 +315,7 @@
   .side.con h4 { color: var(--con); }
   .side ul { margin: 0; padding-left: 16px; font-size: 13px; color: var(--ink-2); }
   .side li { margin: 5px 0; }
-  .side .who {
-    margin-top: 10px; font-size: 12px; color: var(--muted);
-  }
+  .side .who { margin-top: 10px; font-size: 12px; color: var(--muted); }
   .side .who a { font-weight: 600; }
   .verdict {
     padding: 12px 16px 14px;
@@ -324,39 +335,48 @@
   }
   .debates { display: grid; gap: 14px; }
 
-  .pod {
-    display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px;
+  /* Podcast deep */
+  .pod-deep { display: grid; gap: 16px; }
+  .pod-card {
+    background: var(--bg-elev);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
   }
-  @media (max-width: 820px) { .pod { grid-template-columns: 1fr; } }
-  .pod article {
-    background: var(--bg-elev); border: 1px solid var(--line);
-    border-radius: var(--radius); padding: 16px 17px; box-shadow: var(--shadow);
+  .pod-card h3 { margin: 8px 0 4px; font-size: 18px; letter-spacing: -.015em; font-family: var(--serif); }
+  .guest { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+  .pod-blocks { display: grid; gap: 12px; }
+  .pblock {
+    border-radius: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
   }
-  .pod h3 { margin: 6px 0 4px; font-size: 15.5px; }
-  .guest { color: var(--muted); font-size: 12.5px; margin: 0 0 8px; }
-  .pod ul { margin: 0 0 10px; padding-left: 18px; font-size: 13.5px; color: var(--ink-2); }
-  .pod ul li { margin: 3px 0; }
+  .pblock h4 {
+    margin: 0 0 6px; font-size: 12px; letter-spacing: .06em;
+    text-transform: uppercase; font-weight: 700; color: var(--muted);
+  }
+  .pblock.claim { background: var(--accent-soft); border-color: #c9dbff; }
+  .pblock.claim h4 { color: var(--accent); }
+  .pblock.detail { background: var(--bg-soft); }
+  .pblock.diff { background: var(--amber-soft); border-color: #f0dfaa; }
+  .pblock.diff h4 { color: var(--amber); }
+  .pblock ul { margin: 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-2); }
+  .pblock li { margin: 4px 0; }
+  .pblock p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
   .skip {
     font-size: 12.5px; color: var(--muted); padding: 12px 14px;
     border: 1px dashed var(--line-strong); border-radius: var(--radius);
     background: transparent;
   }
-
-  .week5 {
-    background: var(--bg-elev);
-    border: 1px solid var(--line);
+  .pod-brief {
+    background: var(--bg-soft);
+    border: 1px dashed var(--line-strong);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    padding: 16px 18px;
-    margin-bottom: 12px;
+    padding: 14px 16px;
+    font-size: 13.5px; color: var(--ink-2);
   }
-  .week5 h3 {
-    margin: 0 0 10px; font-size: 13px; text-transform: uppercase;
-    letter-spacing: .06em; color: var(--muted);
-  }
-  .week5 ol { margin: 0; padding-left: 20px; color: var(--ink-2); font-size: 13.5px; }
-  .week5 li { margin: 6px 0; }
-  .week5 b { color: var(--ink); }
+  .pod-brief strong { color: var(--ink); }
 
   footer {
     margin: 36px 0 40px;
@@ -377,7 +397,7 @@
     body { background: #fff; font-size: 11pt; }
     .topnav { position: static; background: #fff; }
     .nav-links { display: none; }
-    .lead-card, .section-card, article.item, .theme, .pod article, .stat, .debate, .week5 {
+    .lead-card, .section-card, article.item, .pod-card, .stat, .debate, .week5, .consensus {
       box-shadow: none; break-inside: avoid;
     }
     a { color: #000; text-decoration: underline; }
@@ -392,13 +412,13 @@
 <body>
   <nav class="topnav" aria-label="页面导航">
     <div class="topnav-inner">
-      <div class="brand">AI 早报 <span>2026-10-11</span></div>
+      <div class="brand">AI 早报 <span>2026-10-11 · v2</span></div>
       <div class="nav-links">
         <a href="#topline">今日最该看</a>
         <a href="#industry">行业动态</a>
-        <a href="#x">X 观点</a>
+        <a href="#x">X 共识</a>
         <a href="#debate">正反辨析</a>
-        <a href="#podcasts">播客</a>
+        <a href="#podcasts">播客深写</a>
         <a href="#footer">说明</a>
       </div>
     </div>
@@ -407,18 +427,19 @@
   <div class="wrap">
     <header class="hero">
       <div class="eyebrow">
+        <span class="pill v2">v2 重编</span>
         <span class="pill hot">周日精编</span>
         <span class="pill reg">监管</span>
         <span class="pill prod">产品</span>
         <span class="pill fund">融资</span>
-        <span class="pill view">观点</span>
+        <span class="pill view">共识主张</span>
         <span class="pill debate">正反辨析</span>
-        <span class="pill cast">播客</span>
+        <span class="pill cast">播客深写</span>
       </div>
       <h1>AI 行业早报</h1>
       <p class="meta">
-        <strong>2026-10-11（周日）</strong> · Asia/Shanghai ·
-        行业底稿 10/07–10/10 已核实 · 观点窗 10/04–10/11 · 编辑部日报风格
+        <strong>2026-10-11（周日）· v2</strong> · Asia/Shanghai ·
+        相对 v1：X「观点摘要 × 正反」合并去重；播客少集写透 · 链接均已核实
       </p>
 
       <div class="topline" id="topline">
@@ -445,25 +466,24 @@
             </li>
             <li>
               <div>
-                <strong>四议题正反辨析（本页专章）</strong>
-                <span>主动 Agent · SI/RSI · Coding 闭环 · swarm+决策拆分——每题附真实帖证据与编辑判断。</span>
+                <strong>播客深写：科学闭环、开源权重、经营任务、创作者注意力</strong>
+                <span>AlphaFold / Beam / 硅谷101 / 十字路口——关键主张、细节与主流叙事差异分开写。</span>
               </div>
             </li>
           </ol>
         </div>
         <div class="stats">
           <div class="stat"><div class="n">9</div><div class="l">行业主条目（含 10/10 增补）</div></div>
-          <div class="stat"><div class="n">4</div><div class="l">关键主张正反辨析</div></div>
-          <div class="stat"><div class="n">5</div><div class="l">观点主题抽象（非翻译）</div></div>
-          <div class="stat"><div class="n">5</div><div class="l">播客新集（含 Periodic）</div></div>
+          <div class="stat"><div class="n">6</div><div class="l">共识主张（多人呼应合并）</div></div>
+          <div class="stat"><div class="n">3</div><div class="l">张力议题正反（不重复共识）</div></div>
+          <div class="stat"><div class="n">4</div><div class="l">播客深写（+ Periodic 附记）</div></div>
           <div class="stat wide">
-            <div class="n" style="font-size:20px;">读法提示</div>
-            <div class="l">先扫「正反辨析」与「本周五条结论」；行业条看「为何重要」；X 栏是抽象主张，不是帖子译文。本页可离线打开，链接按需联网。</div>
+            <div class="n" style="font-size:20px;">v2 读法</div>
+            <div class="l">先扫「共识主张」再看「正反」——后者只写张力，不复述同一组证据。播客按「主张 / 细节 / 叙事差」读。</div>
           </div>
         </div>
       </div>
     </header>
-
     <!-- INDUSTRY -->
     <section id="industry">
       <div class="sec-head">
@@ -613,11 +633,12 @@
       </div>
     </section>
 
-    <!-- X -->
+
+    <!-- X CONSENSUS + DEBATE (merged, de-duplicated) -->
     <section id="x">
       <div class="sec-head">
-        <h2>本周 X 观点抽象</h2>
-        <p>非帖子翻译 · 按主张聚类 · 证据链见下方链接</p>
+        <h2>本周 X：共识主张</h2>
+        <p>多人呼应合并为一条 · 证据链附后 · 与下方正反不重复铺陈</p>
       </div>
 
       <div class="week5">
@@ -632,156 +653,72 @@
       </div>
 
       <div class="grid-2">
-        <div class="theme">
-          <div class="theme-h">
-            <h3>个人 Agent：主动、长程、跨端</h3>
-            <span class="tag">Muse · Dots</span>
-          </div>
-          <p class="abstract">产品负责人本周对外讲的不是「更聪明」，而是会主动约会议、纠错、跟进，并把能力从桌面铺到手机/平板。工程焦点是并行子 Agent、语音、可追踪性——长程任务工程，不是聊天 UI。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/alexandr_wang" target="_blank" rel="noopener">@alexandr_wang</a></div>
-            <div class="quote">Muse 满月复盘；一周内密集推 iPad、connectors、Mac computer use、电话 beta、小企业场景。</div>
-            <a class="xlink" href="https://x.com/alexandr_wang/status/2108456337374065097" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/embirico" target="_blank" rel="noopener">@embirico</a></div>
-            <div class="quote">Dots：桌面→移动；会议插件；会中纠错；并行与追踪仍是路线图瓶颈（premium 才计划放开并行）。</div>
-            <a class="xlink" href="https://x.com/embirico/status/2108669028441219559" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/emollick" target="_blank" rel="noopener">@emollick</a></div>
-            <div class="quote">抽象观察：用户故事从「我问它」变成「它先帮我」——好感来自主动，而非问答质量。</div>
-            <a class="xlink" href="https://x.com/emollick/status/2108745817498538389" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 1 ·</b> 个人 Agent 的卖点已是「主动办事 / 长程跟进 / 跨端」，不是「答得更聪明」。</p>
+          <p class="note">产品负责人密集推跨端与会议能力；第三方观察把用户故事概括为「它先帮我」。工程焦点在并行子 Agent、可追踪性——长程任务工程。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/alexandr_wang/status/2108456337374065097" target="_blank" rel="noopener">@alexandr_wang · Muse</a>
+            <a href="https://x.com/embirico/status/2108669028441219559" target="_blank" rel="noopener">@embirico · Dots</a>
+            <a href="https://x.com/emollick/status/2108745817498538389" target="_blank" rel="noopener">@emollick · 抽象</a>
           </div>
         </div>
 
-        <div class="theme">
-          <div class="theme-h">
-            <h3>企业：swarm / 决策层 / 治理</h3>
-            <span class="tag">token ×1000</span>
-          </div>
-          <p class="abstract">叙事从「人提示一个 Agent」升级为后台 swarm；同时出现专用决策模型，把 harness 里大量 yes/no 从 frontier LLM 拆下。另一面：模型要被当内部风险管理。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/satyanadella" target="_blank" rel="noopener">@satyanadella</a></div>
-            <div class="quote">发布 Decision-1；谈 Windows Hybrid Intelligence；撰文 Models as Insider Risks。</div>
-            <a class="xlink" href="https://x.com/satyanadella/status/2108627923888754862" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/levie" target="_blank" rel="noopener">@levie</a></div>
-            <div class="quote">Agent swarm 将消耗远超「一人一提示」的 token；企业要安全、治理、审计跟得上用量。</div>
-            <a class="xlink" href="https://x.com/levie/status/2108750943680630893" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/hwchase17" target="_blank" rel="noopener">@hwchase17</a></div>
-            <div class="quote">Jev 进 harness：大量步骤是判断而非生成；Open SWE 按任务路由后中位成本降约 64%。</div>
-            <a class="xlink" href="https://x.com/hwchase17/status/2108777335650476163" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/emollick" target="_blank" rel="noopener">@emollick</a></div>
-            <div class="quote">Gemini 之后 Google 真问题是产品形态：单一编排 vs 碎片产品线。</div>
-            <a class="xlink" href="https://x.com/emollick/status/2108584037451550741" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 2 ·</b> 企业侧同时出现「swarm 用量会爆」与「专用决策模型拆分」——编排层要按爆炸用量设计治理。</p>
+          <p class="note">Levie 谈 token 远超一人一提示；Chase 称 harness 大量步骤是判断而非生成，Open SWE 按任务路由后中位成本降约 64%；Nadella 同期推 Decision-1，并把模型写成 insider risk。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/levie/status/2108750943680630893" target="_blank" rel="noopener">@levie</a>
+            <a href="https://x.com/hwchase17/status/2108777335650476163" target="_blank" rel="noopener">@hwchase17</a>
+            <a href="https://x.com/satyanadella/status/2108627923888754862" target="_blank" rel="noopener">@satyanadella · Decision-1</a>
+            <a href="https://x.com/satyanadella/status/2108931348857827686" target="_blank" rel="noopener">Insider Risks</a>
           </div>
         </div>
 
-        <div class="theme">
-          <div class="theme-h">
-            <h3>Coding Agent：闭环工程</h3>
-            <span class="tag">目标 · 可观测 · 迭代</span>
-          </div>
-          <p class="abstract">本周产品话术是「目标 + 可观测指标 + 自动迭代」（如压 p95 CI），以及权限/Projects/缓存成本等工程细节——榜单文案退居次席。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/bcherny" target="_blank" rel="noopener">@bcherny</a></div>
-            <div class="quote">给模型目标、测量方式与反馈感；推 auto mode；解释 API 短 TTL vs 交互长 TTL 的成本设计。</div>
-            <a class="xlink" href="https://x.com/bcherny/status/2109027327569203687" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/_catwu" target="_blank" rel="noopener">@_catwu</a></div>
-            <div class="quote">Claude Projects：多线程协调、folder/trust、auto-compact 关法与成本权衡。</div>
-            <a class="xlink" href="https://x.com/_catwu/status/2108415409816793141" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/simonw" target="_blank" rel="noopener">@simonw</a></div>
-            <div class="quote">求 60GB 内最快开源 MoE coding；并暗示 Agent 可能改写开源维护经济性。</div>
-            <a class="xlink" href="https://x.com/simonw/status/2108608482442449261" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 3 ·</b> Coding Agent 本周公开竞争点是「目标可测 + 自动迭代」闭环，以及权限 / Projects / TTL / 成本，而非榜单文案。</p>
+          <p class="note">产品负责人谈 auto mode 与短/长 TTL 成本设计；Projects 谈多线程协调与 auto-compact；开源侧仍在问「可本地跑的最快 MoE coding」——底座基线未退场，但本周增量话术在闭环。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/bcherny/status/2109027327569203687" target="_blank" rel="noopener">@bcherny</a>
+            <a href="https://x.com/_catwu/status/2108415409816793141" target="_blank" rel="noopener">@_catwu</a>
+            <a href="https://x.com/simonw/status/2108608482442449261" target="_blank" rel="noopener">@simonw</a>
           </div>
         </div>
 
-        <div class="theme">
-          <div class="theme-h">
-            <h3>安全话语：可控案例 vs SI/RSI</h3>
-            <span class="tag">话术通胀</span>
-          </div>
-          <p class="abstract">评测非预期行为把讨论拉回监控与控制失败；同时「Superintelligence / RSI」被批评口号化——关键词对了、实质含糊。另一极强调：SI 必须被 contain，是工程+治理问题。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/Miles_Brundage" target="_blank" rel="noopener">@Miles_Brundage</a></div>
-            <div class="quote">「RSI（人类角色以后再定）」≈「FSD (Supervised)」式话术；SI 术语快速贬值。</div>
-            <a class="xlink" href="https://x.com/Miles_Brundage/status/2108674625643450594" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/mustafasuleyman" target="_blank" rel="noopener">@mustafasuleyman</a></div>
-            <div class="quote">Super Intelligence must be contained：工程与治理，类比飞机/核材料/药品。</div>
-            <a class="xlink" href="https://x.com/mustafasuleyman/status/2108959938781511812" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/elonmusk" target="_blank" rel="noopener">@elonmusk</a></div>
-            <div class="quote">嘲讽「终极安全」=把测试搬到达美航班（上不了网）。</div>
-            <a class="xlink" href="https://x.com/elonmusk/status/2108321181602353333" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/GaryMarcus" target="_blank" rel="noopener">@GaryMarcus</a></div>
-            <div class="quote">NYC 听证侧写：厂商难以宣誓系统会遵守安全指令；承诺可回撤。</div>
-            <a class="xlink" href="https://x.com/GaryMarcus/status/2107153498328764901" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 4 ·</b> 「SI / RSI」公开话语层正在口号化贬值；有增量的是 contain、评测隔离、控制面等可检验动作。</p>
+          <p class="note">Brundage 把「RSI（人类角色以后再定）」类比为「FSD (Supervised)」；Suleyman 强调 SI must be contained（飞机/核材料/药品）；Musk 嘲讽断网评测；Marcus 侧写厂商难以宣誓遵守安全指令。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/Miles_Brundage/status/2108674625643450594" target="_blank" rel="noopener">@Miles_Brundage</a>
+            <a href="https://x.com/mustafasuleyman/status/2108959938781511812" target="_blank" rel="noopener">@mustafasuleyman</a>
+            <a href="https://x.com/elonmusk/status/2108321181602353333" target="_blank" rel="noopener">@elonmusk</a>
+            <a href="https://x.com/GaryMarcus/status/2107153498328764901" target="_blank" rel="noopener">@GaryMarcus</a>
           </div>
         </div>
 
-        <div class="theme">
-          <div class="theme-h">
-            <h3>技术路线：系统层权重上升</h3>
-            <span class="tag">search · harness</span>
-          </div>
-          <p class="abstract">主线被抽象为从逐 token 填答案转向当场合成推理链；创造性是否需要真 search；Lean/工具/verifier/harness 才是 neurosymbolic 落地。RSI 建议用科学共同体作参照，而非科幻指数爆炸。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/fchollet" target="_blank" rel="noopener">@fchollet</a></div>
-            <div class="quote">inductive paradigm；RSI 应参照 Science-as-system，而非口号式指数。</div>
-            <a class="xlink" href="https://x.com/fchollet/status/2108951977904517409" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/ylecun" target="_blank" rel="noopener">@ylecun</a></div>
-            <div class="quote">有 search/optimization 才有创造性解；CoT ≠ search；纯自回归不够。</div>
-            <a class="xlink" href="https://x.com/ylecun/status/2108680864850944124" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/GaryMarcus" target="_blank" rel="noopener">@GaryMarcus</a></div>
-            <div class="quote">澄清 neurosymbolic 一贯主张；数学结果用 Lean 等印证「LLM+符号验证」。</div>
-            <a class="xlink" href="https://x.com/GaryMarcus/status/2108715805953372370" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 5 ·</b> 技术路线辩论用语不同，结论同向：「裸自回归 / 纯 CoT」不够，系统层（search、验证、harness）权重上升。</p>
+          <p class="note">Chollet 谈 inductive paradigm，RSI 应参照 Science-as-system；LeCun 强调真 search/optimization，CoT ≠ search；Marcus 澄清 neurosymbolic 与 Lean 等符号验证落地。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/fchollet/status/2108951977904517409" target="_blank" rel="noopener">@fchollet</a>
+            <a href="https://x.com/ylecun/status/2108680864850944124" target="_blank" rel="noopener">@ylecun</a>
+            <a href="https://x.com/GaryMarcus/status/2108715805953372370" target="_blank" rel="noopener">@GaryMarcus</a>
           </div>
         </div>
 
-        <div class="theme">
-          <div class="theme-h">
-            <h3>科学应用与开源生态</h3>
-            <span class="tag">次一级信号</span>
-          </div>
-          <p class="abstract">DeepMind 继续锚科学/医药；开源侧纠结下载量是否失真、数据质量与 reward hacking，以及人才被大厂买走的结构压力。</p>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/demishassabis" target="_blank" rel="noopener">@demishassabis</a></div>
-            <div class="quote">支持 Genesis Mission（约 1.5 亿投入表述）；CZI Virtual Biology。</div>
-            <a class="xlink" href="https://x.com/demishassabis/status/2108331042083872882" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/natolambert" target="_blank" rel="noopener">@natolambert</a></div>
-            <div class="quote">HF 顶模下载下降需谨慎解读；数据工业质量仍低。</div>
-            <a class="xlink" href="https://x.com/natolambert/status/2108954173316178231" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/ClementDelangue" target="_blank" rel="noopener">@ClementDelangue</a></div>
-            <div class="quote">Hub DAU 比 raw downloads 更可信——开源热度指标本身在重估。</div>
-            <a class="xlink" href="https://x.com/ClementDelangue/status/2109041354432983111" target="_blank" rel="noopener">原帖</a>
-          </div>
-          <div class="xpost">
-            <div class="handle"><a href="https://x.com/saranormous" target="_blank" rel="noopener">@saranormous</a></div>
-            <div class="quote">ReflectionAI 访谈（开源市场结构/安全）；预测 cyber IR 创业潮。</div>
-            <a class="xlink" href="https://x.com/saranormous/status/2109026153705201963" target="_blank" rel="noopener">原帖</a>
+        <div class="consensus">
+          <p class="claim"><b>共识 6 ·</b>（次一级）科学应用继续锚定医药/生物学；开源热度指标本身在重估（downloads → DAU）。</p>
+          <p class="note">Hassabis 谈 Genesis Mission / Virtual Biology；Lambert 提醒 HF 顶模下载下降勿过度解读；Delangue 主张 Hub DAU 更可信；Guo 侧有 ReflectionAI / cyber IR 创业信号。</p>
+          <div class="echo">
+            <b>呼应</b>
+            <a href="https://x.com/demishassabis/status/2108331042083872882" target="_blank" rel="noopener">@demishassabis</a>
+            <a href="https://x.com/natolambert/status/2108954173316178231" target="_blank" rel="noopener">@natolambert</a>
+            <a href="https://x.com/ClementDelangue/status/2109041354432983111" target="_blank" rel="noopener">@ClementDelangue</a>
+            <a href="https://x.com/saranormous/status/2109026153705201963" target="_blank" rel="noopener">@saranormous</a>
           </div>
         </div>
       </div>
@@ -797,81 +734,68 @@
       </details>
     </section>
 
-    <!-- DEBATE -->
     <section id="debate">
       <div class="sec-head">
-        <h2>正反辨析</h2>
-        <p>主张一句话 · 正方/反方各附真实帖证据 · 编辑判断标明依据强度</p>
+        <h2>正反辨析（只写张力）</h2>
+        <p>主张已见于上方共识 · 此处不重复举证 · 只展开反对面与编辑判断</p>
       </div>
 
       <div class="debates">
-        <!-- 1 -->
         <div class="debate">
           <div class="debate-claim">
-            <div class="num">议题 01</div>
-            <h3>主张：个人 Agent 的价值主张，已经从「答得更好」切到「主动办事」。</h3>
+            <div class="num">张力 01 · 对共识 1</div>
+            <h3>「主动办事」是叙事领先，还是已经稳态交付？</h3>
+            <p class="ptr">共识侧证据见上（Muse / Dots / Mollick）——此处不再复述产品节奏。</p>
           </div>
           <div class="debate-body">
             <div class="side pro">
-              <h4>正方</h4>
+              <h4>叙事已切、工程跟得上</h4>
               <ul>
-                <li>Muse 满月叙事与跨端铺开（iPad / connectors / computer use / 电话）都在证明「帮你办完」，不是聊得更顺。</li>
-                <li>Dots 推会议插件、会中纠错、桌面→移动——产品优先级落在长程跟进与可追踪性。</li>
-                <li>第三方观察：用户故事开始变成「它先帮我」，情绪价值来自主动。</li>
+                <li>跨端与会议跟进已是对外主轴，不是边角功能；用户故事语言同步切换。</li>
+                <li>瓶颈被产品方公开承认（并行、追踪），说明在按「长程 Agent」而不是「更聪明 chat」排期。</li>
               </ul>
-              <p class="who">谁：
-                <a href="https://x.com/alexandr_wang/status/2108456337374065097" target="_blank" rel="noopener">@alexandr_wang</a> ·
-                <a href="https://x.com/embirico/status/2108669028441219559" target="_blank" rel="noopener">@embirico</a> ·
-                <a href="https://x.com/emollick/status/2108745817498538389" target="_blank" rel="noopener">@emollick</a>
-              </p>
             </div>
             <div class="side con">
-              <h4>反方 / 质疑</h4>
+              <h4>主动仍受成本与可靠性卡住</h4>
               <ul>
-                <li>并行 subagent 仍被产品上限卡住（Dots premium 才计划放开）——「主动」受成本与可靠性约束，尚未全民默认。</li>
-                <li>Claude 侧仍在公开权衡 TTL、compaction、Projects 协调：多线程工程未收敛，主动能力不等于稳定交付。</li>
-                <li>搜索框/聊天窗仍是主流入口；主动叙事可能超前于多数用户的实际工作流。</li>
+                <li>并行 subagent 仍被产品上限卡住（Dots premium 才计划放开）——「主动」不是全民默认。</li>
+                <li>Claude 侧仍在公开权衡 TTL、compaction、Projects：多线程工程未收敛。</li>
+                <li>搜索框/聊天窗仍是主流入口；主动叙事可能超前于多数用户工作流。</li>
               </ul>
               <p class="who">谁：
-                <a href="https://x.com/embirico/status/2107534814840795392" target="_blank" rel="noopener">@embirico（并行路线）</a> ·
+                <a href="https://x.com/embirico/status/2107534814840795392" target="_blank" rel="noopener">@embirico（并行）</a> ·
                 <a href="https://x.com/_catwu/status/2108415409816793141" target="_blank" rel="noopener">@_catwu</a> ·
                 <a href="https://x.com/emollick/status/2108654415464869954" target="_blank" rel="noopener">@emollick（界面）</a>
               </p>
             </div>
           </div>
           <div class="verdict">
-            <strong>编辑判断 · 哪边更合理</strong>
-            <p>更站正方：头部个人 Agent 的<strong>对外主张与产品节奏</strong>确已切到「主动办事」；但交付仍受并行度、成本、可观测性制约——这是叙事领先于工程稳态，不是叙事虚假。</p>
-            <span class="strength">依据强度：中高（多源产品帖 + 第三方抽象一致；缺大规模留存数据）</span>
+            <strong>编辑判断</strong>
+            <p>更站「叙事已切」：头部个人 Agent 的<strong>对外主张与产品节奏</strong>确已切换；但交付仍受并行度、成本、可观测性制约——叙事领先于工程稳态，不是叙事虚假。</p>
+            <span class="strength">依据强度：中高（多源产品帖一致；缺大规模留存数据）</span>
           </div>
         </div>
 
-        <!-- 2 -->
         <div class="debate">
           <div class="debate-claim">
-            <div class="num">议题 02</div>
-            <h3>主张：SI / RSI 话语正在从严肃工程议程滑向「话术通胀」——关键词响亮，约束含糊。</h3>
+            <div class="num">张力 02 · 对共识 4</div>
+            <h3>SI/RSI 是「话术通胀」，还是仍有可操作工程议程？</h3>
+            <p class="ptr">共识侧「术语贬值」证据见上——此处只写工程反面与如何拆开看。</p>
           </div>
           <div class="debate-body">
             <div class="side pro">
-              <h4>正方（话术通胀）</h4>
+              <h4>话术通胀诊断</h4>
               <ul>
-                <li>「RSI，人类角色以后再定」被类比为「FSD (Supervised)」：术语正确，目标被稀释。</li>
-                <li>SI 一词快速贬值，从认真信号变成反信号；跨公司 Agent 协作「既该用又该防」提醒口号掩盖具体风险。</li>
-                <li>嘲讽派把「断网评测」做成物理隔离段子——暴露安全沟通与工程可信度裂痕。</li>
+                <li>术语正确、目标被稀释（FSD Supervised 类比）——关键词响亮不等于进度条。</li>
+                <li>嘲讽派把「断网评测」做成物理隔离段子，暴露安全沟通与工程可信度裂痕。</li>
               </ul>
-              <p class="who">谁：
-                <a href="https://x.com/Miles_Brundage/status/2108674625643450594" target="_blank" rel="noopener">@Miles_Brundage</a> ·
-                <a href="https://x.com/Miles_Brundage/status/2109012025657765981" target="_blank" rel="noopener">贬值论</a> ·
-                <a href="https://x.com/elonmusk/status/2108321181602353333" target="_blank" rel="noopener">@elonmusk</a>
-              </p>
             </div>
             <div class="side con">
-              <h4>反方（仍是工程方向）</h4>
+              <h4>仍有工程方向</h4>
               <ul>
-                <li>「SI must be contained」把问题锚定在飞机/核材料/药品式工程与治理，不是玄学。</li>
-                <li>Chollet：RSI 应参照真实世界的「科学作为系统」——有可操作参照系，而非科幻指数爆炸。</li>
-                <li>Anthropic 非预期行为与 SI Force 补救义务说明：可控性已被拉回案例与合规，不只是话术战场。</li>
+                <li>「SI must be contained」锚定飞机/核材料/药品式工程与治理，不是玄学。</li>
+                <li>Chollet：RSI 应参照「科学作为系统」——有可操作参照系。</li>
+                <li>Anthropic 非预期行为 + SI Force 补救义务：可控性已被拉回案例与合规。</li>
               </ul>
               <p class="who">谁：
                 <a href="https://x.com/mustafasuleyman/status/2108959938781511812" target="_blank" rel="noopener">@mustafasuleyman</a> ·
@@ -881,190 +805,208 @@
             </div>
           </div>
           <div class="verdict">
-            <strong>编辑判断 · 哪边更合理</strong>
+            <strong>编辑判断</strong>
             <p>两边都对一半，但<strong>更站「话术通胀」诊断</strong>：公开话语层确有口号化；真正有增量的是 contain / 评测隔离 / insider-risk 控制面等<strong>可检验动作</strong>。术语本身不应再当进度条。</p>
             <span class="strength">依据强度：中高（多方语义批评一致；工程反例有，但未形成统一度量）</span>
           </div>
         </div>
 
-        <!-- 3 -->
         <div class="debate">
           <div class="debate-claim">
-            <div class="num">议题 03</div>
-            <h3>主张：Coding Agent 的竞争主战场，是「目标可测 + 自动迭代」的闭环工程，而不是榜单。</h3>
+            <div class="num">张力 03 · 对共识 2+3</div>
+            <h3>swarm + 决策拆分 + 闭环工程：方向成立，前提够吗？</h3>
+            <p class="ptr">共识侧成本账本与产品发布见上——此处只写「站不住」的条件。</p>
           </div>
           <div class="debate-body">
             <div class="side pro">
-              <h4>正方</h4>
+              <h4>方向成立</h4>
               <ul>
-                <li>产品负责人公开讲：给目标、给测量、给反馈感；auto mode 与 TTL/成本设计都是闭环零件。</li>
-                <li>Projects 的多线程协调、folder trust、auto-compact——竞争点落在权限与上下文工程，不是参数规模口号。</li>
-                <li>企业侧硅谷101等实测：榜单接近满分 ≠ 真实经营任务交付（无人干预通过率显著更低）——与闭环论同向。</li>
+                <li>用量预测 + 64% 成本账本 + Decision-1/Jev 同周产品化：不是 PPT。</li>
+                <li>闭环话术（目标/测量/反馈）与企业侧实测（榜单≠交付）同向——见硅谷101。</li>
               </ul>
               <p class="who">谁：
-                <a href="https://x.com/bcherny/status/2109027327569203687" target="_blank" rel="noopener">@bcherny</a> ·
-                <a href="https://x.com/_catwu/status/2108415409816793141" target="_blank" rel="noopener">@_catwu</a> ·
                 <a href="https://sv101.fireside.fm/269" target="_blank" rel="noopener">硅谷101 E255</a>
               </p>
             </div>
             <div class="side con">
-              <h4>反方 / 质疑</h4>
-              <ul>
-                <li>开源侧仍在抢「可本地跑的最快 MoE coding」——模型能力基线并未退出竞争，只是换赛道表述。</li>
-                <li>若没有更强底座，闭环只能把失败迭代得更快；「工程 vs 模型」是假二分，采购仍看基准与 demo。</li>
-                <li>榜单与营销仍驱动心智（JevBench、盲测表）——企业采购清单未必已完全「去榜单化」。</li>
-              </ul>
-              <p class="who">谁：
-                <a href="https://x.com/simonw/status/2108608482442449261" target="_blank" rel="noopener">@simonw</a> ·
-                <a href="https://x.com/simonw/status/2108615902308769912" target="_blank" rel="noopener">维护经济性</a> ·
-                （市场侧：Decision/Jev 类基准仍在重塑采购语言）
-              </p>
-            </div>
-          </div>
-          <div class="verdict">
-            <strong>编辑判断 · 哪边更合理</strong>
-            <p>更站正方：<strong>本周公开竞争话术与工程博文</strong>确实以闭环为主；模型/榜单是入场券，不是本周增量。注意：这不否定底座军备——只说明边际竞争点已移到 harness 与可观测指标。</p>
-            <span class="strength">依据强度：中（产品负责人一致性高；缺跨厂商客观对照实验）</span>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="debate">
-          <div class="debate-claim">
-            <div class="num">议题 04 · 可选</div>
-            <h3>主张：企业侧「Agent swarm + 专用决策模型」拆分站得住——用量会爆，简单判断应从 frontier 拆下。</h3>
-          </div>
-          <div class="debate-body">
-            <div class="side pro">
-              <h4>正方</h4>
-              <ul>
-                <li>Levie：swarm 将消耗远超「一人一提示」的 token——编排与治理必须按用量爆炸设计。</li>
-                <li>Chase：harness 里大量步骤是判断而非生成；Jev 接入后 Open SWE 中位成本降约 64%——拆分有账本证据。</li>
-                <li>Decision-1 / Jev 同周产品化与融资验证：决策层正在成为标准组件，而非 PPT。</li>
-              </ul>
-              <p class="who">谁：
-                <a href="https://x.com/levie/status/2108750943680630893" target="_blank" rel="noopener">@levie</a> ·
-                <a href="https://x.com/hwchase17/status/2108777335650476163" target="_blank" rel="noopener">@hwchase17</a> ·
-                <a href="https://x.com/satyanadella/status/2108627923888754862" target="_blank" rel="noopener">@satyanadella</a>
-              </p>
-            </div>
-            <div class="side con">
-              <h4>反方 / 质疑</h4>
+              <h4>前提未齐</h4>
               <ul>
                 <li>Google 产品形态仍被批评碎片化：没有单一编排界面，「拆模型」解决不了「散产品」。</li>
-                <li>swarm 放大 token 的同时也放大失控面——Anthropic 评测外溢说明多 Agent / 联网动作的监控尚未配齐。</li>
-                <li>决策模型赛道定价战与基准战刚开打（Decision-1 vs Jev），互操作性与校准可信度仍未定型。</li>
+                <li>swarm 放大 token 也放大失控面——评测外溢说明多 Agent / 联网动作监控未配齐。</li>
+                <li>决策模型赛道定价战刚开打；开源侧仍在抢本地 MoE coding——模型基线未退出竞争。</li>
               </ul>
               <p class="who">谁：
                 <a href="https://x.com/emollick/status/2108584037451550741" target="_blank" rel="noopener">@emollick</a> ·
-                <a href="https://www.anthropic.com/research/investigating-unintended-model-actions" target="_blank" rel="noopener">可控性案例</a> ·
-                <a href="https://x.com/levie/status/2109079686286565378" target="_blank" rel="noopener">@levie（治理压力）</a>
+                <a href="https://x.com/levie/status/2109079686286565378" target="_blank" rel="noopener">@levie（治理）</a> ·
+                <a href="https://x.com/simonw/status/2108608482442449261" target="_blank" rel="noopener">@simonw</a>
               </p>
             </div>
           </div>
           <div class="verdict">
-            <strong>编辑判断 · 哪边更合理</strong>
-            <p>主张<strong>方向成立</strong>：成本账本与产品发布共同支持「swarm + 决策拆分」。但站得住的前提是<strong>编排界面与控制面同步成熟</strong>——否则只是把贵模型账单换成更多小模型账单，外加更大的事故半径。</p>
+            <strong>编辑判断</strong>
+            <p>主张<strong>方向成立</strong>：成本账本与产品发布共同支持。但站得住的前提是<strong>编排界面与控制面同步成熟</strong>——否则只是把贵模型账单换成更多小模型账单，外加更大的事故半径。模型/榜单仍是入场券，本周增量在 harness。</p>
             <span class="strength">依据强度：中高（成本数字 + 双厂商产品；治理配套仍弱）</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PODCASTS -->
+    <!-- PODCASTS DEEP -->
     <section id="podcasts">
       <div class="sec-head">
-        <h2>播客</h2>
-        <p>窗口内新集保留 · 凝练核心观点 · Lex 非 AI 主轴略过</p>
+        <h2>播客深写</h2>
+        <p>少集写透 · 每集：关键主张 / 有趣细节 / 与主流叙事差异 · Lex 非 AI 主轴略过</p>
       </div>
 
-      <div class="pod">
-        <article>
+      <div class="pod-deep">
+
+        <article class="pod-card">
           <span class="pill cast">Latent Space · 10/10</span>
           <h3>Why AlphaFold Didn't Solve Protein Folding</h3>
-          <p class="guest">嘉宾：Pushmeet Kohli（Google DeepMind）· Sal Candido（Biohub）· 主持 Brandon Anderson</p>
-          <ul>
-            <li>生物学里的 Bitter Lesson：先找到「对的 scaling law / 对的数据」，盲目堆数据无效。</li>
-            <li>AlphaFold 解决的是「复现 PDB 结构」，并非蛋白动力学与功能全集——还远未「解决折叠」。</li>
-            <li>可校准的不确定性（pLDDT）比内部可解释性更关键；虚拟细胞需要全新数据集。</li>
-            <li>Cure-all 叙事要求用 10× 突破思维，而非只做 10% 改进。</li>
-          </ul>
-          <div class="sources">
-            <a href="https://www.latent.space/p/biohub-deepmind" target="_blank" rel="noopener">收听 / 文稿</a>
+          <p class="guest">嘉宾：Pushmeet Kohli（Google DeepMind）· Sal Candido（Biohub）· 主持 Brandon Anderson · <a href="https://www.latent.space/p/biohub-deepmind" target="_blank" rel="noopener">文稿 / 收听</a></p>
+          <div class="pod-blocks">
+            <div class="pblock claim">
+              <h4>关键主张</h4>
+              <ul>
+                <li>生物学也有「Bitter Lesson」变体：不是盲目堆数据/算力，而是先找到<strong>对的 scaling law 与对的数据</strong>；数据错了，再多算力也拉不出能力。</li>
+                <li>AlphaFold「解决折叠」是传播层叙事：实际做的是<strong>复现 PDB 里已有结构测定</strong>，并未穷尽蛋白动力学、无序、功能与情境依赖构象。</li>
+                <li>对用户决策而言，<strong>可校准的不确定性（如 pLDDT）比内部可解释性更关键</strong>——自信错了比答错更伤；「行为可信」优先于「人脑能读懂权重」。</li>
+                <li>虚拟细胞 / 治愈所有疾病级目标，要求按 <strong>10× 突破</strong>重设问题，而不是只做 10% 迭代；同时承认建模、数据生成与领域专家三者不可宗教化偏废。</li>
+              </ul>
+            </div>
+            <div class="pblock detail">
+              <h4>有趣细节</h4>
+              <ul>
+                <li>Sal：蛋白语言模型可以吃<strong>质量并不高的宏基因组序列</strong>（很多甚至不是完整蛋白），性能仍上升——「脏数据」有时携带有用统计；但危险在于只放大「容易造」的数据。</li>
+                <li>Pushmeet：AlphaFold 2 是「手工艺」架构——把残基互相影响等生物物理直觉 bake 进模型，换数据效率；同时强调好数据覆盖比「更大」更难。</li>
+                <li>计算机视觉出身的 Pushmeet 想直接在 <strong>cryo-EM 显微图</strong>上建模，绕过 PDB 结构这一层压缩——认为那里藏着动力学与分布信息；尝试过，仍需更多工作。</li>
+                <li>Sal 的自行车隐喻：现在模型常在优化「辐条」，人们却想用它设计「皮卡零件」——必须从单蛋白走向相互作用与系统级语境。</li>
+                <li>发布后社区发现 AlphaFold 2 还是不错的<strong>无序区预测器</strong>——说明行为泛化有时先于团队自己讲清楚的故事。</li>
+                <li>「AI 何时进临床」被拆穿为病态问题：AI 已在药物发现全链路使用；真正难估的是 10×/100× 加速何时到来，取决于生物学硬问题是否被啃开。</li>
+              </ul>
+            </div>
+            <div class="pblock diff">
+              <h4>与主流叙事的差异</h4>
+              <p>主流标题常写「蛋白折叠已被解决 / AI 攻克生物学」；这集刻意把功劳边界收窄到 PDB 复现任务，并公开说「别停资金属动力学」。另一条主流是「更大模型 + 更多组学数据自然涌现虚拟细胞」——嘉宾反而强调：细胞级目标下现有数据往往不够，必须先定义问题再选建模或造数。第三条差异：业界热捧可解释性，Pushmeet 把优先级改成<strong>校准与行为边界</strong>，甚至设想未来由更大模型去「解释」AlphaFold，而不是强迫人类读激活。</p>
+            </div>
           </div>
         </article>
 
-        <article>
-          <span class="pill cast">Latent Space · 10/8</span>
-          <h3>Synthesis Superintelligence — Periodic Labs</h3>
-          <p class="guest">嘉宾：Liam Fedus · Ekin Dogus Cubuk · 主持 swyx / Brandon</p>
-          <ul>
-            <li>下一波科学 AI 不只靠互联网语料，而靠模型在真实实验闭环里学习（含失败实验数据）。</li>
-            <li>「synthesis superintelligence」：预测材料 → 优化合成条件 → 实验表征 → 反馈进 RL。</li>
-            <li>科学发现不同于数学/编程：物理实验噪声与仪器智能化是硬约束。</li>
-          </ul>
-          <div class="sources">
-            <a href="https://www.latent.space/p/periodic" target="_blank" rel="noopener">收听 / 文稿</a>
-          </div>
-        </article>
-
-        <article>
-          <span class="pill cast">No Priors · 约 10/9</span>
+        <article class="pod-card">
+          <span class="pill cast">No Priors · Ep 181 · 10/9</span>
           <h3>Beam: The Great American Open Model</h3>
-          <p class="guest">嘉宾：Misha Laskin（ReflectionAI 联合创始人兼 CEO）· 主持 Sarah Guo / Elad Gil</p>
-          <ul>
-            <li>Beam：约 500B 参数开源权重推理模型，强调 coding / agentic 与推理效率。</li>
-            <li>企业从「租用智能」转向「拥有智能」；押注开放权重将吃下全球多数 token 需求。</li>
-            <li>讨论中国开源生态、开放模型安全，以及前沿开源如何加速科学发现。</li>
-          </ul>
-          <div class="sources">
-            <a href="https://podcasts.apple.com/us/podcast/no-priors-artificial-intelligence-technology-startups/id1668002688" target="_blank" rel="noopener">Apple Podcasts（节目）</a>
+          <p class="guest">嘉宾：Misha Laskin（ReflectionAI 联合创始人兼 CEO）· 主持 Sarah Guo / Elad Gil · 约 70 分钟 · <a href="https://podcasts.apple.com/us/podcast/beam-the-great-american-open-model-with-reflectionai/id1668002688?i=1000794029585" target="_blank" rel="noopener">Apple Podcasts</a> · <a href="https://castro.fm/episode/7K5GGR" target="_blank" rel="noopener">章节</a></p>
+          <div class="pod-blocks">
+            <div class="pblock claim">
+              <h4>关键主张</h4>
+              <ul>
+                <li>Beam：Reflection 首个<strong>约 500B 参数开源权重推理模型</strong>；公司过去一年从约 30 人扩到约 300 人，补齐 pretrain / midtrain / RL，押注「前沿开源智能可广泛可得」。</li>
+                <li>企业算力叙事从「租用智能（API）」转向「拥有智能（权重）」；Laskin 认为开源权重将吃下全球多数 token 需求（节目中谈及开放/封闭 token 比例已翻转的观察）。</li>
+                <li>与中国开源生态竞争被框为<strong>好事</strong>——不是零和恐慌叙事；同时正面回应开放模型安全争议。</li>
+                <li>安全论点经验化：封闭模型也曾出现跨公司入侵类事件，受害方反而用开放模型自救；援引 Linus’s Law——足够多眼睛让漏洞变浅。</li>
+              </ul>
+            </div>
+            <div class="pblock detail">
+              <h4>有趣细节</h4>
+              <ul>
+                <li>创业原点：Laskin 与联合创始人曾在 DeepMind/Gemini 早期 RL 侧；当时体验仍偏 chat，算力约 95% 砸在 pretrain，coding/agentic 尚未成主流——Reflection 后来把野心拧到 agentic + 开源权重。</li>
+                <li>「什么最难？」他在全员会上被问到的答案是<strong>一切都极难</strong>：人才、文化、数据、可真正跑满的集群与基础设施——大厂研究者默认「工具就是可用的」，创业后要自己造。</li>
+                <li>训练效率叙事：公开讨论围绕大规模 GB300 集群上的 pretrain 与数周级 RL，以及相对同能力模型的<strong>推理效率倍数</strong>（节目侧宣传口径约 3–4×；以原集为准）。</li>
+                <li>科学侧彩蛋：开放前沿模型可能把「多年 PhD 压缩到一周级探索」；稳态研究团队规模被谈到约百人量级——人机配比随算力变化。</li>
+                <li>章节结构本身很「政策向」：中国开源是否持续开放、安全与「强大工具该不该广给」、数据中心与就业——不只是发模发布会。</li>
+              </ul>
+            </div>
+            <div class="pblock diff">
+              <h4>与主流叙事的差异</h4>
+              <p>主流常把「美国开源」讲成追赶中国权重发布的军备口号，或把开放权重默认等于不安全。这集把开放权重同时卖成<strong>企业拥有智能的采购逻辑</strong>与<strong>安全研究的众包假说</strong>，并用「封闭模型出事 → 开放模型补救」的经验例子反击「只有封闭才安全」。另一条差异：不把开源写成「小而美替代」，而写成<strong>吃掉全球多数 token</strong> 的份额叙事——与「闭源 API 永久收租」的华尔街默认相反。</p>
+            </div>
           </div>
         </article>
 
-        <article>
-          <span class="pill cast">硅谷101</span>
-          <h3>E255｜模型越来越强，为什么用户没感觉？</h3>
-          <p class="guest">嘉宾：张阔（阿里国际站总裁）· 再访 Accio Work</p>
-          <ul>
-            <li>榜单接近满分 ≠ 经营任务交付：自建 107 个真实任务，前沿模型无人干预通过率约 61%。</li>
-            <li>Agent 公式：模型 × 工程框架 × 上下文；垂直场景仍需联合优化，不能干等模型升级。</li>
-            <li>多模型路由、冲突建议、长期经营能力——老板仍要保留品味与预算判断。</li>
-          </ul>
-          <div class="sources">
-            <a href="https://sv101.fireside.fm/269" target="_blank" rel="noopener">收听</a>
+        <article class="pod-card">
+          <span class="pill cast">硅谷101 · E255 · 10/8</span>
+          <h3>模型越来越强，为什么用户没感觉？再访张阔 / Accio Work</h3>
+          <p class="guest">嘉宾：张阔（阿里国际站总裁）· 主播 Yiwen · <a href="https://sv101.fireside.fm/269" target="_blank" rel="noopener">sv101.fireside.fm/269</a></p>
+          <div class="pod-blocks">
+            <div class="pblock claim">
+              <h4>关键主张</h4>
+              <ul>
+                <li><strong>榜单接近满分 ≠ 经营任务交付。</strong>团队从真实业务抽 107 个任务（比价、识钓鱼邮件、订船期、交易纠纷等），最前沿模型在<strong>无人干预</strong>条件下通过率约 <strong>61%</strong>。</li>
+                <li>Agent 公式：<strong>模型 × 工程框架 × 上下文</strong>；垂直场景必须联合优化，不能干等下一档通用模型。</li>
+                <li>好用的 Agent 要「做完」且「用得起」；还要理解这盘生意追求什么——流水≠利润，老板仍要保留品味、市场判断与预算分配。</li>
+                <li>多模型路由是常态：最贵模型不一定是某任务的最优解；多 Agent 建议冲突时，商家需要裁决机制。</li>
+              </ul>
+            </div>
+            <div class="pblock detail">
+              <h4>有趣细节</h4>
+              <ul>
+                <li>半年后再访 Accio Work：边界从采购搜索扩到日常经营；案例包括植物监测产品从创意走到设计、供应链与销售。</li>
+                <li>商业任务比编程更难的原因被摊开：目标函数糊、工具与流程长、对成本/交期/合规敏感——不是「不会写代码」。</li>
+                <li>评测必须持续做：新版本也可能退步；「有流水不代表有利润」被单独拿出来当经营现实。</li>
+                <li>中美 Agent 生态差异：垂直 SaaS vs 平台工具；「AI 会不会替代 SaaS」被放进独立站/平台电商的产品设计语境里讨论。</li>
+                <li>后半程谈上云、定时任务、事件响应与长期经营——执行层能力与「长期经营能力」被刻意拆开。</li>
+              </ul>
+            </div>
+            <div class="pblock diff">
+              <h4>与主流叙事的差异</h4>
+              <p>科技媒体默认「benchmark 涨点 → 用户体感同步涨」；这集用 107 任务实测把落差钉死在约 61% 无人通过率。另一条主流是「通用模型吞噬垂直产品」——张阔侧强调工程框架与生意上下文仍是壁垒，垂直方要做的是联合优化而非等死。第三条：硅谷叙事爱谈「完全自主 Agent」；这集把「人反复解释、检查、兜底」写成当前生产现实，并把老板判断保留为功能而非过渡态。</p>
+            </div>
           </div>
         </article>
 
-        <article>
-          <span class="pill cast">十字路口</span>
+        <article class="pod-card">
+          <span class="pill cast">十字路口 · 近周</span>
           <h3>AI 无限，人生有限｜对谈 KK、山音</h3>
-          <p class="guest">一线 AI 创作者 / AI 导演 · 主播 Koji</p>
-          <ul>
-            <li>AI 把「导演梦」从不可及变为可执行；重度用户视角拆解视频产品与多模型混用。</li>
-            <li>模型趋同后，产品壁垒在工作流与品味；生成速度超过观看速度时的新机会。</li>
-            <li>主题句：算力与工具近乎无限，创作者的人生与注意力有限——如何选择。</li>
-          </ul>
-          <div class="sources">
-            <a href="https://www.xiaoyuzhoufm.com/episode/6ac7ce36195d838e2aeeebd9" target="_blank" rel="noopener">小宇宙</a>
+          <p class="guest">一线 AI 创作者 / AI 导演 · 主播 Koji · 约 66 分钟 · <a href="https://www.xiaoyuzhoufm.com/episode/6ac7ce36195d838e2aeeebd9" target="_blank" rel="noopener">小宇宙</a></p>
+          <div class="pod-blocks">
+            <div class="pblock claim">
+              <h4>关键主张</h4>
+              <ul>
+                <li>AI 把「导演梦」从资源门槛后的不可及，变成可执行的职业路径——嘉宾从戏剧/广告背景转入 AI 导演，作品进入电影节语境。</li>
+                <li>模型趋同之后，视频产品壁垒在<strong>工作流与品味</strong>，不在单一模型商标；重度用户会<strong>混用多模型</strong>（节目提及 Seedance、Minimax 等）服务同一部片子。</li>
+                <li>主题句：算力与工具近乎无限，创作者的人生与注意力有限——选择比功能清单更重要。</li>
+                <li>当视频生成速度超过人类观看速度，会出现新的分发/策展/创作形态机会（而不只是「更多短视频」）。</li>
+              </ul>
+            </div>
+            <div class="pblock detail">
+              <h4>有趣细节</h4>
+              <ul>
+                <li>山音上戏毕业后离开电影行业；KK 曾在广告公司朝九晚五——两年后以 AI 导演身份做出作品并登上国内外电影节（节目叙事）。</li>
+                <li>在众多 AI 视频产品中，两人谈到不约而同选择某工作流工具（节目点名 CapCut Video Studio）的原因——偏「能完工」而非「demo 炫技」。</li>
+                <li>时间戳提示的讨论点：今天顶级 AI 电影水平在哪、还有什么做不到、底层模型趋同后的产品壁垒、生成快于观看时的创新。</li>
+                <li>听友评论区形成对照音：有人担心孩子 generational 地失去笨拙练习；有人问「人人是导演谁当观众」；影视后期从业者感慨团队数月工作被一人压缩，同时怀念临场意外。</li>
+              </ul>
+            </div>
+            <div class="pblock diff">
+              <h4>与主流叙事的差异</h4>
+              <p>主流 AI 视频报道爱比「哪家模型更真/更长」；这集把冲突改写成<strong>创作者注意力经济学</strong>与工作流壁垒。另一条主流是「AI 取代导演」恐吓或「人人都是导演」狂欢——节目两边都不站：强调门槛下降后的积极行动者故事，同时用「人生有限」约束无限生成。与硅谷 Agent 效率叙事相比，这集的「产品」标准是能否上电影节与能否形成稳定创作习惯，而不是 token 成本曲线。</p>
+            </div>
           </div>
         </article>
+
+        <div class="pod-brief">
+          <strong>附记 · Latent Space Periodic（10/8）未做同等篇幅深写：</strong>
+          Liam Fedus / Ekin Dogus Cubuk 谈「synthesis superintelligence」——下一波科学 AI 靠真实实验闭环（含失败数据），而非只吞互联网语料；材料发现环 = 预测 → 合成条件 → 表征 → RL；物理噪声与「每台仪器 140 IQ」是硬约束；没有人能零样本空想出室温超导。完整文稿：
+          <a href="https://www.latent.space/p/periodic" target="_blank" rel="noopener">latent.space/p/periodic</a>
+          。本页优先把篇幅留给 AlphaFold / Beam / 硅谷101 / 十字路口四集。
+        </div>
+
+        <p class="skip">另：Lex Fridman 近集若非 AI 主轴，按例程略过。Dwarkesh × Noam Brown（agent swarms / RSI）为 10/1，已略出本窗口核心，不重复占版。</p>
       </div>
-      <p class="skip" style="margin-top:12px;">另：Lex Fridman 近集若非 AI 主轴，按例程略过，不展开摘要。Dwarkesh × Noam Brown（agent swarms / RSI）为 10/1，已略出本窗口核心，不重复占版。</p>
     </section>
 
     <footer id="footer">
       <div class="foot-grid">
         <div>
           <h3>数据窗口说明</h3>
-          <p>行业条目以 2026-10-07 至 10-10 已核实公开内容为底，并增补 10/10 Nadella「Models as Insider Risks」与 Latent Space Periodic（10/8）。X 观点抽象窗口为 2026-10-04 至 10-11（Asia/Shanghai），来源见 <code>/workspace/ai-weekly/2026-10-11-opinion-digest.md</code>；链接均为已核实 status URL，禁止编造。</p>
+          <p>行业条目以 2026-10-07 至 10-10 已核实公开内容为底，并增补 10/10 Nadella「Models as Insider Risks」。X 共识与正反窗口为 2026-10-04 至 10-11（Asia/Shanghai），底稿见 <code>/workspace/ai-weekly/2026-10-11-opinion-digest.md</code>；链接均为已核实 status / 原文 URL，禁止编造。</p>
         </div>
         <div>
-          <h3>编辑体例</h3>
-          <p>单文件 HTML：自包含 CSS，可选加载 Google Fonts；锚点导航；高密度卡片；打印样式已优化。观点栏为<strong>主张抽象</strong>而非帖子翻译墙。正反辨析每题含主张、正方/反方要点与谁、编辑判断及依据强度。静默名单仅作信息密度侧注。</p>
+          <h3>v2 编辑体例</h3>
+          <p>相对 v1：<strong>合并</strong>原「X 观点抽象」与「正反辨析」的重复铺陈——共识卡多人呼应写一条；正反节只写张力与反面证据。播客改为<strong>少集深写</strong>（主张 / 细节 / 叙事差）。单文件浅色编辑部 HTML，锚点导航，可离线打开。</p>
         </div>
       </div>
-      <p style="margin-top:16px;">AI 行业早报 · 2026-10-11（周日）Asia/Shanghai · 单文件交付</p>
+      <p style="margin-top:16px;">AI 行业早报 · 2026-10-11（周日）Asia/Shanghai · v2 · 路径 <code>/workspace/ai-briefing-2026-10-11-v2.html</code></p>
     </footer>
   </div>
 </body>
