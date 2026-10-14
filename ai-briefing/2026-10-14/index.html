@@ -1,0 +1,190 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-10-14</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-10-14 周三</h1>
+<div class="sub">新闻截止：北京时间 10/14 08:00 ｜ 生成于 10/14 08:31（例程约 08:25 触发，分段并行）｜ 精选 7 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>Google 正式放量 Gemini 4 Argon。</b>付费 API、AI Studio／Antigravity（Ultra）与 Gemini App／Search AI Mode（Pro／Ultra）今日起全球可用；统一 100 万 token 输入输出上限，引入价 $2／$10 每百万 token（至 11/30），其后 $4／$20。</li>
+<li><b>OpenAI 工程师因在高管会议室安装隐蔽录音设备被 FBI 逮捕。</b>美司法部 10/13 公布告诉：沙特籍工程师 Alfozan 10/9 被捕；OpenAI 称用自有模型协助溯源，暂无权重／源码／客户数据外泄迹象。</li>
+<li><b>NVIDIA 将完整 Run:ai 平台开源</b>（含 KAI Scheduler、GPU Fractioning、资源管理与 Workload Map），作为 DSX AI Factory 开放底座；社区版无需付费订阅，企业支持另计。</li>
+<li><b>监管路线公开分裂：</b>英议会听证上 OpenAI／Anthropic 支持有约束力规则，DeepMind／Meta 倾向标准与现有监管；同日《财经》称 DeepSeek 第二轮融资拟增至约 1000 亿元（当事方未回应）。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已上线（付费／分档）</span>Google 全球放量 Gemini 4 Argon：1M 统一上下文，引入价对折</h3>
+北京时间 10/14 00:00（官方博客标注 Oct 13），Google／DeepMind 宣布 Gemini 4 Argon 面向开发者与企业经 Gemini API（付费档）与 AI Studio／Gemini 平台开放；Google AI Ultra 可在 Antigravity 使用；Pro／Ultra 订阅者可在 Gemini App 与 Search AI Mode 使用。官方称模型面向长程工程、金融／法律知识工作与网络安全等场景，API 提供「industry-leading」的 100 万 token 统一输入输出上限与续写协议；引入价为每百万 input $2、output $10（缓存输入 95% 折），至 2026-11-30 后恢复 $4／$20。厂商自报在 Vals Index（金融／编程／法律／税务等）排名第一；Antigravity 内称内部 agentic 代码提交量提升超 35%、回滚减少近三分之一。
+<div class="lim">限制：免费与低档用户本轮仍以 Flash 系列为主（Ars 等报道 Pro／Ultra 才有 App 侧 Argon；Antigravity／AI Studio 编程场景侧重 Ultra）。Vals／内部效率数字为厂商自报。Artificial Analysis 在 9/30 限测报道中测得 Argon（high）Intelligence Index 53，与 GPT-6 Astra（max）持平，Cost per Task 在引入折扣下约为 Astra 的 60%；该文写于大范围 GA 之前，公开 GA 后的完整复测以 AA 模型页为准。SOTA 宣传不等于各场景全面领先。</div>
+<div class="src">来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Google Blog</a> · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/">开发者博文</a> · <a href="https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/">Ars Technica</a> · <a href="https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs">Artificial Analysis（限测期 9/30）</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">限测（Beta／申请制）</span>Physical Intelligence 开放 Pi API Beta：上传数据微调 π 模型并托管推理</h3>
+Physical Intelligence（π）10/13 发文宣布 Pi API 进入 beta：开发者可上传机器人数据、在 Pi 托管算力上微调其通用机器人基础模型，再经托管推理网关部署到自有机器人。官方称早期合作方已覆盖重型工程机械、双臂装配、餐饮等场景，多数演示使用云端推理；目标是让应用方自行跑通「采集—训练—实机评测」迭代，而不必自建完整 ML 基础设施。
+<div class="lim">限制：公开 beta 需申请并说明用途；文中未给出公开价目、速率限制、支持机型白名单或 SLA。展示案例为合作方／早期用户，不能外推为开箱即用的通用机器人能力。</div>
+<div class="src">来源：<a href="https://www.pi.website/blog/api-beta">Physical Intelligence 官方博客</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已上线（合作方产品）</span>OpenAI：Higgsfield 借 GPT-6 Astra 将 AI 视频从约 1 分钟拉到 10 分钟以上</h3>
+OpenAI 10/13 客户故事称，视频生成平台 Higgsfield 在接入 GPT-6 Astra 后，用户可生成超过 10 分钟的视频（此前约 1 分钟上限）；CEO Alex Mashrabov 称 Astra 的工具调用与 3D 等工作流有助于长视频一致性，并同时使用 GPT-Image-2.5 做可读文字／信息图、Codex 加速产品原型落地。OpenAI 亦提到 Higgsfield 下一步关注与 GPT-Live 相关的「voice to movie」方向。
+<div class="lim">限制：这是 OpenAI 与客户联合叙述的产品能力，时长上限与画质／一致性取决于 Higgsfield 产品实现，不是 OpenAI 通用视频 API 的统一 SLA。未独立实测 10 分钟成品的稳定性与成本。</div>
+<div class="src">来源：<a href="https://openai.com/index/higgsfield-longer-videos-voice">OpenAI（Higgsfield 故事）</a></div></div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span>美司法部：OpenAI 工程师涉嫌在高管会议室安装隐蔽录音设备被捕</h3>
+美国司法部 10/13 新闻稿称，OpenAI 工程师、35 岁沙特籍公民 Abdulrahman Alfozan 因涉嫌使用设备截获口头通信，于 10/9 被捕并于当日首次出庭。告诉称约 9/28 有人在旧金山总部高管会议室电视 USB 口安装加密录音设备（以卫生纸掩盖），OpenAI 约 9/30 发现；CCTV 与办公工具查询、关联聊天机器人提示词等被用来建立嫌疑；10/5 另在其遗留包中发现类似第二台设备。OpenAI 声明称已解雇该员工并移交 FBI，使用自有模型协助判断设备来源，并称目前没有迹象表明其不当访问或外泄模型权重、源码或客户数据。若定罪最高可面临 5 年监禁与 25 万美元罚金。
+<div class="lim">限制：目前为刑事告诉阶段，罪名是否成立由司法程序判定；「截获超级智能相关敏感会议」等表述来自检方／FBI 叙述。OpenAI「无外泄迹象」为其单方现阶段结论。动机、是否有境外指令等调查仍在进行。</div>
+<div class="src">来源：<a href="https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai">U.S. Department of Justice</a> · <a href="https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device">The Verge（含 OpenAI 声明引文）</a> · <a href="https://apnews.com/article/ai-fbi-justice-department-7f512b2552ffcbbf8f1ebbb18f81a9ba">AP</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已开源（社区版）</span>NVIDIA 开源完整 Run:ai 平台：GPU 编排底座并入 DSX AI Factory</h3>
+NVIDIA 10/13 技术博客宣布，将完整 NVIDIA Run:ai 平台以开源形式提供，作为 DSX AI Factory 的开放基础，供客户、开发者与生态伙伴采用。发布包含可独立采用的四块：KAI Scheduler（已 Apache 2.0 并贡献 CNCF Sandbox）、GPU Fractioning Operator（对接 CUDA 13.4 原生 GPU 分片）、KAI Resource Management（项目／部门配额与节点池）、Workload Map（多类 AI 工作负载的统一契约）。源码在 NVIDIA DSX AI Factory GitHub 组织；NGC 提供 Community Product 与 Helm chart，社区版无需付费 Run:ai 订阅，也不含 NVIDIA 企业支持。文中列出 Crusoe、Mirantis、Nebius、OpenNebula、Rafay、Saturn Cloud、Spectro Cloud、vCluster 等伙伴集成路径。
+<div class="lim">限制：开源许可与 NGC 下载仍受适用开源协议及 NVIDIA AI 产品条款约束；企业支持、Mission Control／AI Enterprise 等商业发行版条款另计。开源不等于各云厂商已默认托管上线——伙伴「计划／正在集成」与「已 GA」需逐家核实。</div>
+<div class="src">来源：<a href="https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/">NVIDIA Developer Blog</a> · <a href="https://www.hpcwire.com/aiwire/2026/10/13/nvidia-open-sources-full-runai-platform-for-gpu-orchestration/">AIwire／HPCWire</a></div></div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card"><h3><span class="tag e2">媒体报道·当事方未确认</span>英议会听证：OpenAI／Anthropic 支持有约束力 AI 规则，DeepMind／Meta 未跟进</h3>
+据 WIRED 10/13 报道，英国议会 Business, Innovation, Science and Trade 委员会听证上，Anthropic 欧洲负责人 Liam Booth-Smith 称规则「应该有约束力」，自愿承诺不够；OpenAI 副总裁 Tom Duff Gordon 支持法定框架与部分强制要素（如事件报告），认为前沿风险不宜长期只靠自愿。Google DeepMind 的 Owen Larter 强调应聚焦标准；Meta 的 Rob Sherman 指向英国现有监管机构。同场英方官员承认 AISI 目前对模型的获取与测试依赖企业合作、整体仍属自愿；实验室亦表示对英方的预发布访问需在美国政府允许范围内。听证会数百米外，MI5 负责人警告 AI 可能抬升生物武器误用风险。
+<div class="lim">限制：以 WIRED 对公开听证的报道为准，非立法文本已通过。四家立场为出席高管当场表述，不自动等于各国最终立法方案。AISI「无否决权」等表述为报道中的制度现状描述。</div>
+<div class="src">来源：<a href="https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/">WIRED</a> · <a href="https://www.mlex.com/mlex/articles/2537399/pressed-by-uk-lawmakers-anthropic-google-meta-openai-differ-on-ai-regulation">MLex</a></div></div>
+
+<div class="card"><h3><span class="tag e2">媒体报道·当事方未确认</span><span class="tag st">接近完成／未官宣</span>《财经》：DeepSeek 第二轮融资拟增至约 1000 亿元，投前估值约 5000 亿元</h3>
+《财经》10/13 报道称，多位参与交易人士透露 DeepSeek 将在近期完成最新一轮融资，金额由原计划约 500 亿元增至约 1000 亿元；新老股东拟出资约各半，投前估值仍约 5000 亿元。报道列举新进方包括石溪资本、中芯聚源、CPE 源峰、君联资本、吉利等，老股东宁德时代、腾讯、IDG、砺思、拾象等仍在名单，其中宁德时代拟追加约 100 亿元。文称公司同时调整股东结构以适配科创板 IPO（最快年末递表、目标 2027 挂牌），并新任原高瓴创投合伙人严文韬为 CFO。《财经》称向 DeepSeek 求证截至发稿未获回应。虎嗅等转述参与方 LP 称「仍在动态变化」。
+<div class="lim">限制：金额、名单与交割时点均为媒体援引交易人士，DeepSeek 未公开确认；「将完成」不等于已打款交割。投前估值口径、是否含老股转让等细节未在公开材料中完整披露。与早前「至少 800 亿／逼近千亿」报道属同一融资进程的加码版本，非全新独立交易。</div>
+<div class="src">来源：<a href="https://www.mycaijing.com/article/detail/584924?source_id=40">《财经》</a> · <a href="https://www.huxiu.com/article/4897183.html">虎嗅（LP「动态变化」转述）</a></div></div>
+
+<h2 id="x">X 观点 · 抽象与合并</h2>
+<div class="sub">窗口：北京时间 10/13 08:00–10/14 08:00（UTC 10/13 00:00–10/14 00:00，拉取略延至 ~00:27）。名单 102 人全部解析；以分批 <code>from:</code> 检索 + 分页 + 重点账号 <code>get_users_posts</code> 抽查。下列只写有增量信号的主张，相同内容已合并。Elon/Gary 仅保留与 AI 产品/安全实质相关条目。</div>
+
+<div class="card"><h3>① Gemini 4 Argon 正式放量：第三极叙事成型（本窗最强共识）</h3>
+<b>共识：</b>Logan 宣布 Argon 在 Gemini API / App（Pro+Ultra）/ Antigravity Ultra 全球上线，称 Google 内测超 10 万人、Fairwind 防御者与早期客户已日用；Demis 用「知识工作 + 编码」与 wizard chess 物理/3D 演示站台；Mollick 称其为首个跨过 Fable/Mythos/Astra 门槛的非 OpenAI/Anthropic 模型，性格与品味不同于 Claude/Astra，写作/创意可并肩、多 Agent 复杂任务仍落后，Antigravity harness 也不如竞品；Levie 用 Box AI Complex Work 评测报相对 3.1 Pro <b>+14pp</b>，「firmly at the frontier」；Josh Woodward 推进 App 端 Pro/Ultra 放量并晒家具/视频 demo。<br>
+<b>张力：</b>Logan 自承 Argon「big model smell」、难以广泛供给，正在做可服务亿级用户的 Gemini 4 变体；Brundage 反馈 Argon 对 CoT / 非 CoT 区分「funky」；Kokotajlo 从官方报告摘出「situationally aware」片段；Mollick 另帖强调「阈值」而非平滑爬坡——Anthropic 提醒自复制 IoT worm 能力阈。
+<div class="src"><a href="https://x.com/OfficialLoganK/status/2110038940841545827">Logan：全球放量</a> · <a href="https://x.com/OfficialLoganK/status/2110040125048832302">Logan：big model smell</a> · <a href="https://x.com/demishassabis/status/2110041008100843835">Demis</a> · <a href="https://x.com/emollick/status/2110052331702124894">Mollick：测评长帖</a> · <a href="https://x.com/emollick/status/2110060618258497764">Mollick：蒸馏对比</a> · <a href="https://x.com/levie/status/2110046686198550539">Levie：Box +14pp</a> · <a href="https://x.com/joshwoodward/status/2110039733481230734">Woodward：App 放量</a> · <a href="https://x.com/Miles_Brundage/status/2110084492677513607">Brundage：CoT</a> · <a href="https://x.com/DKokotajlo/status/2110131064463388873">Kokotajlo：情境觉知</a></div></div>
+
+<div class="card"><h3>② Muse Wonder 仍在抢镜：模型无关 + 通宵 Agent 流水线</h3>
+Wang 继续晒 Wonder Full：通宵切镜/多版本评选的视频流水线、Bug Hunt Bench 第 4、Merge Intelligence Index、用户向「model is the product」叙事；同时承认部署仍有大量 kink 要熨平。Rauch 在恭喜 Gemini 的同时点出：Wonder 与 Argon 背靠背提醒个人与公司应 <b>model-agnostic / gateway-max</b>。Chollet 也祝贺 Wonder「fantastic model」。
+<div class="src"><a href="https://x.com/alexandr_wang/status/2110057643301806492">Wang：通宵视频</a> · <a href="https://x.com/alexandr_wang/status/2110057950593355778">Wang：Bug Hunt #4</a> · <a href="https://x.com/alexandr_wang/status/2110055802090459207">Wang：部署 kink</a> · <a href="https://x.com/rauchg/status/2110044152482365747">Rauch：模型无关</a> · <a href="https://x.com/fchollet/status/2110042948821975317">Chollet：祝贺</a></div></div>
+
+<div class="card"><h3>③ 防御侧 agent：GPT-5.6 Sol 拿下 Chrome 全链奖金</h3>
+Brockman：6 天、约 $4 万算力，用 GPT-5.6 Sol 发现影响约 10 亿用户的 Chrome 关键漏洞，拿到 Google 2026 年首个 full-chain 奖励——用来论证防御者应把前沿模型用到「前所未有」的软件安全水位。同窗 Yann 引用他人长帖，批评把「网络安全末日 / 就业末日 / 末日」当恐吓叙事的人；与防御侧实锤形成对照。
+<div class="src"><a href="https://x.com/gdb/status/2110063893016096831">gdb：Chrome full-chain</a> · <a href="https://x.com/ylecun/status/2110081769500447118">Yann：反末日恐吓</a></div></div>
+
+<div class="card"><h3>④ Coding agents = killer app？「杀 SaaS」实验 vs 团队上下文 ROI</h3>
+Rauch：所有人 rightly 转回编码，coding agents 是 AI 的 killer app，「developers 的 elysium」。swyx 发布 <i>How to Kill Your SaaS</i>：拿真实年费 $43k 的 SaaS 做全球黑客松，周末克隆 + AI/真人评测，72 份提交、~100B tokens，并讨论「非平凡中档 SaaS 仍难杀」与 $1 万竞赛结果。Chollet 给反面账本：若 agent 省工程师 2 小时、却让团队对齐/评审多花 3 小时，ROI 为负——孤立 chat 缺团队共识与架构决策上下文（并推 Kylon 共享多玩家环境）。Sarah Guo 同窗回复也点「team context = critical unsolved problem」。Harrison Chase：router 应在 harness 里而非 gateway，因为 harness 才知道任务。
+<div class="src"><a href="https://x.com/rauchg/status/2110044152482365747">Rauch：coding agents</a> · <a href="https://x.com/swyx/status/2110065576764686421">swyx：Kill Your SaaS</a> · <a href="https://x.com/fchollet/status/2110050795890827756">Chollet：团队 ROI</a> · <a href="https://x.com/saranormous/status/2110063060371255680">Sarah Guo：team context</a> · <a href="https://x.com/hwchase17/status/2110041909284745578">Chase：router in harness</a></div></div>
+
+<div class="card"><h3>⑤ 扩散、本地模型、机器人与「信息瓶颈」</h3>
+Amasad：今天暂停前沿研究，AI 仍要约 <b>10 年</b> 才能扩散进经济——他们在用 solutions partners 加速扩散。Lambert：修正下载统计后，本地格式（GGUF/AWQ/ONNX 等）在飙升，总体更像「停滞」而非「崩盘」；另批评 Anthropic 先高调要监管、却强调自家 leaky API 的有害行为学习风险——「API 不安全就别托管」。Hausman/Levine：开放机器人基础模型、PI 模型可跑在远比一年前更广的机器人上。Will Bryk：Exa 年化收入过 $1 亿、年增约 10×，预测 2030 年前 agent 搜索量为人的 1000×，「智能近完美、信息远未完美」。willdepue：很快进步会卡在数据而非智力。Clem：法国 + Hugging Face + NVIDIA 数据中心/开源叙事。
+<div class="src"><a href="https://x.com/amasad/status/2110128937049452575">Amasad：10 年扩散</a> · <a href="https://x.com/natolambert/status/2110073543387996431">Lambert：本地模型</a> · <a href="https://x.com/natolambert/status/2110002173732077632">Lambert：API/监管</a> · <a href="https://x.com/hausman_k/status/2110133376539848790">Hausman：开源机器人</a> · <a href="https://x.com/svlevine/status/2110116801145376931">Levine：PI 跨机器人</a> · <a href="https://x.com/WilliamBryk/status/2110058915589464192">Bryk：Exa $100M</a> · <a href="https://x.com/willdepue/status/2109816586374902200">willdepue：数据瓶颈</a> · <a href="https://x.com/ClementDelangue/status/2110010580278853800">Clem：法国 AI</a></div></div>
+
+<div class="card"><h3>⑥ 次级信号：mechinterp、对齐争议、创业建议、Grok Bot</h3>
+roon：预期未来数月 mechinterp 进步「可能超过过去几年」，并认为可把对齐变成可工程化、甚至「可证明」；同窗 Brundage 转推「read the roon」。Gary（过滤后）：称某事件是 Anthropic alignment 的「total black eye」、另帖「Hope is not a business plan」。Mollick：手机端已有 19 个模型强于当年独霸一年的 GPT-4。Paul Graham：AI 时代 startup 标准建议几乎仍适用；AI 可替代大量执行工作但不能分担创始人压力。Felix：Claude 侧「更有野心」使用教程。Elon（过滤后）：Grok Bot 接邮箱/检测诈骗邮件/绑手机键；对内存定价与「有钱≠建成超算中心」有实质评论。Sholto：AI 把公司改造 100× 并复用网络效应将成教科书案例。
+<div class="src"><a href="https://x.com/tszzl/status/2109917793374347752">roon：mechinterp</a> · <a href="https://x.com/tszzl/status/2109917795219886338">roon：可证明对齐</a> · <a href="https://x.com/GaryMarcus/status/2109880903984152618">Marcus：alignment black eye</a> · <a href="https://x.com/emollick/status/2109851162518425779">Mollick：19 手机模型&gt;GPT-4</a> · <a href="https://x.com/paulg/status/2110087363254690301">PG：创业建议仍适用</a> · <a href="https://x.com/felixrieseberg/status/2110023283169247623">Felix：更有野心</a> · <a href="https://x.com/elonmusk/status/2110124896089260384">Elon：Grok Bot</a> · <a href="https://x.com/elonmusk/status/2110122281603326170">Elon：超算落地≠融资</a> · <a href="https://x.com/_sholtodouglas/status/2110044367440535945">Sholto：教科书案例</a></div></div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="card"><h3>主张 1：Gemini 4 Argon 已进入前沿第一梯队</h3><div class="grid">
+<div class="pro"><b>正方</b>：Mollick 明确「首个跨过 Fable/Mythos/Astra 门槛的非 OAI/Anthropic 模型」；Levie 企业评测 +14pp 且「firmly at the frontier」；Demis/Logan/Woodward 产品与 demo 站台；Rauch「Never bet against Google」。</div>
+<div class="con"><b>反方</b>：Logan 自承难以广泛供给（big model smell）；Mollick 称多 Agent 复杂任务与 harness 仍落后、模型偏武断/懒；Brundage 指出 CoT 行为怪异；Kokotajlo 关注报告中的情境觉知——能力叙事≠部署叙事。</div></div>
+<div class="verdict"><b>判断：</b>「能力进入第一梯队」在本窗独立试用与企业评测信号里基本成立；「可得性和 harness 成熟度进入第一梯队」仍待广泛供给与独立盲测。别把放量公告等同于已服务亿级用户。</div></div>
+
+<div class="card"><h3>主张 2：Coding agents 是 AI 的 killer app，并将杀死大量中档 SaaS</h3><div class="grid">
+<div class="pro"><b>正方</b>：Rauch 称 coding agents 是 killer app、开发者已入 elysium；swyx 用真实 $43k/年 SaaS 做可复现黑客松，把「杀 SaaS」从口号变成有数据的实验；本窗 Wonder/Argon/Sol 演示均强绑定编码与 agent 工作流。</div>
+<div class="con"><b>反方</b>：Chollet：孤立 agent 若制造对齐/评审税，团队 ROI 可为负；Sarah Guo：team context 仍是未解问题；swyx 自己也承认非平凡中档 SaaS「仍难杀」；Chase 提醒路由必须懂任务——纯 gateway 不够。</div></div>
+<div class="verdict"><b>判断：</b>「编码是当前最强产品锚点」证据充分；「中档 SaaS 大规模死亡」仍属进行中实验。共享团队上下文、审批与评测 harness 是前提，不是可选项。</div></div>
+
+<div class="card"><h3>主张 3：即使暂停前沿研究，AI 经济扩散仍需约十年</h3><div class="grid">
+<div class="pro"><b>正方（Amasad）</b>：能力已够用到扩散成瓶颈；暂停前沿，经济渗透仍要约 10 年；Replit 侧在用 solutions partners 加速落地。</div>
+<div class="con"><b>反方（本窗事实）</b>：同一窗口 Google 放量 Gemini 4、Meta 侧 Wonder 通宵秀肌肉、OpenAI 展示 Sol 防御挖洞——前沿竞赛并未暂停；Mollick 提醒能力「阈值」可突然跨越（如 IoT worm）；Exa/机器人开源说明新应用层仍在快速长出。</div></div>
+<div class="verdict"><b>判断：</b>「扩散滞后于能力」方向对；「停研究也要十年」是强调落地摩擦的修辞，不宜读成「可以停赛」。本窗现实是：前沿仍在发货，同时扩散与团队/数据/信息瓶颈被更多人点名。</div></div>
+
+<div class="card"><h3>主张 4：用前沿模型做防御性挖洞是净利好</h3><div class="grid">
+<div class="pro"><b>正方（gdb）</b>：Sol 以可控成本拿到 Chrome full-chain，影响面约 10 亿用户——证明防御者可把模型用到「前所未有」的安全水位；Logan 亦强调 Fairwind 先给 cyber defenders。</div>
+<div class="con"><b>反方</b>：Yann 警告勿用「网络安全末日」恐吓；Lambert 指出 leaky API 本身会教有害行为；Mollick 强调能力阈值（自复制 worm）——同一套能力也可被滥用；Marcus 把相关对齐失败称为 black eye。</div></div>
+<div class="verdict"><b>判断：</b>防御侧公开奖金与实锤漏洞是清晰正外部性；但「模型越强 → 安全净增」不自动成立，前提是访问控制、评测门槛与不把不安全 API 敞开放到被蒸馏/滥用。</div></div>
+
+<h2 id="pod">播客 / 深度访谈</h2>
+<div class="card"><h3>Latent Space｜Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics（RSS / datePublished 10/13 22:25 UTC ≈ 北京时间 10/14 06:25）</h3>
+AIE NYC 现场访谈：Dyna Robotics 联合创始人兼首席科学家 Jason Ma（AlphaGo / Penn / NVIDIA / Google DeepMind Eureka）对谈 swyx 与 Vibhu，讲他们把「世界动作模型（World Action Model）」推进到可部署物理 Agent 的路径。时长约 72 分钟；页面含完整文字稿与 Taku 机器人现场 demo（建议看 YouTube）。<br>
+<b>机制与产品线索：</b>① <b>Dyna-2</b>：号称首个在超 <b>100 万小时</b>人类视频上预训练的 world-action model，并宣称人类数据上跨四个数量级的 scaling laws；输入不只是相机视频，还有关节角等本体状态，输出是「未来视频预测 + 可执行的机器人动作」。Jason 的第一性原理表述是：机器人决策本质是「根据当下与过去，预测下一步」；机器人只是世界的一部分，因此应尽量预测原始相机表征，而不是先压成带人类偏见的抽象状态。② 相对 <b>VLA（Vision-Language-Action）</b>：他把行业路径拆成 video world model、VLA、以及他们的 WAM——VLA 多从视觉语言模型迁到机器人并主要预测动作/抽象表征；WAM 则认为「预测未来」更根本，名称不重要，能力边界才重要。③ <b>Dyna-2.1 物理 Agent</b>（约 9/29 发布）：半人形硬件 + 围绕 Dyna-2 的 agentic harness，宣称可靠超长程全身自主；公开指标包括餐厅叠餐巾 <b>24 小时连续、成功率约 99.4%</b>（含打翻整叠后的恢复），并在 <b>鼎泰丰</b>等场景日折数千张餐巾；另有 Best Western 等部署讨论「试点 vs 规模化」。④ 数据与硬件：机器人没有互联网级语料，数据是最大缩放瓶颈；新任务可低至约 <b>45 分钟</b>示教；合成环境 / 自生成训练数据、端侧推理与蒸馏是下一波；自研轮式半人形而非双足，灵巧手过热与缺失触觉仍是硬瓶颈。⑤ 「机器人版 Bitter Lesson」：用规模化数据取代过度特化工程；agentic harness 让物理工作流可跑到小时级多步骤。<br>
+<b>为什么重要：</b>把本周软件侧「harness / 多 Agent / 长程自主」叙事平移到物理世界——同一套「模型 + harness + 部署验收」逻辑，只是失败代价变成打翻餐巾与过热的手。嘉宾履历（Eureka 等）也把具身路线接到 DeepMind / NVIDIA 的连续工作上。<br>
+<div class="src"><a href="https://www.latent.space/p/dyna">原文 / 节目页</a> ｜ 依据：网页正文 + 页面公开文字稿（shownotes / transcript）；未逐字对照音频波形，但文字稿可核对上述机制表述</div></div>
+
+<div class="card"><h3>a16z｜Can AI Break Cryptography? What the Experts Actually Think（10/13，约 42 分钟）</h3>
+a16z crypto 的 Liz Harkavy 对话斯坦福密码学家 <b>Dan Boneh</b>、a16z crypto GP <b>Eddy Lazzarin</b> 与 Research Partner <b>Justin Thaler</b>，把「AI 会不会打碎加密」从社媒警告里拆回证据层级。<br>
+<b>核心区分（据节目简介）：</b>① 现代密码学建立在数学假设之上；AI 驱动的数学研究进展引发了新一轮对钱包、银行与私信加密的担忧，但需分清「已证明」与「仍属推测」。② 讨论 OpenAI 近期相关结果<b>证明了什么、没证明什么</b>，以及 AI 威胁路径与量子计算威胁路径的差异。③ 现有安全实践与可选密码学方案仍给出信心理由；更关键的工程原则是——假设一旦失效，系统要能迁移/适配。④ 另一面：AI 也可能反过来帮助研究者与开发者把软件做得更安全。配套资源指向原 a16z crypto 讨论视频（YouTube）。<br>
+<b>为什么值得听：</b>把「模型会破密」从标题党拉回假设、证据与工程可迁移性；对任何把 Agent / 链上资产 / 长期密钥绑在一起的产品讨论，都是有用的刹车带。<br>
+<div class="src"><a href="https://a16z.simplecast.com/episodes/can-ai-break-cryptography-what-the-experts-actually-think-LCUGnMEC">节目页</a> ｜ 依据：RSS / 节目简介（时长 00:42:11，episode 1227）；Simplecast 网页为 JS 壳未取到更长 shownotes，未逐字听完全集</div></div>
+
+<div class="card"><h3>本窗无新集</h3><span class="sub">Dwarkesh（最新 10/01 Si Sheppard）、Lex Fridman（最新 09/17 #502）、No Priors（10/09 Beam / Misha Laskin 已在 10/12 早报深写，本窗不重复）、Acquired（最新 09/14 The Home Depot）、硅谷101（E255 张阔 / 10/09 已在 10/12 早报深写）、张小珺商业访谈录（最新 09/03 第153集 曾鸣）、十字路口Crossing（「对谈鸭哥」已在 10/13 早报深写，本窗不重复）。a16z 的 RSI（10/12）与 Bostrom（10/11）已在 10/13 早报深写，不重复。Latent Space 同站点 [AINews] Meta Muse Wonder（网页 datePublished≈10/13 17:37 北京时间）属新闻简报体裁，未按「播客/深度访谈」收录；本窗 Latent Space 新条目为播客 RSS 中的 Dyna-2 集。</span></div>
+
+
+<h2 id="gap">覆盖缺口与方法说明</h2>
+<div class="card"><h3>新闻</h3><section class="coverage">
+<h3>新闻段覆盖与缺口（2026-10-14）</h3>
+<ul>
+<li><b>截点：</b>北京时间 2026-10-14 08:00。优先过去约 24h；Argon GA 官方时间戳为 10/13 16:00 UTC（北京 10/14 00:00），司法部／WIRED／《财经》等为 10/13，均在截点前。</li>
+<li><b>AIHOT：</b>已读 agent 说明与 openapi；items <code>mode=all&amp;window=24h&amp;by=published</code> 分页至边界共 424 条；另取 latest／hot／daily。摘要仅作线索，入选条已回官方或主流原文。</li>
+<li><b>官方 RSS：</b>OpenAI、Google AI、HN frontpage 已拉取。Google RSS 头条即为 Argon；OpenAI RSS 含 Higgsfield 故事（10/13 12:00 GMT）。</li>
+<li><b>InBrief：</b>中文页可读，可见快照仍大量停留在 Muse Wonder 等昨日主题；未将其当作完整候选池。</li>
+<li><b>微信公众号：</b>服务登录正常（宜自省，未过期），但本地文章库 24h／7d 均为 0；日志持续 <code>ret=200013 freq control</code>。按规则未触发 <code>rss/poll</code>、未轰炸；公众号源本窗记为缺口，候选改走 AIHOT／RSS／主流媒体。</li>
+<li><b>付费墙／受限：</b>WSJ／部分 FT 未作全文依赖；英议会以 WIRED／MLex 可访问报道为准。Reuters「独立评估发布控制权」独家（StreetInsider 转载）未单列入选（与听证监管主题部分重叠，且未核到 Reuters 全文页）。</li>
+<li><b>跨日去重：</b>对照 ledger／HTML 2026-10-13：Muse Wonder、Anthropic 反蒸馏／IoT 自复制、Maia 300、X Subscription、Amazon–Decart、Epic AI 先行、中欧混动配额等无实质新版本，不重复。Argon 昨日仅为未证实传闻，本窗首次官宣放量。</li>
+<li><b>未入选示例：</b>Liquid AI LFM2.5-24B-A2B（开源权重，影响不及入选条）；Meta「Your Algorithm」自然语言调 Feed（产品功能）；Character.ai Chapter 11／Disney 竞购（多家报道，但本窗验证深度与长期叙事弱于 DeepSeek／监管分裂）；Anthropic Scion 源码控制系统（工程向）；406 人联署要求高危模型物理隔离（公开信，证据与落地路径弱于议会听证）；NTT×Anthropic 大阪数据中心等旧闻外溢。</li>
+</ul>
+</section>
+</div>
+<div class="card"><h3>X 观点</h3><h2 id="x-coverage">X 覆盖缺口</h2>
+<div class="sub">名单总数 <b>102</b>；用户名全部解析成功 <b>102/102</b>（含 polynoamial）。本窗检索覆盖全部名单（分批 <code>from:</code> OR 检索 + 分页）；观察到有原创帖账号约 <b>47</b>。单次检索 <code>max_results</code> 硬顶 25，高产账号（尤其 elonmusk、OfficialLoganK、joshwoodward、steipete、paulg）会占满分页额度，低产账号依赖后续页或抽查。</div>
+
+<div class="card"><h3>限流 / API 约束</h3>
+<ul>
+<li>未出现硬性 429 阻断；日额度读取结束时仍约 975+/1000。</li>
+<li>每分钟约 30 次读取上限，已分批发、遇顶则换批继续，未原地死等。</li>
+<li><code>search_posts_all</code> 单次最多 25 条；同一查询最多翻 2–3 页后换账号组合。</li>
+</ul></div>
+
+<div class="card"><h3>本窗确认无帖（抽查）</h3>
+<p>sama、karpathy、nickaturley：<code>get_users_posts</code> 在窗口内 <code>result_count: 0</code>。</p></div>
+
+<div class="card"><h3>检索覆盖但本窗未见增量帖 / 仅噪音的账号（55）</h3>
+<p class="sub">含：真正沉默、仅转推（已用 -is:retweet 排除）、或被高产账号挤出前几页而未再单独抽查者。不代表账号失效。</p>
+<p>@sama · @DarioAmodei · @jackclarkSF · @mustafasuleyman · @NoamShazeer · @aidangomez · @arthurmensch · @mntruell · @miramurati · @ilyasut · @hardmaru · @karpathy · @AndrewYNg · @DrJimFan · @jeremyphoward · @rasbt · @soumithchintala · @geoffreyhinton · @Thom_Wolf · @julien_c · @alexalbert__ · @janleike · @hendrycks · @johnschulman2 · @LiamFedus · @markchen90 · @ch402 · @AmandaAskell · @eladgil · @ajeya_cotra · @RyanGreenblatt · @isafulf · @TrentonBricken · @bobmcgrewai · @matanSF · @paraga · @ericjang11 · @ShunyuYao12 · @peakji · @ZheqingZhu · @slatestarcodex · @EgeErdil2 · @tamaybes · @realGeorgeHotz · @AdamMarblestone · @embirico · @nickaturley · @ahuja_karan · @junyuan_qi · @_catwu · @mikeyk · @Red_Xiao_ · @ikhare · @jasonyuan · @sjwhitmore</p></div>
+
+<div class="card"><h3>噪音过滤</h3>
+<ul>
+<li>elonmusk：大量 Starlink/Starship/短回复已丢弃；保留 Grok Bot 产品能力与超算落地评论。</li>
+<li>GaryMarcus：教皇祝福等非产品帖丢弃；保留 alignment black eye / 「Hope is not a business plan」。</li>
+</ul></div>
+</div>
+<div class="card"><h3>播客</h3><ul>
+<li>播客：英文 RSS 已实测可读——Dwarkesh（api.substack.com/feed/podcast/69345.rss）、Latent Space（api.substack.com/feed/podcast/1084089.rss）、No Priors（feeds.megaphone.fm/nopriors）、Lex Fridman（lexfridman.com/feed/podcast/）、a16z（feeds.simplecast.com/JGE3yC0V）、Acquired（feeds.transistor.fm/acquired）。中文：硅谷101 RSS（sv101.fireside.fm/rss）可读；张小珺经小宇宙节目页 __NEXT_DATA__ + Apple Podcasts / iTunes lookup（id1634356920）交叉核对；十字路口经小宇宙节目页 __NEXT_DATA__ 核对。另拉 Latent Space 站点 /feed 作深度网页交叉（非仅播客 RSS）。</li>
+<li>本窗新集 2 条（截止北京时间 2026-10-14 08:00；对照窗自 10/13 08:00 起）：Latent Space「Dyna-2 / Jason Ma」（datePublished 2026-10-13T22:25:55Z ≈ 北京时间 10/14 06:25）、a16z「Can AI Break Cryptography?」（RSS published 2026-10-13 10:00 UTC ≈ 北京时间 18:00）。</li>
+<li>跨日去重：对照 /workspace/ai-briefing-2026-10-13.html 与 10-12——十字路口鸭哥、a16z RSI、a16z Bostrom、No Priors Beam、硅谷101 E255、Latent Space AlphaFold、Latent Space Dynamic Workflows 网页深写均已报，不重复。</li>
+<li>依据层级：Latent Space Dyna-2 依据网页正文 + 页面公开 transcript（可核对 WAM / VLA / 部署表述）；a16z 密码学集依据 RSS 节目简介。均未逐字听完全集音频波形；a16z Simplecast 节目页返回 JS 壳（约 3KB），未取到比 RSS 更长的 shownotes。</li>
+<li>未收录：Latent Space [AINews] Meta Muse Wonder（同站点网页，10/13 17:37 CST）——新闻简报非访谈播客，故不进本栏。</li>
+<li>失败与处理：a16z.com/podcasts/... 与 Simplecast API 直链均 404，改回 RSS 简介成功（同一方法未超过 3 次无效重试）。中文两档无新集；无额外失败缺口需替换 feed。</li>
+<li>原始文件：/workspace/ai-briefing/work/2026-10-14/raw/podcasts/（各 .rss 及 zhang/crossing/ls-dyna 等页面缓存）。</li>
+</ul>
+</div>
+<footer>
+<ul>
+<li>本页由「AI行业每日简报」例程生成：新闻、X、播客三分段并行后合并。启动 2026-10-14 08:26:35，合并 2026-10-14 08:31:25。</li>
+<li>微信：登录正常（宜自省），距过期 &gt;24h；本地库空 + freq control，本窗未强制 poll。</li>
+<li>跨日去重：ledger/2026-10-13.json 与昨日早报。</li>
+</ul>
+</footer>
+</div>
+</body></html>
