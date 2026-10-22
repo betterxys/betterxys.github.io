@@ -1,0 +1,164 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-10-22</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-10-22 周四</h1>
+<div class="sub">新闻截止：北京时间 10/22 08:00 ｜ 生成于 2026-10-22 08:35（Asia/Shanghai）｜ 精选 8 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+<div class="banner"><b>公众号信源登录已过期</b>（宜自省）：请在本机打开 <code>http://127.0.0.1:5000/login.html</code> 用公众号管理员微信重新扫码。本窗未代登录、未 poll；新闻以 AIHOT／官方／主流媒体为主。</div>
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>英伟达 GTC Berlin：Isaac 大扩容</b>——Agile ONE SN 参考人形（GR00T＋Jetson Thor，早 2027）、Isaac Lab 3.0 GA、开源 Isaac OS、SimReady／Human 1M。</li>
+<li><b>OpenShell Reference Architecture 现已可用</b>：Vera Rubin＋Vera CPU＋BlueField-4／Sentry，把 agent 安全做成全栈基础设施。</li>
+<li><b>Anthropic 开 Claude Duet 研究预览</b>：主动型个人 agent（Opus 5.5），美区 Pro／Max 候补。</li>
+<li><b>Recursive 发布 Flint</b>：40B／2.5B 激活本地编码 MoE，Apache-2.0；Socher 称 Eureka Machine 几乎参与全栈。</li>
+<li><b>OpenAI 模型进入 Google Cloud Model Garden</b>（含 Codex）；微软仍是主云伙伴。另：DSX POD 集装箱 AI 工厂参考设计、Flapping Airplanes $1B A 轮、$PHP2Shell 全球协调披露。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">参考平台（早2027可用；Lab 3.0 已 GA）</span>英伟达 Isaac 大扩容：Agile ONE SN 参考人形＋Isaac Lab 3.0＋开源 Isaac OS</h3>
+GTC Berlin（<b>10/21</b>）NVIDIA Newsroom：Isaac 开源机器人平台重大扩展。伙伴 <b>Agile Robots</b> 官宣 <b>Agile ONE SN</b>——预装 <b>Isaac GR00T</b>、搭载 <b>Jetson Thor</b>（标称 2,070 FP4 TFLOPS／128GB 统一内存）的参考人形：身高 1.40m、重 40kg、<b>31 DoF</b>、单臂 3kg 负载；双 WUJI Hand 2（各 20 DoF、1kHz 力控＋触觉）；计划整合 <b>Halos</b> 安全栈；<b>早 2027</b> 面向研究机构（称 Stanford／ETH Zurich 等有兴趣）。同步：<b>Isaac Lab 3.0 正式可用</b>（开源学习框架，Newton／PhysX、多 GPU）；开源 <b>Isaac OS</b>（基于 Holoscan 的实时运行时）；Hugging Face 上 <b>SimReady Central Library</b>（2,000+ 资产）与 <b>Human 1M</b> 数据集；三条面向 <b>DGX Station</b> 的开源参考工作流，含用 <b>ChatGPT Astra</b> 做 Cosmos 后训练与 GR00T 1.7 RL 精炼。黄仁勋称「机器人的 ChatGPT 时刻正在逼近」。
+<div class="lim">限制：参考人形≠量产开售；可用性「early 2027」；厂商自报算力／生态名单。欧洲 ABB／KUKA／Sereact 等为伙伴集成叙事，非独立量产关账。</div>
+<div class="src">来源：<a href="https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data">NVIDIA Newsroom · Isaac</a> · <a href="https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/">GTC Berlin Keynote 博客</a> · <a href="https://x.com/nvidia/status/2112856769567371772">nvidia RT</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">现已可用（全栈参考架构）</span>NVIDIA 推出 OpenShell Reference Architecture：Rubin 推理、Vera 跑 harness、BlueField 硅级隔离</h3>
+同日 Newsroom：<b>OpenShell Reference Architecture</b>——在开源 OpenShell 安全运行时之上，拼出工业级「构建／收容／观测／强制」agent 基础设施：<b>Vera Rubin</b>（含 NVL72）跑推理；<b>Vera CPU</b> 跑 agent harness／工具；<b>BlueField-4＋Sentry</b> 带外监控与硅级策略，越界可在毫秒级隔离；边缘可延伸到 RTX／DGX Spark／Station。官方称 OS／编排覆盖 Canonical／Red Hat／SUSE／Microsoft MXC 等；合作方名单含 Anthropic、OpenAI、Microsoft、Google Cloud、AWS、CrowdStrike、SAP、ServiceNow、Siemens 等。黄仁勋：「agents think on Rubin, act on Vera, governed on BlueField」。公告写明架构 <b>现已可用</b>。
+<div class="lim">限制：「合作方在用」≠全量生产默认；吞吐／隔离数字为厂商口径。与 Isaac／Halos 同属安全栈，但面向通用 agent 基础设施而非机器人专用。</div>
+<div class="src">来源：<a href="https://nvidianews.nvidia.com/news/openshell-reference-architecture">NVIDIA Newsroom · OpenShell</a> · <a href="https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/">Technical Blog</a> · <a href="https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/">Keynote</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">研究预览（美区 Pro／Max 候补）</span>Anthropic 开放 Claude Duet：主动找活、后台虚拟机、敏感动作需批准的个人 agent</h3>
+Anthropic／Claude 站（<b>10/21</b>）：<b>Claude Duet</b> 研究预览——独立 iOS／Android／claude.ai 应用，围绕 <b>Claude Opus 5.5</b>，主张「先找你、再代劳」：晨间跨应用简报、间歇巡检连接账户、任务可在自有虚拟机＋浏览器后台继续；发消息／付款／签名／删除前须展示并等待批准；凭证路径对齐 Managed Agents（模型不直接见密码）。产品负责人 <b>Karan Ahuja</b>、Cat Wu 等同步官宣；含 6,000+ Marketplace 连接器叙事。首批：美国 Pro／Max，共享套餐用量；候补制。
+<div class="lim">限制：研究预览≠GA；后台巡检消耗额度；官方自承可能误判紧急度／个人杂务较弱／尚不展示浏览器画面。勿与「Claude Code／Chrome」混为一谈。</div>
+<div class="src">来源：<a href="https://claude.com/resources/articles/claude-duet">Introducing Claude Duet</a> · <a href="https://x.com/ahuja_karan/status/2112987751184527408">Karan Ahuja</a> · <a href="https://x.com/_catwu/status/2112988751576330487">Cat Wu</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已开源（Apache-2.0；本地编码）</span>Recursive 发布 Flint：40B／约 2.5B 激活的本地编码 MoE，称 Eureka Machine 几乎参与全栈</h3>
+Recursive（Richard Socher，<b>10/21</b>）官宣首模 <b>Flint</b>：MoE，总参约 <b>40B</b>、每 token 激活约 <b>2.5B</b>；权重 Hugging Face、<b>Apache-2.0</b>；支持 llama.cpp／Ollama／LM Studio／vLLM／SGLang 等，并推本地引擎 <code>rec</code>。厂商自报：短上下文 M4 Pro MacBook Pro <b>125+ tok/s</b>、64GB RTX Spark <b>150+ tok/s</b>；在 &lt;50B MoE 的 agentic coding 榜（含 SWE-Bench Pro v2／Terminal-Bench 2.1／Verified）称领先。叙事核心：小团队＋<b>Eureka Machine</b> 自动化研究环（架构搜索／量化／内核）四个月从零做出。Clem／Socher 线程同日热传。
+<div class="lim">限制：基准与速度均为厂商自报；官方称复杂任务仍需比闭源大模型更多引导；「本地」对内存门槛（约 48GB 档叙事）不低。WIRED／TechCrunch 为体验／报道补充，非独立审计。</div>
+<div class="src">来源：<a href="https://recursive.com/updates/introducing-recursive-flint">Recursive 公告</a> · <a href="https://x.com/RichardSocher/status/2112944385415426249">Richard Socher 线程</a> · <a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/">TechCrunch</a></div></div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">即将 GA（私测已开；微软仍主云）</span>OpenAI 模型进入 Google Cloud Model Garden：frontier＋Codex，可扣 GCP 承诺消费</h3>
+OpenAI 官网（<b>10/21</b>）：与 Google Cloud 合作，把 frontier 模型与 <b>Codex</b> agent 工作流接入 <b>Model Garden</b>；经 Marketplace 计费，企业可用 GCP 消费承诺抵扣；还将进入 Google Antigravity 与 Gemini Agent。Greg Brockman／Thomas Kurian 互引。明确：<b>Microsoft remains OpenAI’s primary cloud partner</b>；GA「未来数周」。Ars 等补充：GPT-6／6.1 线 Astra／Sol／Luna 私测叙事——以官方页为准。
+<div class="lim">限制：分发扩容≠训练联盟改写；「唯一同时提供三大闭源」为媒体概括。与昨日 OpenAI~$30B 融资洽谈是不同事件。</div>
+<div class="src">来源：<a href="https://openai.com/index/openai-models-google-cloud">OpenAI 公告</a> · <a href="https://x.com/OpenAI/status/2112988118471295323">OpenAI 官帖</a> · <a href="https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/">Ars Technica</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">参考设计（伙伴早2027交付；14天＝已备场址）</span>NVIDIA DSX POD：工厂预制 Vera Rubin AI 工厂集装箱，备场址部署可缩至约 14 天</h3>
+NVIDIA Newsroom（<b>10/21</b>）：<b>DSX POD</b>——伙伴在模块化集装箱内集成／验证完整 <b>Vera Rubin</b> AI 工厂参考设计，到场对接电源／冷却／网络等；叙事相对传统现场建设，从约 <b>6 个月</b>压到最短约 <b>14 天</b>（前提：场址已就绪）。伙伴名单含 Dell／HPE／Lenovo／Schneider／Vertiv／Bull／Foxconn／QCT 等，目标 <b>2027 年初</b>全球交付。黄仁勋：「AI factory 开始产 token 才创造价值」。
+<div class="lim">限制：参考设计≠NVIDIA 自营交钥匙；14 天不含土建／电力报装；单 POD 容量／报价未公布。与 OpenShell／Isaac 同场但产业含义不同（部署形态 vs 软件栈）。</div>
+<div class="src">来源：<a href="https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment">NVIDIA Newsroom · DSX POD</a> · <a href="https://x.com/nvidia/status/2112882448530800716">nvidia</a> · Keynote 博客</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已关账（公司宣布；估值媒体口径）</span>一年纪 AI 实验室 Flapping Airplanes 宣布 $10 亿 A 轮，估值口径约 $60 亿</h3>
+TechCrunch（<b>10/21</b>）：公司宣布 <b>$1B Series A</b>，Index×Lux 联席领投；报道估值约 <b>$6B</b>（相对九个月前 $180M seed／$1.5B 估值约四倍）。参与方含 Sequoia、GV、Kleiner Perkins、Valor、Atreides、A*、Nvidia 等。团队 Aidan Smith＋Spector 兄弟；叙事为「少数据训大模型」＋ megakernel（训练／推理／甚至游戏同核重叠）。
+<div class="lim">限制：估值「reportedly」；技术主张多为公司表述。属头部融资量级但产品仍早期，勿写成已验证数据效率数量级跃迁。</div>
+<div class="src">来源：<a href="https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/">TechCrunch</a></div></div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">已披露／补丁优先（AI 辅助发现）</span>OpenAI「Patch the Planet」：模型协助发现 PHP 致命漏洞，两月全球协调后公开</h3>
+OpenAI（<b>10/21</b>）：过去约两月牵头维护者／研究者／安全厂商，处理 PHP 致命漏洞（媒体／社群常称 <b>PHP2Shell</b>；CVE 线索见公开应急讨论）。称 Calif 用 <b>GPT-5.6 Sol</b> 在 Patch the Planet 倡议下发现关键缺陷，Wiz 亦独立发现并报告；PHP 维护者主导修复与发布，Cloudflare 等参与前置防护。同步给出 Codex skill 版 PHP 版本检查、提出五阶段披露协调框架，并称投入约 <b>$10 亿</b>补贴 Daybreak 面向一线防御者。Greg Brockman／OpenAI 官帖强调「Defender’s Window」——据称前沿模型先于攻击者发现。
+<div class="lim">限制：具体 CVE 编号／利用细节以 PHP 维护者与 Patch the Planet 站点为准；「近年最严重之一」为官方判断。防御叙事与攻击面扩张是同一能力硬币——文中亦承认。</div>
+<div class="src">来源：<a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities">OpenAI · Patch the Planet</a> · <a href="https://x.com/OpenAI/status/2112907856018309586">OpenAI</a> · <a href="https://x.com/gdb/status/2112921529650688312">Greg Brockman</a></div></div>
+
+<h2 id="x">X 观点 · 抽象与合并</h2>
+<div class="sub">窗口：UTC 2026-10-21 00:00 → 2026-10-22 00:00（相对 10/21 早报增量）。名单分批 <code>from:</code>＋主题检索；下列只写有增量信号的主张。覆盖：实验室／产品负责人／研究者批次有帖；未穷尽全部 next_token。</div>
+
+<div class="card"><h3>① GTC：部署速度、agent 边界、实体 AI 三线同时加压</h3>
+nvidia／NVIDIAAI：DSX POD「备场址约 14 天」；OpenShell「设边界、越界即停」；Isaac／Agile 参考人形与欧洲工业伙伴叙事。共识：算力稀缺正从「买到卡」转向「多久能产 token＋agent 能否安全落地＋机器人栈是否开箱」。分歧：集装箱参考设计能改写土建／电力瓶颈到什么程度——官方反复强调「prepared site」。
+<div class="src"><a href="https://x.com/nvidia/status/2112882448530800716">nvidia：DSX POD</a> · <a href="https://x.com/NVIDIAAI/status/2112847569827348804">NVIDIAAI：开源模型</a> · Keynote 报道</div></div>
+
+<div class="card"><h3>② 主动个人 Agent 与「Attention Interface」：Duet／Mods／本地编码同日共振</h3>
+Karan／Cat：Claude Duet＝主动找活＋候补。swyx 等 Latent Space 线深挖 Claude Mods＝把 harness 翻转向人类注意力。Socher：Flint＝本地、快、可私有 agent。Rauch：DeepSeek Flash 进 Token Pass 做廉价子 agent。共识：产品竞争从「更聪明」滑向「谁替你盯着、谁让你少看日志」；分歧在沙箱／权限／额度谁买单。
+<div class="src"><a href="https://x.com/ahuja_karan/status/2112987751184527408">Karan：Duet</a> · <a href="https://x.com/_catwu/status/2112988751576330487">Cat：Duet</a> · <a href="https://x.com/RichardSocher/status/2112944385415426249">Socher：Flint</a> · <a href="https://x.com/rauchg/status/2113010010766913815">Rauch：Flash 子 agent</a></div></div>
+
+<div class="card"><h3>③ 防御发现成为「正面能力展示」——也是军备提醒</h3>
+OpenAI／gdb：PHP 致命洞＋全球协调披露；Levie：网络攻防将是 AI 最深刻面向之一，「不知疲倦的劳动力」可发现亦可攻击。共识：Defender’s Window 值得制度化；分歧：披露窗口、政府角色与「补贴防御算力」能否跑赢能力扩散。
+<div class="src"><a href="https://x.com/OpenAI/status/2112907856018309586">OpenAI：PHP</a> · <a href="https://x.com/gdb/status/2112921529650688312">gdb</a> · <a href="https://x.com/levie/status/2112964214818283917">Levie</a></div></div>
+
+<div class="card"><h3>④ 云分发与「主伙伴」并列：OpenAI×GCP 不改 Azure 主位</h3>
+OpenAI 官帖强调 Model Garden＋Codex；同时书面保留 Microsoft primary。解读：企业采购路径多元化，训练／排他叙事未同步改写。
+<div class="src"><a href="https://x.com/OpenAI/status/2112988118471295323">OpenAI×GCP</a></div></div>
+
+<div class="card"><h3>⑤ 工程侧：耐久 harness、自蒸馏、防火墙抢跑</h3>
+Arav：与 NVIDIA 的 JOLT 自蒸馏＋RL；Rauch：Vercel 对 Node RCE 防火墙层抢先缓解；Clem 为 Flint 加油。信号：发布日之外，生产防护与后训练技巧仍是日常主线。
+<div class="src"><a href="https://x.com/AravSrinivas/status/2113013527418146913">Arav：JOLT</a> · <a href="https://x.com/rauchg/status/2113050053724221732">Rauch：Firewall</a> · <a href="https://x.com/ClementDelangue/status/2113007389242949780">Clem</a></div></div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="card"><h3>主张 1：OpenShell 已把「agent 安全」从软件策略升级为可采购的全栈标配</h3><div class="grid">
+<div class="pro"><b>正方</b>：Rubin／Vera／BlueField＋开源运行时闭环；银行／SAP／ServiceNow 等具名合作；「现已可用」降低观望借口。</div>
+<div class="con"><b>反方</b>：名单≠默认部署；策略证明／跨云一致执行仍难；硅级隔离绑定特定硬件世代，中小团队难复现。</div></div>
+<div class="verdict"><b>判断：</b>方向正确、叙事完整；是否「标配」看未来两季云厂商 SKU 与真实隔离误杀率，而非发布会伙伴墙。</div></div>
+
+<div class="card"><h3>主张 2：Claude Duet 证明个人主动 Agent 的产品形态已收敛</h3><div class="grid">
+<div class="pro"><b>正方</b>：晨报＋后台 VM＋敏感动作门禁＋连接器，与 Muse／Dots 等形成可比较品类；负责人公开迭代。</div>
+<div class="con"><b>反方</b>：候补／用量共享／误判风险自承；「主动」越强，隐私与误操作成本越高；尚非全球 GA。</div></div>
+<div class="verdict"><b>判断：</b>形态在收敛，信任与额度经济学未收敛。看周留存与「未经请求却做对」的比例，而非发布文案。</div></div>
+
+<div class="card"><h3>主张 3：Flint 证明「自动化研究」已能量产可用本地编码模</h3><div class="grid">
+<div class="pro"><b>正方</b>：开源权重＋高本地吞吐＋厂商榜单；Eureka 叙事提供可检验的研发方法论故事。</div>
+<div class="con"><b>反方</b>：自报基准；复杂任务仍需更多引导；自动化环本身不可审计，存在「故事＞可复现」风险。</div></div>
+<div class="verdict"><b>判断：</b>「本地编码 Pareto 外推」值得跟；「RSI 已闭环」证据不足。等第三方 SWE／真实仓库长程任务。</div></div>
+
+<div class="card"><h3>主张 4：AI 发现致命漏洞说明防御窗口可以制度化</h3><div class="grid">
+<div class="pro"><b>正方</b>：两月协调＋维护者主导修复＋公开框架；官方承认能力双刃但仍选择扩大防御补贴。</div>
+<div class="con"><b>反方</b>：同样能力缩短攻击者路径；披露名单与 PoC 流转风险；$10 亿补贴口径与准入细节待观察。</div></div>
+<div class="verdict"><b>判断：</b>单次成功≠制度完成。关键看后续漏洞的平均修复时延与「泄露／抢跑」事故率。</div></div>
+
+<h2 id="pod">播客 / 深度访谈</h2>
+<div class="card"><h3>a16z｜The Missing Infrastructure for AI Agents: Documents — Reducto’s Adit Abraham × Jennifer Li（10/21）</h3>
+Abraham 主张：agent 能推理海量信息，但世界真实工作仍锁在 PDF／表格／扫描件里；传统 OCR 在脏文档上崩，前沿模型长抽取还会「静默丢字段」。Reducto 用视觉语言模型＋专用基础设施做高准确抽取，并称月处理数十亿页级（录制当日到第 70 亿页叙事）；讨论 R1、可自审自纠的抽取 agent，以及从「读文件」走向「可靠改文件」——误读一词即可影响医保理赔或金融决策。
+<br><b>为什么重要：</b>对着读本日 Duet／OpenShell——主动 agent 要碰真实业务，输入层可信度与模型智商同等关键。
+<div class="src"><a href="https://a16z.simplecast.com/episodes/the-missing-infrastructure-for-ai-agents-documents-reductos-adit-abraham-Tf_0B_WM">a16z 单集</a> · RSS ｜ 依据：RSS／简介；未逐字听完全集。</div></div>
+
+<div class="card"><h3>Latent Space｜Claude Mods: Flipping the Harness Inside Out — Dan McAteer（10/21）</h3>
+长文／播客向：Claude Mods＝在 Claude Code 内跑的 TS／JS 插件，把 harness 从「面向机器」翻成「面向人类注意力」的 Attention Interface；可观察／改写提示、工具调用与渲染。举例内置 You Should Know（旁路 agent 标出你可能漏看的风险）与作者自建 Next Steps Supervisor；对比 ChatGPT Intelligent UI（模型选组件）与 Cursor PR Routing（团队写策略）。代价：噪音、缓存后仍不低的 token、以及「mods 不沙箱」的信任问题。
+<br><b>为什么重要：</b>与 Duet「主动找你」同日——一个改 CLI 注意力，一个改个人生活流注意力。
+<div class="src"><a href="https://www.latent.space/p/claude-mods">Latent Space</a> ｜ 依据：全文页；未逐字听音频（若有）。</div></div>
+
+<div class="card"><h3>本窗另见／已覆盖（不重写长文）</h3>
+<ul>
+<li><b>a16z×Karan Singhal 健康</b>（10/20）、<b>Latent Space×SF Compute</b>（10/20）：昨报已长写。</li>
+<li><b>硅谷101 E256</b>（≈10/19–20）、<b>No Priors×Ameisen</b>（10/18）：窗外／已覆盖。</li>
+<li><b>Dwarkesh／Lex／Acquired／张小珺</b>：本窗截点前无新的必读主线集（张小珺 feed 仍不稳）。</li>
+<li>Latent Space 另发 AINews·DeepInfer／Tenex 等短讯——DeepInfer 昨报已选，不重复长写。</li>
+</ul>
+</div>
+
+<h2 id="gap">覆盖缺口与方法说明</h2>
+<div class="card">
+<h3>新闻</h3>
+<ul>
+<li>AIHOT：已读 agent help、<code>latest?window=24h&amp;mode=all</code>、<code>hot</code>、<code>daily</code>；摘要仅线索，入选条已回 NVIDIA Newsroom／OpenAI／Claude／Recursive／TechCrunch 等一手或可靠媒体。</li>
+<li>OpenAI／Google AI RSS、HN frontpage、InBrief 中文页已拉取；Google AI 主题 RSS 仍偏旧（Argon 等），GCP×OpenAI 走 OpenAI 官网。</li>
+<li>微信公众号：<b>登录过期</b>（宜自省，<code>isExpired:true</code>）；<b>未</b>代扫码、未 poll。</li>
+<li>去重：不重报 10/21 已刊 DeepInfer／Orchestra Bio／Locked Chats／TorchTPU／Voxtral／OpenAI~$30B 洽谈／Anthropic 安全草案——除非实质新版本（本窗无）。</li>
+<li>见但未入选：Nvidia×Firmus「数亿美元」续谈（未关账）；Claude Fable 5.5 传闻；Hyperion／车端伙伴展示（非旗舰量产）；Walmart MCP 购物网关（中腰部消费）；RTX Spark「手提 DGX-1」舞台对比（上周已开售叙事）；Anthropic S-1／容量泄露续热；Grok Bot artifacts 等产品小更新。</li>
+</ul>
+<h3>X</h3>
+<ul>
+<li>名单分批 <code>search_posts_all</code>（UTC 10/21→10/22）；另查 nvidia／产品负责人／Duet／Flint／PHP 主题。未声称穷尽每一页 <code>next_token</code>。</li>
+<li>Elon／纯政治／无增量互撕已滤。</li>
+</ul>
+<h3>播客</h3>
+<ul>
+<li>已查：a16z Show、Latent Space、硅谷101、No Priors 线；张小珺无稳定 feed（记缺口）。</li>
+<li>新写入本期：a16z×Reducto／Adit Abraham（10/21）、Latent Space·Claude Mods（10/21）。</li>
+</ul>
+</div>
+
+<footer>AI 行业早报 · 2026-10-22 · 生成于 Asia/Shanghai 08:35 · 仅供信息汇总，不构成投资建议</footer>
+</div></body></html>
