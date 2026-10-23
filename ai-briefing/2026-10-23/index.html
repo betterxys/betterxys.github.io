@@ -1,0 +1,162 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-10-23</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-10-23 周五</h1>
+<div class="sub">新闻截止：北京时间 10/23 08:00 ｜ 生成于 2026-10-23 08:45（Asia/Shanghai）｜ 精选 8 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+<div class="banner"><b>公众号信源登录已过期</b>（宜自省）：请在本机打开 <code>http://127.0.0.1:5000/login.html</code> 用公众号管理员微信重新扫码。本窗未代登录、未 poll；新闻以 AIHOT／官方／主流媒体为主。</div>
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>OpenAI Decisions API 正式 GA</b>：GPT‑6 Luna 做有界答案（predicate／choice／score），号称比 Responses 快约 10×；输入 $0.10／百万 token、无输出费。</li>
+<li><b>Anthropic 形式化验证大规模落地</b>：Claude＋Theorem 在 123 个开源库、239 个 OSS-Fuzz 入口给出 Rocq 机器检查证明（约 1.8 亿行）。</li>
+<li><b>微软 MAI-DxO 登 Science</b>：复杂 NEJM 病例诊断准确率约 83% vs 医生约 36%；研究系统≠临床产品，将进医院前瞻试验。</li>
+<li><b>DeepSeek 约千亿元／$15B 融资续热</b>（Bloomberg／Reuters／WSJ 匿名）：CATL／腾讯等；公司未官宣，数字或仍变。</li>
+<li><b>另：</b>Claude 网页／桌面／移动端下周起默认 auto mode；1Password for Agents；Claude 在 GCP「Anthropic 托管」方案 GA。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">现已 GA（专用端点）</span>OpenAI Decisions API 全面开放：有界答案、近实时、按输入计费</h3>
+OpenAI（<b>10/22</b>）：<b>Decisions API</b> 正式 GA，基于 <b>GPT‑6 Luna</b>，面向分类／路由／评分等「答案集合有界」的小决策；支持文本、图像与原生 JSON，单次最多 <b>400</b> 个问题（公测 200）。三种类型：<b>predicate</b>（条件概率）、<b>choice</b>（预置选项）、<b>score</b>（量规加权分）。相对经 Responses 调 Luna，官方称可最高约 <b>10×</b> 更快。定价：输入 <b>$0.10／百万 token</b>、缓存输入 $0.01；<b>无输出 token 费</b>。新增原生 <b>GPT‑Live</b> 集成、提示缓存、美／欧驻留。Box／Datadog／Ramp／Sierra／Speak 等给出延迟与成本对比案例。
+<div class="lim">限制：厂商自报吞吐／客户引用；「决策模型」品类亦有 TypeSafe Jev 等竞品叙事。不等于通用对话智能跃迁，而是热路径上的廉价分类器。</div>
+<div class="src">来源：<a href="https://openai.com/index/decisions-api">OpenAI · Decisions API</a> · <a href="https://developers.openai.com/api/docs/guides/decisions">开发者指南</a> · <a href="https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/">TechCrunch</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">研究发布（证明已公开部分）</span>Anthropic：Claude 大规模形式化验证——123 库、239 fuzz 入口、约 1.8 亿行 Rocq</h3>
+Anthropic Frontier Red Team（<b>10/22</b>）与 Theorem 合作：用 Claude 在汇编级（RISC-V）为 <b>123</b> 个开源库、OSS-Fuzz 的 <b>239</b> 个入口证明「任意 &lt;64MB 输入下不触发崩溃／ASan」等属性；证明约 <b>1.8 亿行 Rocq</b>，中位二进制约 1.8 万条指令。过程中发现多年漏测的边界 bug 并打补丁。同步开源部分 trusted components／可复现证明；Theorem 提供对其他 OSS 跑同一管线的意愿与 Claude skill。另有 zlib／RFC1950、Rust‑Python 子集等案例。
+<div class="lim">限制：单线程静态二进制＋固定内存预算＋RISC-V／Linux 语义模型；≠「无任何 bug」；规格与真实 x86／glibc 部署仍有鸿沟。成本以亿级 token 计，依赖模型降本与证明复用。</div>
+<div class="src">来源：<a href="https://www.anthropic.com/research/formal-verification">Anthropic Research</a> · <a href="https://x.com/AnthropicAI/status/2113390212911083894">@AnthropicAI</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">研究论文（Science；非临床产品）</span>微软 MAI-DxO：编排多角色「虚拟会诊」，NEJM 难例约 83% vs 医生约 36%</h3>
+Microsoft AI（<b>10/22</b>）在 <b>Science</b> 发表：<b>MAI-DxO</b>（Diagnostic Orchestrator）＋<b>SDBench</b> 逐步诊断基准。系统像专科会诊：假设／选检／唱反调／控成本／清单质控多轮辩论。复杂 NEJM 病例准确率约 <b>83%</b>（医生无参考约 22%、有参考约 <b>36%</b>）；急诊 MIMIC-IV-ED 约 <b>80%</b> vs 医生约 <b>47%</b>；成本优化配置可在保持高准确率下显著少检。将开源部分 SDBench；与 Mayo Clinic 合作、与 Beth Israel 做前瞻真实场景试验。Mustafa Suleyman／Satya Nadella 同日转发。
+<div class="lim">限制：回顾性文本病例≠床旁；「医疗超级智能」为愿景措辞。官方与媒体均强调需临床验证。勿写成已批准诊疗产品。</div>
+<div class="src">来源：<a href="https://microsoft.ai/news/building-medical-superintelligence/">Microsoft AI</a> · <a href="https://x.com/mustafasuleyman/status/2113332931423039945">@mustafasuleyman</a> · <a href="https://x.com/satyanadella/status/2113347282469077501">@satyanadella</a> · <a href="https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence">The Verge</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">下周默认（Pro／Max／Team 应用；Enterprise 暂 opt-in）</span>Claude 网页／桌面／移动端：新会话将默认 auto mode；分类器拦高风险动作</h3>
+Claude／Anthropic（更新 <b>10/22</b>）：下周起，Pro／Max／Team 在网页、桌面与移动端的新会话默认进入 <b>auto mode</b>——安全动作自动执行，危险动作由分类器拦截并另寻路径；用户可切回手动。Claude Code 侧已推进默认（文中留有较早日期／迁移细节，以产品内通知为准）。受控试验：1053 名付费测试者对危险命令人工仅拦约 <b>13.6%</b>，auto mode 约 <b>89%</b>。Enterprise／API／云伙伴部署暂仍 opt-in，计划约一个月内推进默认。
+<div class="lim">限制：分类器≠零风险；高风险生产变更仍建议人工审。第三方红队／提示注入评估为厂商委托口径。</div>
+<div class="src">来源：<a href="https://claude.com/resources/articles/auto-mode-default-in-claude-code">Claude · Auto mode default</a></div></div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">平台上线（个人／家庭；伙伴分批 rollout）</span>1Password for Agents：Agent 代登时凭证不进模型，本机批准后由 1Password 填入表单</h3>
+1Password（<b>10/22</b>）：推出 <b>1Password for Agents</b>——个人 Agent 碰到登录页时用数字钥匙向 1Password 自证；用户在本机看到「谁要哪个登录、为何」并批准后，<b>1Password 直接填入目标站点</b>，密码／OTP 不交给模型。首批叙事伙伴：Meta <b>Muse</b>、Anthropic <b>Claude Duet</b>、OpenAI ChatGPT Work／<b>dots</b>、SpaceXSI <b>Grok Bot</b>、Town Townie 等；Browserbase／Perplexity 等「即将」。Individual／Family（1Password.com）无额外收费；.eu／.ca 暂不支持。Muse／Grok Bot 分日推送，Duet／Work／dots 等多标「coming soon」。
+<div class="lim">限制：看不见密码≠不能误下单／误发信；会话级授权仍依赖产品实现。伙伴到位节奏以各 App 为准。</div>
+<div class="src">来源：<a href="https://1password.com/blog/1password-for-ai-agents">1Password Blog</a> · <a href="https://x.com/1Password/status/2113263674076922120">@1Password</a> · BusinessWire</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">现已 GA（Anthropic 托管）</span>Claude Models on Google Cloud（Anthropic managed）正式可用：GCP IAM／计费＋当日同步平台能力</h3>
+Anthropic／Google Cloud（<b>10/22</b>）：<b>Claude Models on Google Cloud（Anthropic managed）</b> GA——客户用 Google Cloud <b>IAM</b>、计费与承诺消费抵扣；Claude Managed Agents、Code Execution、Computer Use、Agent Skills 等平台能力主张与原生 Claude Platform <b>同日同步</b>。Google 云博客同步宣布该托管部署选项 GA，强调「部署选择」而非取代 Vertex 其他路径。
+<div class="lim">限制：数据处理器为 Anthropic、认证走 GCP——合规边界需企业法务自核。与昨日 OpenAI×Model Garden 同属「多云分发」，训练／主伙伴叙事未改写。</div>
+<div class="src">来源：<a href="https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed">Claude · Google Cloud</a> · <a href="https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud">Google Cloud Blog</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">现已可用（Dream Lab＋Connect API）</span>Canva 发布首个自研图像生成模型 Craft：2K、多比例，称 DesignArena 设计向前列</h3>
+Canva Newsroom（约 <b>10/22</b>）：首个自研图像基础模型 <b>Canva Craft</b>，由 Canva Research 从零训练，面向设计场景；现已在 Canva 与 Connect API 可用，输出最高约 <b>2K</b>、支持大量宽高比。厂商引用 DesignArena 众包评测，自称图像生成「第二先进」实验室口径——须当营销主张。
+<div class="lim">限制：排行榜与「第二」为公司引用；非通用文生图独立审计。属生产力套件垂直化，非实验室 frontier 叙事。</div>
+<div class="src">来源：<a href="https://www.canva.com/newsroom/news/canva-craft/">Canva Newsroom</a> · <a href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/">TechCrunch</a></div></div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card"><h3><span class="tag e2">媒体报道·当事方未确认</span><span class="tag nw">融资洽谈／接近收尾</span>DeepSeek 新一轮约 1000 亿元人民币（≈$15B）融资：Bloomberg／Reuters／WSJ；公司与多数投资方未置评</h3>
+多家主流媒体（美东约 <b>10/21 夜–10/22</b>）：知情人士称 DeepSeek 最新私募约 <b>1000 亿元人民币（≈$15B）</b>，目标较最初约 500 亿至少两度上调；<b>宁德时代（CATL）</b>与 <b>腾讯</b>据称最大投资方之一，另现兆易创新、美团、吉利、美的、网易、IDG 等名单（各报略有出入）。Reuters：投前估值口径约 5000 亿元；融资「未来数日收尾」，条款与名单「仍可能变」。WSJ 另写加速上海上市时间线（知情人士）。TechCrunch 强调：恰在美联邦民用机构要求移除 DeepSeek 技术之后两日。DeepSeek／多数具名企业未确认或拒评。
+<div class="lim">限制：匿名信源；「已筹集」与「接近收尾」表述并存；勿写成公司官宣关账。与 6 月超 $70 亿首轮外部融资为不同轮次。</div>
+<div class="src">来源：<a href="https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs">Bloomberg</a> · <a href="https://www.streetinsider.com/Reuters/DeepSeek+wrapping+up+%2415+billion+fundraising+to+fuel+AI+race/27217623.html">Reuters 转载</a> · <a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/">TechCrunch</a> · WSJ</div></div>
+
+<h2 id="x">X 观点 · 抽象与合并</h2>
+<div class="sub">窗口：UTC 2026-10-22 00:00 → 2026-10-23 ≈00:00（相对 10/22 早报增量）。头部实验室＋名单抽样 <code>search_posts_all</code>；下列只写有增量信号的主张。未穷尽全部 next_token／全名单。</div>
+
+<div class="card"><h3>① 「决策／编排」从对话主路径拆出：Decisions 与 DxO 同日加压</h3>
+产品侧：Decisions API 把分类／路由做成专用、按输入计费的热路径；医疗侧：Suleyman／Nadella 推 MAI-DxO——多角色编排＋逐步取证，而非一次答完。共识：Agent 成本与延迟瓶颈常在「无数小判断」；分歧：专用决策端点会不会碎片化开发体验，医学编排在真实医院 workflow 能迁移多少。
+<div class="src"><a href="https://openai.com/index/decisions-api">OpenAI Decisions</a> · <a href="https://x.com/mustafasuleyman/status/2113332931423039945">Suleyman</a> · <a href="https://x.com/satyanadella/status/2113347282469077501">Nadella</a></div></div>
+
+<div class="card"><h3>② 防御叙事升级：形式化证明 vs「先把洞修完」</h3>
+AnthropicAI：形式化验证从专家奢侈品走向可规模化证明。swyx：对 AI 挖洞「别怪发现者，锁死清洞」——承接 PHP2Shell 余波。共识：能力双刃下防御必须制度化；分歧：证明的信任边界（语义模型／规格）与披露窗口／抢跑风险，谁先成为默认工程纪律。
+<div class="src"><a href="https://x.com/AnthropicAI/status/2113390212911083894">AnthropicAI</a> · <a href="https://x.com/swyx/status/2113359027682050352">swyx</a> · OpenAI Patch the Planet 昨报续</div></div>
+
+<div class="card"><h3>③ 凭证成为 Agent 品类基础设施：1Password 抢「信任层」</h3>
+1Password 官帖拉齐 Muse／Duet／dots／Grok Bot／Town——「批准代登、模型不见密」。解读：个人主动 Agent（Duet 昨报）落地卡点从「会不会点」转向「敢不敢登」。分歧：会话授权粒度、误操作 irreversibility，以及伙伴「coming soon」是否拖慢品类成形。
+<div class="src"><a href="https://x.com/1Password/status/2113263674076922120">1Password</a></div></div>
+
+<div class="card"><h3>④ 工期感知与企业铺开：估时校准 vs 全员 Work</h3>
+swyx：Opus 5.5「估时」对委托工作越来越关键——别用人类人天糊弄 agent。gdb：Uber 全员 ChatGPT Work。Mollick：从「4 分钟人类等价」到「17 周」的能力时钟叙事续热。共识：交付单位从聊天轮次变成可委托工期；分歧：估时校准失败会放大空转成本。
+<div class="src"><a href="https://x.com/swyx/status/2113283272130412684">swyx</a> · <a href="https://x.com/gdb/status/2113325885491437764">gdb×Uber</a> · <a href="https://x.com/emollick/status/2113323645284344215">Mollick</a></div></div>
+
+<div class="card"><h3>⑤ 实验室其余信号</h3>
+DeepMind ForTy 森林类型制图；GeminiApp 地图＋日历 Personal Intelligence；nvidia GTC Berlin 巡展续。DeepSeek／xAI／sama 本窗实验室账号增量帖偏少——融资故事主要在媒体层。
+<div class="src"><a href="https://x.com/GoogleDeepMind/status/2113278710795153785">DeepMind ForTy</a> · <a href="https://x.com/GeminiApp/status/2113343041805127839">GeminiApp</a></div></div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="card"><h3>主张 1：Decisions API 证明「小决策」应从大模型主路径剥离</h3><div class="grid">
+<div class="pro"><b>正方</b>：延迟／成本数量级差；无输出费＋缓存适合热路径；客户案例跨路由、风控、语音。</div>
+<div class="con"><b>反方</b>：有界问题集合要产品自己设计好；品类有独立创业公司；滥用会把本该生成的解释硬塞进分类器。</div></div>
+<div class="verdict"><b>判断：</b>工程上方向正确。看两季内是否成为 Agent 默认中间件，而非又一个被忽视的专用端点。</div></div>
+
+<div class="card"><h3>主张 2：LLM 形式化验证已可成为「新一代 fuzz」</h3><div class="grid">
+<div class="pro"><b>正方</b>：规模（百库／亿行证明）＋机器检查；顺带挖出长尾 bug；证明可复用降边际成本。</div>
+<div class="con"><b>反方</b>：信任落在语义模型与规格；部署架构鸿沟大；token 成本仍高，易变成头部实验室特权。</div></div>
+<div class="verdict"><b>判断：</b>「证明管线可行」已立住；「默认安全基线」未立住。看 OSS 复现率与 x86／并发语义扩展。</div></div>
+
+<div class="card"><h3>主张 3：MAI-DxO 说明医疗 Agent 编排已越过「考题 AI」</h3><div class="grid">
+<div class="pro"><b>正方</b>：逐步取证＋成本敏感更像临床；Science＋开源基准可复现争论；医院前瞻试验已排期。</div>
+<div class="con"><b>反方</b>：回顾病例选择偏差；医生对照组设置遭质疑空间；监管与责任归属未解。</div></div>
+<div class="verdict"><b>判断：</b>基准叙事强、产品叙事早。关键看前瞻试验终点与「建议权 vs 决策权」设计。</div></div>
+
+<div class="card"><h3>主张 4：DeepSeek 千亿融资证明中美算力／资本战仍在加速</h3><div class="grid">
+<div class="pro"><b>正方</b>：多主流媒体交叉；产业资本＋地方／国家叙事共振；开源模型＋基建扩张逻辑自洽。</div>
+<div class="con"><b>反方</b>：当事方未确认；数字与名单浮动；美限制与上市时间线增加执行风险。</div></div>
+<div class="verdict"><b>判断：</b>作「高置信媒体事件」跟踪；作「已关账事实」尚早。等公司／监管披露或交割文件。</div></div>
+
+<h2 id="pod">播客 / 深度访谈</h2>
+<div class="card"><h3>Latent Space｜Why AI Compute Comes in Rectangles — Modal CEO Erik Bernhardsson（10/22）</h3>
+新 cohost Basil Chatha 对话：Modal 自 Series C 后称跨越约 <b>$10 亿年化收入</b>、<b>$7.5 亿 D 轮／估值约 $160 亿</b>、累计近 <b>30 亿</b>个 sandbox。核心论点：市场卖的是「固定 GPU×固定期限」的矩形合约，真实负载却是尖峰／日内波动；Modal 做需求池化的「期限变换」。Sandbox 一度考虑关停，后因编码 agent／后台 agent／RL 增至约营收 <b>1/3</b>。另谈：向 25+ 云采购、更担心 GPU 价格崩而非涨、2027 或成非 NVIDIA 加速器之年、可选 code review＋强 CI、FDE 补产品缺口。与上周 SF Compute「可交易算力」形成对照——一边交易，一边弹性切片。
+<br><b>为什么重要：</b>对着读 Decisions／Agent 热路径——算力合同形状决定你能不能按秒买「试错」。
+<div class="src"><a href="https://www.latent.space/p/modal-d">Latent Space · Modal</a> ｜ 依据：长文页／时间戳摘要；未逐字听完全集音频。</div></div>
+
+<div class="card"><h3>本窗另见／已覆盖（不重写长文）</h3>
+<ul>
+<li><b>Latent Space×Moshi／Anekha Sokhal</b>（10/22）：交易工作流向短访——未作主长文。</li>
+<li><b>Latent Space AINews·PHP2Shell</b>（10/22）：新闻向；主新闻昨报已覆盖，本窗不重复。</li>
+<li><b>a16z／No Priors／硅谷101</b>：本窗截点前无新于昨报的必读主线集（a16z 最新仍为 10/18 Ameisen；硅谷101 E256≈10/19）。</li>
+<li><b>昨报已长写</b>：a16z×Reducto（10/21）、Latent Space·Claude Mods（10/21）。</li>
+</ul>
+</div>
+
+<h2 id="gap">覆盖缺口与方法说明</h2>
+<div class="card">
+<h3>新闻</h3>
+<ul>
+<li>AIHOT：已读 agent help、<code>latest?window=24h&amp;mode=all</code>、<code>hot</code>、<code>daily</code>、相关 search；摘要仅线索，入选条已回 OpenAI／Anthropic／Microsoft／1Password／Claude／Canva／Bloomberg／Reuters 等。</li>
+<li>OpenAI／Google AI RSS、HN、InBrief 已拉；Google AI 主题 RSS 仍偏旧。</li>
+<li>微信公众号：<b>登录过期</b>（宜自省）；<b>未</b>代扫码、未 poll。</li>
+<li>Anthropic <b>公开 S-1</b>：EDGAR 检索 10/20–10/23 无公开 S-1／S-1A；媒体称「最早周五／约 10/26」仍为知情人士——本窗不单列，记缺口。</li>
+<li>Unitree H2-X／G1：仍无定价开售／官宣量产关账，对照规则不重报。</li>
+<li>去重：不重报 10/22 已刊 Isaac／OpenShell／Duet／Flint／OpenAI×GCP Model Garden／DSX POD／Flapping $1B／Patch the Planet 主披露——除非实质新版本（PHP2Shell 社媒续热未改判断，不单列）。</li>
+<li>见但未入选：OpenAI×Uber ChatGPT Work（偏客户案例）；Sakana Aquarium（日企本体 Agent 平台，中腰部）；SpaceX×Tesla 合并传闻（非 AI 主线）；OpenAI~$30B 融资洽谈续；Grok Bot 系统 App 连接（产品小更）。</li>
+<li>大模型×物理世界：本窗无达标「官宣开售／量产／头部融资」的机器人／AI 眼镜等消费硬件新事实。</li>
+</ul>
+<h3>X</h3>
+<ul>
+<li>实验室账号＋名单核心声音抽样；主题检索 Decisions／DxO／1Password／formal verification。未声称穷尽 next_token／全名单。</li>
+<li>日配额接近上限，截断处已记。</li>
+</ul>
+<h3>播客</h3>
+<ul>
+<li>已查：Latent Space、a16z／Lenny 线、硅谷101、No Priors；新写入本期：Latent Space×Modal／Erik（10/22）。</li>
+<li>张小珺 feed 仍不稳（记缺口）。</li>
+</ul>
+</div>
+
+<footer>AI 行业早报 · 2026-10-23 · 生成于 Asia/Shanghai 2026-10-23 08:45 · 仅供信息汇总，不构成投资建议</footer>
+</div></body></html>
