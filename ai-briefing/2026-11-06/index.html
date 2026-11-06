@@ -1,0 +1,150 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-06</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-11-06 周五</h1>
+<div class="sub">新闻截止：北京时间 11/06 08:00 ｜ 生成于 2026-11-06 08:30（Asia/Shanghai）｜ 精选 8 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<div class="banner"><b>公众号信源：登录正常但拉取频控</b>——宜自省 <code>isExpired:false</code>（expire≈11/07 前后），本窗 <code>/api/public/articles</code> 对机器之心返回 <code>ret=200013 freq control</code>，等同文章池不可用。新闻以 AIHOT／官方 IR／主流媒体／X／播客 RSS 为主。相对上期（11/05）覆盖约 24 小时增量；<b>必补白天 HIT</b>：SoftBank×ABB 中国段被拦（ABB 官网确认）、百度开源 ERNIE-5.5-Flash-Base。</div>
+
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>中国拦 SoftBank 购 ABB 机器人中国业务</b>（11/5）：ABB 官网确认外资安全审查办公布禁止中国段收购；交易企业价值约 <b>$5.375B</b>；媒体称顾虑机器人数据出境训 AI（含 SoftBank 重仓的 OpenAI）——大模型×物理世界政策头条。</li>
+<li><b>百度开源 ERNIE-5.5-Flash-Base</b>：280B-A14B MoE，预训练止点 33.5T／训练上下文至 128K、微调推理至 1M；HF／ModelScope 提供 FP8＋BF16——完整 Flash（chat／工具）未到。</li>
+<li><b>Thinking Machines：Inkling 2 Small</b>：594B／激活 17B，AA Intelligence Index <b>31</b>；Tinker 可微调解码，计划下周 Apache 2.0 放全量权重。</li>
+<li><b>Gemini Omni 1.2 Flash GA</b>：原生最长 <b>15 秒</b>视频（原 10 秒），720p 约 <b>$0.07／秒</b>（较 1.1 降约 30%）；多轮对话式剪辑。</li>
+<li><b>另：</b>Perplexity Teammates（Max／$200）；OpenAI 命名发布 GPT-6 Cyber＋Daybreak Red CI（昨早报 948 LPE 管线的产品化）；美股 AI／半导体暴跌（Nasdaq −5.5%，SOX −12%）；Claude Personal Finance 美国 Beta。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">开源基座；补入白天 HIT</span>百度：开源 ERNIE-5.5-Flash-Base——280B-A14B，预训练终点权重</h3>
+百度（<b>2026-11-05</b>）：正式释放 ERNIE-5.5-Flash-Base，稀疏 MoE，总参 <b>280B</b>、每 token 激活 <b>14B</b>；从零预训练约 <b>33.5T</b> tokens，训练上下文至 <b>128K</b>，微调／推理支持至 <b>1M</b>。权重取自预训练结束、尚未 mid／post-training 的检查点，定位「供社区自行做领域适配、指令微调与 RL」的干净起点。架构叙事含 latent-gated sparse attention（MLA＋HCA 混合）、Latent MoE 等效率设计。Hugging Face／ModelScope 同时提供 <b>FP8</b> 与 <b>BF16</b> safetensors；许可为 ERNIE 5.5 Flash Base Model License v1.0（含商业收入门槛等条款，用前需读 LICENSE）。
+<div class="lim">限制：本批仅为 <b>Base</b>；完整 ERNIE-5.5-Flash（chat／reasoning／tool calling／DSpark）官方标注 Coming soon。vLLM recipes 亦区分 Base＝completions、Flash＝对话工具。不把 Base 写成已可直接当聊天产品用的完整模型。</div>
+<div class="src">来源：<a href="https://ernie.baidu.com/release/ernie-5-5-flash-base/">ERNIE · 5.5 Flash Base</a> · <a href="https://huggingface.co/baidu/ERNIE-5.5-Flash-Base">HF · ERNIE-5.5-Flash-Base</a> · <a href="https://x.com/BaiduResearch">@BaiduResearch</a>（白天 HIT）</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">美国开源路线；二代模型</span>Thinking Machines：发布 Inkling 2 Small——594B-A17B，AA Index 31，计划下周 Apache 2.0 权重</h3>
+Thinking Machines Lab（<b>11/5</b>）：二代模型 Inkling 2 Small，MoE 总参 <b>594B</b>、激活 <b>17B</b>，支持图像输入与 variable effort。Artificial Analysis Intelligence Index 报 <b>31</b>（相对前代大幅跃升）。官方强调长周期 agentic 编码／autoresearch、视觉自检、多 harness 适配；给出 FrontierCode／DeepSWE／SWE-Bench Pro 等自报表。即日起可在 <b>Tinker</b> 做推理与微调；按「safe path to open weights」路线，计划外部安全测试完成后于<b>下周</b>以 <b>Apache 2.0</b> 放全量权重。@miramurati 同步官宣。
+<div class="lim">限制：当前仍为闭源权重＋Tinker 托管；「下周开源」为意向时间表，以实际权重仓为准。榜单多为公司／AA 口径，独立复现待跟进。昨日 Cognition SWE-2 Flash 以 Inkling-Small 为基座对照——二代发布会改写美国开源对照轴。</div>
+<div class="src">来源：<a href="https://thinkingmachines.ai/news/inkling-2-small/">Thinking Machines · Inkling 2 Small</a> · <a href="https://x.com/thinkymachines/status/2118489527362912566">@thinkymachines</a> · <a href="https://x.com/miramurati/status/2118489804585509192">@miramurati</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">视频生成</span>Google：Gemini Omni 1.2 Flash GA——原生 15 秒、720p 约 $0.07／秒（降约 30%）</h3>
+Google／DeepMind（约 <b>11/5 17:00 UTC＝11/6 01:00 CST</b>）：Omni 1.2 Flash 在 Gemini API 与 Gemini for business <b>正式 GA</b>。原生生成／编辑最长由 10 秒提至 <b>15 秒</b>（可 3–15 秒按秒指定）；强化参考图／角色一致性，支持多轮对话式修改而非整段重生成。720p 标价约 <b>$0.07／秒</b>（官方称较 Omni 1.1 降约 <b>30%</b>）；可先 360p／720p 草稿再升 1080p／4K。Gemini 应用侧：Google AI 订阅用户滚动获得；Ultra 可用满 15 秒。@GeminiApp 同步推送。
+<div class="lim">限制：音频参考仍 allowlist；「30%」为公司相对 1.1 口径；与 Runway／Kling／Veo 等同秒价比较需计入分辨率与是否含音频。</div>
+<div class="src">来源：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/">Google Blog · Omni 1.2 Flash</a> · <a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/">DeepMind Blog</a> · <a href="https://x.com/GeminiApp/status/2118406227533435391">@GeminiApp</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag nw">工作 Agent</span>Perplexity：推出 Teammates——常驻工作智能体，先向 Max（约 $200／月）开放</h3>
+Perplexity（<b>11/5</b>）：发布面向工作的常驻智能体 <b>Teammates</b>，对标叙事含 OpenAI Dots／Claude Duet。可承接并行岗位级任务，复用既有 Projects／Memory／Skills／Computer；支持 Slack 协作与主动盯频道变化。CEO @AravSrinivas：公司内部近 30 天约有 <b>10,000</b> 个 teammates（约人力 <b>20×</b>），前一日活跃约 <b>1,000</b>；愿景是「每人上百个 teammates」。首发网页版给 <b>Max</b> 用户，原生 App 随后。
+<div class="lim">限制：门槛为高价 Max 档；「20× 人力」为公司内部用量叙事，非第三方审计；与 Dots／Duet 的能力边界需实测而非营销对照。</div>
+<div class="src">来源：<a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work">The Verge</a> · <a href="https://x.com/AravSrinivas/status/2118388400730591469">@AravSrinivas 官宣串</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag nw">网络安全；产品化补入</span>OpenAI：命名发布 GPT-6 Cyber——ExploitGym 48.5%；Daybreak Red for Critical Infrastructure</h3>
+OpenAI（约 <b>11/5 09:00 UTC＝11/5 17:00 CST</b>，昨早报截止后）：将此前「自动化 cyber 管线／即将发布模型」产品化为 <b>GPT-6 Cyber</b>。ExploitGym <b>48.5%</b>（vs GPT-5.6 Cyber 32.1%，相对约 +51%）；越权利用 honeypot 评估未加部署提示时越权率约 <b>0.07%</b>（99.93% 守界），加提示达 100%。沿用昨已报的 Linux <b>948</b> LPE，并补 Firefox <b>81</b> 个此前未知高危＋多份补丁已合入 Mozilla。Preparedness 网络安全等级升至 <b>Critical</b>。访问：经审批的 Daybreak Red 客户（API／Codex）；新增 <b>Daybreak Red for Critical Infrastructure</b> 给获批关键基础设施防守方。@gdb／@sama 转发防守叙事。
+<div class="lim">限制：昨早报已覆盖 948 LPE＋$1.21M 单位经济——本期只补「命名产品＋评测数字＋CI 通道」，不重复展开管线细节。不对公众默认开放；Dual-use 与 OT／ICS 误用仍是核心约束。</div>
+<div class="src">来源：<a href="https://openai.com/index/introducing-gpt-6-cyber">OpenAI · GPT-6 Cyber</a> · <a href="https://x.com/gdb/status/2118395717966606542">@gdb</a> · 昨早报：A thousand fewer paths to root</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">消费级产品</span>Anthropic：Claude Personal Finance 美国 Beta——Plaid 只读连账户，Pro／Max／Ultra</h3>
+Anthropic（<b>11/5</b>）：Claude 上线 Personal Finance，经 <b>Plaid</b> 只读连接银行／信用卡；可用自然语言做消费分类、异常扣款、利息解释等。公司强调无广告、无自营信贷产品；理财对话不用于模型训练；不能转账／投资。本周起向美国 <b>Pro／Max／Ultra</b> 用户滚动 Beta。叙事上对标 ChatGPT 今年早些时候的理财连接能力。
+<div class="lim">限制：仅美国；只读范围与两年流水等边界以产品说明为准；「不用于训练」为公司承诺，外部难独立审计。</div>
+<div class="src">来源：<a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/">TechCrunch</a>（引 Anthropic 博文）</div></div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card"><h3><span class="tag e2">媒体报道</span><span class="tag nw">算力基建；资本市场</span>美股 AI／半导体暴跌：Nasdaq −5.5%、SOX −12%——中期选举后数据中心监管定价重估</h3>
+Reuters／CNBC／AP 等（<b>11/5</b> 美股交易日）：Nasdaq Composite 跌约 <b>5.5%</b>（约 19 个月最大单日跌幅，并确认相对 10/6 高点进入技术性调整），费城半导体指数跌逾 <b>12%</b>；Nvidia 约 −9%，AMD／存储相关个股多见双位数下跌。诱因叙事叠加：民主党中期选举后对数据中心／AI 基建的地方与联邦阻力预期升温（昨早报已报多州选票否决），以及 Qualcomm／Arm 等财报指引偏软触发踩踏。S&amp;P 500 约 −4.4%；部分报道称纳指相关市值蒸发以万亿美元计。Meta 等公开警告选举反弹可能拖慢扩建。
+<div class="lim">限制：单日行情≠政策已落地；「45% 规划产能受影响」等为投行情景，非立法文本。昨早报已报选票结果——本期只报市场定价反应与财报催化剂，不重复选票清单。</div>
+<div class="src">来源：<a href="https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html">Reuters／Yahoo</a> · <a href="https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html">CNBC</a> · <a href="https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e">AP</a></div></div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag e2">动机媒体</span><span class="tag nw">机器人；外资安全审查；补入白天 HIT</span>中国拦 SoftBank 收购 ABB 机器人中国业务——企业价值约 $5.375B 交易承压</h3>
+ABB（苏黎世，<b>2026-11-05</b> 集团新闻稿）：确认 SoftBank 已告知，中国「外商投资安全审查工作机制办公室」<b>禁止</b>收购 ABB 机器人业务的<b>中国部分</b>。交易源于 2025 年 10 月协议，企业价值约 <b>$5.375B</b>，监管审批由 SoftBank 主导；ABB 称双方仍密切沟通、建设性推进。FT／路透等称审查顾虑包括机器人相关数据出境并用于训练 AI（报道点名 SoftBank 重仓的 OpenAI）；中国约占 ABB 机器人约 <b>30%</b> 量级市场，上海等地为重要产能与研发。白天大事提醒已 HIT；其后 ABB 官网确认，证据升 <b>e1</b>（禁止事实）／动机细节仍多为 <b>e2</b>。
+<div class="lim">限制：NDRC／审查办与 SoftBank 未发独立长说明；「整笔交易是否重组／剥离中国资产再报」未定。与 Meta×Manus 被要求处置并列，显示前沿科技跨境并购的中国安全审查已成为硬约束。</div>
+<div class="src">来源：<a href="https://new.abb.com/news/detail/140154/update-on-divestment-of-abb-robotics">ABB · Update on divestment of ABB Robotics</a> · FT／路透转述（白天 HIT） · <a href="https://www.therobotreport.com/chinese-regulators-block-softbanks-5-4b-acquisition-of-abb-robotics/">The Robot Report</a></div></div>
+
+<h2 id="x">X 观点 · 主题抽象</h2>
+<div class="card"><h3>主题 A：编制表失效——「Teammates／席位」改写 headcount 规划</h3>
+<ul>
+<li><b>共识：</b>@AravSrinivas 用内部 10k teammates≈20× 人力、日活约 1k，把 Agent 从「会话里写 prompt」推向「给目标的常驻同事」；Slack 主动盯工、默认少打扰／多请示成为产品哲学辩论点。</li>
+<li><b>分歧：</b>乐观派视为组织杠杆拐点；谨慎派质疑 Max 高价门槛、休眠 teammate 注水、以及责任归属（谁为错误动作买单）。</li>
+<li><b>隐含判断：</b>与昨窗 steipete「项目同事」叙事同构——席位制 SaaS 计量可能让位于「并行 Agent 数×任务吞吐」。</li>
+</ul></div>
+<div class="card"><h3>主题 B：美国开源权重棋盘——Inkling 2 Small 把「可微调基座」重新抬上台面</h3>
+<ul>
+<li><b>@miramurati／@thinkymachines：</b>AA 31＋Tinker 即时可用＋下周 Apache 意向，把二代小杯定位为可定制智能的起点。</li>
+<li><b>@swyx</b>（稍早对 Inkling 谱系）：强调蒸馏／效率「更快更便宜但榜单不掉」的稀缺性，预期美国预训练基座会大量出现类似产品。</li>
+<li><b>@ClementDelangue</b> 转发官宣——开源分发层对「下周真放权重」高度敏感。</li>
+</ul></div>
+<div class="card"><h3>主题 C：防守叙事产品化——GPT-6 Cyber 从研究管线走到 Daybreak SKU</h3>
+<ul>
+<li><b>@gdb：</b>强调守界训练与 Critical Infrastructure 通道；@sama 转发客户侧「对防守方有意义」评价。</li>
+<li><b>@tszzl</b> 等转发早期采用者口径（能力「out of this world」）——能力炫耀与 Dual-use 焦虑并行。</li>
+<li>与昨早报「约 $1k／洞」单位经济相连：讨论从 headline 数字转向「谁有权调用 Red／如何审计越权」。</li>
+</ul></div>
+<div class="card"><h3>主题 D：选票之后的价格发现——数据中心政治进入 K 线</h3>
+<ul>
+<li>盯梢账号本窗较少原创宏观长文，但行情本身成为共同背景音：地方禁建／限功率（昨已报）→ 国会控制权预期 → 半导体／neocloud 踩踏。</li>
+<li><b>隐含：</b>物理世界约束（电、地、噪音、选票）开始反向定价模型层资本开支故事。</li>
+</ul></div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="card"><h3>主张 1：中国拦 ABB 中国段说明「机器人数据＝AI 训练数据」已进入外资安审核心</h3><div class="grid">
+<div class="pro"><b>正方</b>：ABB 官正确认禁止中国业务收购；FT 等将动机指向数据出境训 AI——具身数据主权从倡议变成交易否决权。</div>
+<div class="con"><b>反方</b>：动机仍媒体归因；或可用剥离／合资重构过审；亦可能叠加中日外交与产业政策，而非单一 AI 叙事。</div></div>
+<div class="verdict"><b>判断：</b>禁止事实 e1 成立，作为物理世界×模型的监管里程碑必报。盯 SoftBank／ABB 是否拆分中国资产再申报，而非假设交易整体死亡。</div></div>
+
+<div class="card"><h3>主张 2：开源「预训练终点 Base」（ERNIE／即将到来的 Inkling 权重）比再发一个 Chat 更重要</h3><div class="grid">
+<div class="pro"><b>正方</b>：干净 Base 让社区自控 post-training，降低重复预训练成本；280B-A14B／594B-A17B 提供可对比研究基线。</div>
+<div class="con"><b>反方</b>：无对齐 Base 抬高误用与蒸馏风险；许可证收入门槛／「下周开源」时间表可能让实际可复现性打折；完整 Flash／工具能力未到则产品替代有限。</div></div>
+<div class="verdict"><b>判断：</b>研究与生态意义大于「又一个聊天模型」头条。把 Base 与 Chat 产品严格分开写，盯权重落地日与独立评测。</div></div>
+
+<div class="card"><h3>主张 3：Nasdaq 暴跌证明 AI 资本开支叙事已被「电与选票」证伪</h3><div class="grid">
+<div class="pro"><b>正方</b>：单日 −5.5%／SOX −12% 显示市场开始系统性折现数据中心延误与监管溢价；与地方选票结果同向。</div>
+<div class="con"><b>反方</b>：叠加财报踩踏与拥挤交易平仓，幅度可能过度；hyperscaler 资本开支指引未集体撤回；政策从选票到联邦立法仍有长链条。</div></div>
+<div class="verdict"><b>判断：</b>价格信号重要，但不能从一日 K 线推出建设停摆。盯后续项目取消／延期公告与国会实质法案，而非情绪叙事。</div></div>
+
+<h2 id="pod">播客新集 · 核心观点</h2>
+<div class="card"><h3>No Priors（11/5）：Robinhood CEO Vlad Tenev——Tokenization、Agentic Trading 与「所有权」扩张</h3>
+Sarah Guo 对谈 Vlad：主线是让个人投资者在机构／VC 收益集中化的结构里仍能获得「Ownership」。节目把 tokenization、代理化交易（agentic trading）与 Harmonic 等产品线串成「从交易 App 到所有权基础设施」的叙事——与本窗「Agent 成为编制外同事」主题可对读：金融账户侧的 Agent 权限与 Claude Personal Finance 只读边界形成对照。
+<div class="src">RSS：No Priors · 2026-11-05</div></div>
+
+<div class="card"><h3>Training Data / a16z（11/5）：Trajectory 的 Ronak——从「伪持续学习」到可在线改道的模型产品</h3>
+Ronak Malde 批评当下 Agent 仍是「离线批次更新的纸质地图」：看起来聪明，但不能在任务中途改学习回路。主张把自训模型的门槛从「研究院×数月×亿级算力」拉到产品团队可迭代的 continual learning——与 Inkling／ERNIE Base「把 post-training 交给用户」的发布哲学同月共振。
+<div class="src">RSS：Training Data · 2026-11-05</div></div>
+
+<div class="card"><h3>The Vergecast（11/3，补读）：Will data centers rock the vote?</h3>
+选举日特辑：Adi Robertson 解释数据中心如何成为中期选举代理议题（电价、土地、噪音、党派动员）。本窗美股暴跌可视为该集的「开盘后验证」——选票结果（昨早报）→ 风险溢价（今日行情）。
+<div class="src">RSS：Vergecast · 2026-11-03</div></div>
+
+<div class="card"><h3>硅谷101</h3>
+RSS 可解析，但最近一集为 <b>10/28</b> E257（对话 Vitalik／EA），本窗无更新集。不把旧集冒充今日新内容。
+<div class="lim">覆盖缺口：无 11/05–11/06 新集。</div></div>
+
+<h2 id="gap">覆盖缺口与待观察</h2>
+<ul>
+<li><b>微信公众号：</b>登录正常，但 <code>articles</code> 频控（ret=200013）；机器之心／量子位等未能写入候选池——banner 已标。不静默当作「今日无公号新闻」。</li>
+<li><b>OpenAI 官网部分正文：</b>直连偶发 403／人机验证，GPT-6 Cyber 以 WebFetch 可读文本＋@gdb 交叉核验；Images／基础设施稿未再展开（昨已报 Images）。</li>
+<li><b>ABB 官网：</b>curl 超时，以 WebFetch 取得与媒体一致的官方声明全文。</li>
+<li><b>见但未达头条：</b>Sand.ai A+～$200M；Nothing／三星眼镜预告；小鹏 IRON「年底量产」计划；Cat Wu 加盟 OpenAI（人事）；Anthropic IPO 续热；GPT-6.2 Astra／Sol 泄露截图；Isomorphic～$5B 洽谈；Pliant $80M；Dropbox×Tigris～$350M；Meta Muse Realtime Avatar 美国上线；Airbnb 2027 H1 旅行 Agent 计划；Cursor 应用搭建功能——均可观察，未达 Cresta／fal／今日政策／开源主线阈值。</li>
+<li><b>已在 11/05 早报覆盖、本期不复述：</b>Images 2.6／Flare＋Sunburst；cyber 948 LPE～$1.21M（本期仅补 GPT-6 Cyber 产品名与 CI 通道）；Hy4；Kimi K3.1 Pro HF；SWE-2 Flash；Pierre；fal E＋F；Agility×Churchill 交割 AGLT；中期选举数据中心选票清单。</li>
+<li><b>X 限流：</b>本窗 search_posts_all 正常返回；分钟配额余量充足，无整窗空白。</li>
+</ul>
+
+<footer>
+生成本地路径：<code>/workspace/ai-briefing/work/2026-11-06/ai-briefing-2026-11-06.html</code>｜截止 2026-11-06 08:00 Asia/Shanghai｜Pages 目标：<a href="https://betterxys.github.io/ai-briefing/2026-11-06/">betterxys.github.io/ai-briefing/2026-11-06/</a>
+</footer>
+</div></body></html>
