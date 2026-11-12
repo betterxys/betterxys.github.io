@@ -1,0 +1,156 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-12</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+.note{background:#eef3ff;border:1px solid #d5e0f7;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#1e3a8a}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-11-12 周四</h1>
+<div class="sub">新闻截止：北京时间 11/12 08:00 ｜ 生成于 08:29（Asia/Shanghai）｜ 精选 10 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<div class="note">常用产品对照（相对 11/11 基线，只记正式新版本或实质新功能）：Codex CLI 稳定版由 0.167.1 升至 <b>0.167.2</b>（GitHub rust-v0.167.2，2026-11-11 22:44Z，默认在 Vertex AI 上增量发送工具更新）；最新预览标签现为 rust-v0.170.0-alpha.1（22:06Z 前为 rust-v0.169.0-alpha.11 / 11.1，官方预览说明仍薄，不作功能更新打扰）。Cursor 官方 changelog 最新特性仍为 Voice Chat（2026-11-06），博客最新仍为 11/10 的 Projects 多人协作。WorkBuddy 更新日志最新条目仍为 5.11.0（2026-11-03，灰度中）；文档站构建信息出现 release/5.12.0 分支，但无「5.12.0 版本发布」正文，不记为已发布。Grok Bot 官方 changelog 最新仍为 v0.79.3（2026-11-06）。ChatGPT 官方 release notes 页本窗返回质询页，未能核对其是否已超过 11/10 的 Business Hub 记载。</div>
+
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>英伟达：</b>《华尔街日报》称董事会正准备罢免任职 33 年的创始 CEO 黄仁勋，最早周三开会决定去留——这是报道，不是公司已宣布免职。</li>
+<li><b>Qwen4-Max 预览</b>上线 Token Plan（官方确认 1M 上下文，预览至 11/25 后退役）；同日开源 <b>Qwen Code 1.0 Preview</b>。</li>
+<li><b>文心 ERNIE 5.5 Flash Preview</b>：280B/14B MoE 的首个后训练预览，API 已上千帆，权重计划 11/25 前开源。</li>
+<li>Google 发布 <b>Gemini Decisions API / Decision 1</b>：150–250ms 封闭式多模态决策，不按 token 生成答案。</li>
+<li>Runway 将 27B 世界动作模型 <b>Praxis-1</b> 以 Apache 2.0 开放权重（大模型×物理世界）。</li>
+<li>Anthropic IPO 路演：彭博称订单已数倍超额，IPO+私募合计最高约 <b>$904 亿</b>，有望成为史上最大上市。</li>
+<li>彭博称 OpenAI <b>Q3 营收首次超过 $100 亿</b>，仍落后 Anthropic 的企业侧增速。</li>
+<li>DeepMind 发布 <b>AlphaGenome 2</b>，按细胞类型预测基因变异效应。</li>
+<li>补报：妙动科技跟拍机器人 <b>Beni</b> 已于 11/10 现货开售（4999 元起），昨日早报漏选。</li>
+<li>英国 AI 芯片公司 <b>Fractile</b> 完成 $7.2 亿 C 轮，估值超 50 亿英镑。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">产品/模型</span>Google 发布 Gemini Decisions API 与 Gemini Decision 1：一次前向完成最多 1000 道封闭式决策</h3>
+<p>Google 官方博客（标注 Nov 11）推出 Gemini Decisions API，由新模型 <b>gemini-decision-1</b> 驱动，已在 Google AI Studio 的 Gemini API 上线。它针对工具选择、策略检查、模型路由、上下文打分等「有界选择」，把共享的多模态输入（文本、图像、音频、视频、PDF，最多 256K tokens）与最多 1000 道互相独立的问题一次评估，返回概率与 0–1 置信度，而不是逐 token 生成答案。</p>
+<p>官方给出的产品数字：端到端延迟 150–250ms（模型计算中位 50–100ms，上下文至 16K 时从 1 到 100 题几乎持平）；定价 <b>$0.10 / 百万输入 token，输出 token 不计费</b>；同一 <code>input</code> 只计一次，官方称在其共用基准上比 Gemini 3.5 Flash-Lite + Interactions API 便宜近 5 倍。问题类型为 noul（是否）、choice（2–255 选项）和 score（有序量表）。</p>
+<p>Google 内部已把它当低延迟控制平面：Notebook 用它做实时模型档位路由（官方称日常查询延迟可降约 40%）、Stitch 快速画布、Labs 的 CC 表情选择，以及 Search 里 MCP 工具的对抗检测。生态接入正在滚动：OpenRouter、LangChain、Vercel、LiteLLM、Pydantic AI、Pipecat、LiveKit、OpenCode；Google Cloud 上的 Gemini 支持「即将推出」。开放有免费试用档。</p>
+<div class="lim">限制：这是封闭集合上的打分接口，不是通用聊天或长程智能体模型；官方自报的基准领先与「校准误差最低」有待独立复核。定价比较锚定自家 Flash-Lite，不直接等于对所有外部分类器更便宜。</div>
+<div class="src">来源：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">Google Blog · Gemini Decisions API</a>（2026-11-12 02:00 CST）· <a href="https://x.com/Google/status/2120583966272983331">@Google</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">开源/具身</span>Runway 将 27B 世界动作模型 Praxis-1 以 Apache 2.0 开放权重</h3>
+<p>Runway 宣布，今年 9 月首次介绍的世界动作模型 Praxis-1「现在对所有人开放权重」。它是 27B 参数的 MoE 扩散 Transformer，同时预测视频与动作。官方称其在 NVIDIA RoboLab-120 榜上以 <b>46.2%</b> 成功率（1200 回合）居首，高于 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%），并称优于所有开源权重的 VLA。</p>
+<p>上线伙伴 Noble Machines、Standard Bots、Ultra 已分别在腿式人形、六轴工业臂和双臂仓储机器人上自有硬件运行。权重与推理/微调代码（含全量与 LoRA）以 Apache 2.0 发布，允许商用；可在 Hugging Face（原生 LeRobot）、GitHub、vLLM-Omni 获取，并提供 Reactor 托管推理。官方称可在 H100/B200、RTX 5090 / RTX PRO 6000 到机器人端的 Jetson Thor 上运行。对未见过的 Google RT-1 机器人微调后，官方称 SimplerEnv 成功率 80.0%，高于原 RT-1 策略的 52.4%。</p>
+<div class="lim">限制：RoboLab-120 与 RT-1/SimplerEnv 数字均为官方自报，截止日期写「2026 年 11 月」，需以榜单/复现为准。开放的是单一检查点与适配工具，不等于已在多类本体上无需微调即可量产部署。9 月是模型发布，今天是权重开源。</div>
+<div class="src">来源：<a href="https://runwayml.com/news/company-news/praxis-1-is-now-available">Runway · Praxis-1 Is Now Available</a>（页标 November 11；AIHOT 记 11/12 07:25 CST）</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">科研模型</span>DeepMind 发布 AlphaGenome 2：按细胞类型预测 DNA 变异如何改变基因表达</h3>
+<p>Google DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2。与去年按组织批量并行预测的初代不同，它改成<b>条件式架构</b>：一次针对一种组织/细胞类型或状态，把该条件注入整个网络。训练数据包含超过 1.07 亿个单细胞剖面、覆盖 68 种组织（人与小鼠，兼有 bulk 与单细胞），并新增 DNA 甲基化读出。</p>
+<p>官方关键结果：在 TenK10K（28 种原代免疫细胞）上，识别的因果变异从微调后的初代等基线的 16% 提升到约 30%，方向性基因效应从 23% 到 43%。模型还可在不重新训练的情况下，用少量新的单细胞 RNA-seq 快照条件化到未见过的细胞状态（官方举例包括 COVID-19 mRNA 疫苗激活的 T 细胞）。面向非商业研究的 API 与 Colab 教程即日起开放，商业研究为私有预览；官方预告将在 Antigravity 中提供 AlphaGenome 2 Skills。仅供研究，未批准临床或诊断用途。</p>
+<div class="lim">限制：性能数字来自官方博客与合作方评价，不是监管批准的体外诊断工具。「接近两倍」指特定数据集上的召回，不能外推到所有疾病或所有细胞图谱。</div>
+<div class="src">来源：<a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/">DeepMind · AlphaGenome 2</a>（RSS 2026-11-11 23:00 CST）· <a href="https://x.com/GoogleDeepMind/status/2120532824465805749">@GoogleDeepMind</a> · <a href="https://x.com/demishassabis/status/2120565316619284734">@demishassabis</a></div></div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card"><h3><span class="tag e2">媒体报道</span><span class="tag nw">公司治理</span>《华尔街日报》：英伟达董事会正准备罢免 CEO 黄仁勋，最早周三开会决定去留</h3>
+<p>据《华尔街日报》报道（TechCrunch 11/11 15:28 PST / 约 11/12 07:28 CST 转述），英伟达正准备罢免已领导公司 33 年的联合创始人兼 CEO 黄仁勋；消息人士称董事会最早于周三开会决定其去留。这是对黄仁勋周日承认与一名被美方情报界指认为中国间谍的女性有婚外情之后、独立调查仍在进行中的重大升级。</p>
+<p>同晚《纽约时报》另报黄仁勋还与一名向其汇报的公司高管存在婚外情。TechCrunch 称消息传出后盘后约跌 8%，近五个交易日约跌 11%，并指黄仁勋直接下属约 60 人、公司没有明显的公开继任安排。另有报道称美国国会可能要求他就相关关系作证。股东侧已有集体诉讼指控公司误导投资者（周一前后，见中文媒体转述），与「是否免职」不是同一件事。</p>
+<p>周日独立调查启动时，英伟达独立董事曾声明没有理由认为公司机密已泄露，并聘请 Wachtell 的 Joon H. Kim 主持调查——这些是已确认的公司动作。截至本截点，英伟达没有宣布罢免或离职。</p>
+<div class="lim">限制：核心判断来自 WSJ 匿名消息来源，经 TC 等转述；「正准备罢免 / 最早周三开会」不等于已经免职，也不等于调查已得出泄密或违规结论。截点在北京周四 08:00，对应美西周三下午，会后若有官方声明需下一窗口再核。个人生活与情报风险、出口合规、继任真空是三条应分开写的线索，不能互相代替。</div>
+<div class="src">来源：<a href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">WSJ 报道页</a>（本窗未穿透付费墙，事实以 TC 转述核对）· <a href="https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/">TechCrunch</a> · <a href="https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/">TC / NYT 第二条关系</a> · 独董此前声明：<a href="https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board">NVIDIA Newsroom</a></div></div>
+
+<div class="card"><h3><span class="tag e2">媒体报道</span><span class="tag e1">文件可核</span>彭博：Anthropic IPO 路演订单已数倍超额，IPO+私募最高约 $904 亿，或成史上最大上市</h3>
+<p>这是对昨日早报「路演启动、$70–$78、825M Class A、芯片商 $260 亿 Class N 私募」的实质性进展，不是重复同一条。彭博 11/11 引述知情人士称，发行份额已获得数倍订单，需求主要来自大型机构的锚定级意向。公司与联合创始人通过 IPO 加私募配售寻求最高约 <b>$904 亿</b>；若按此口径合计，将超过 SpaceX 上市规模、成为史上最大股票市场首发。完全稀释估值目标约 <b>$1.4 万亿</b>。代表未立即置评；条款仍可能变化。</p>
+<p>已可在文件中核对的结构：定价区间 $70–$78；高位 IPO 本身约 $643.5 亿（未计绿鞋）；另向 AMD、Broadcom、Google、Micron、Microsoft、Nvidia、TSMC 按发行价私募 $260 亿。计划 <b>11/18 定价、11/19</b> 以代码 ANT 在纳斯达克全球精选市场上市。高盛、摩根士丹利牵头，另有 20 家银行。周五将有 Dario Amodei 与摩根大通 CEO Jamie Dimon 的路演活动。WSJ 另报七位创始人拟在 IPO 中各出售约 $2.5 亿股票、仍保留约 $180 亿量级持仓并维持控制权——属媒体对文件的解读。</p>
+<p>FT 当日常早曾称，因需求旺盛，承销商考虑把目标估值拉回 $1.5 万亿或更高。这与彭博稍后「目标约 $1.4T、保守开价以便上调」不是同一句已宣布的提价，不能写成区间已经上修。</p>
+<div class="lim">限制：超额认购倍数来自匿名消息，不是最终账簿；$904 亿是 IPO+私募+相关出售的合计上限，不要与单笔 IPO 募资或市值混淆。$1.4T 是完全稀释口径。上市日与定价仍以招股文件和定价公告为准。</div>
+<div class="src">来源：Bloomberg（11/11，Bailey Lipschultz；见 <a href="https://news.bloomberglaw.com/artificial-intelligence/anthropics-ipo-is-said-to-be-multiple-times-oversubscribed-1">Bloomberg Law 转载</a>、<a href="https://qz.com/anthropic-ipo-oversubscribed-roadshow-demand-111126">Quartz 转述</a>）· 文件口径见昨日 S-1/A-2 与多家对招股书的核算</div></div>
+
+<div class="card"><h3><span class="tag e2">媒体报道</span>彭博：OpenAI 第三季度营收首次超过 $100 亿，亏损率收窄但仍落后 Anthropic 企业侧</h3>
+<p>TechCrunch 转述彭博匿名消息：OpenAI 第三季度营收首次跨越 <b>$100 亿</b>，较此前报道的第二季度约 $67 亿增长接近 50%（Q1 到 Q2 的环比增速曾被报为约 18%）。调整后经营利润率由二季度的约 <b>-150%</b> 收窄至三季度约 <b>-109%</b>（若按营收反推，绝对亏损约从 $101 亿到 $109 亿，亏损额仍在扩大、比率在收窄）。彭博称其年化营收约 <b>$500 亿</b>。</p>
+<p>对比上下文：Anthropic 昨天披露截至 10 月底年化营收约 $810 亿，且一个月内增加 $100 亿。两家年化口径不同——报道明确指出 Anthropic 计入云伙伴销售，OpenAI 对部分伙伴销售只报自身分成——不能直接把 $500 亿与 $810 亿当成同一套会计下的胜负。</p>
+<div class="lim">限制：OpenAI 不是上市公司，这些数字全部来自匿名消息，未经公司确认或审计财报。The Decoder 等转述曾同时写 WSJ / The Information，本窗以 TechCrunch 对彭博的引述为准，不把未核到的第二家原文算作独立双确认。</div>
+<div class="src">来源：<a href="https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/">TechCrunch 转述 Bloomberg</a>（2026-11-11 08:14 PST）</div></div>
+
+<div class="card"><h3><span class="tag e2">媒体报道</span><span class="tag st">融资</span>英国 AI 芯片公司 Fractile 完成 $7.2 亿 C 轮，估值超 50 亿英镑，目标明年出货</h3>
+<p>TechCrunch 报道，开发专用 AI 芯片的英国公司 Fractile 完成 <b>$7.2 亿</b> C 轮，英国 Sovereign AI Fund 参与，领投包括 Thrive Capital、Founders Fund、Lightspeed、Redpoint。英国政府称估值「超过 50 亿英镑」；FT 与路透消息人士提到约 <b>$70 亿</b> 的可能对应数字。公司走「芯片 + 机器学习编译器」的全栈路线，硬件侧重把 DRAM 堆叠在芯片上以缓解智能体长链路对内存带宽的压力。CEO Walter Goodwin 称新资金将用于「明年交付首批芯片与系统」，并强调「前面还有很多工作」。</p>
+<div class="lim">限制：估值的英镑/美元换算来自政府表述与媒体消息人士，不是公司正式定价公告。出货时间是管理层前瞻，不是已宣布的客户合同或量产日期。</div>
+<div class="src">来源：<a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/">TechCrunch</a>（2026-11-11 11:34 PST）</div></div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">模型预览</span>阿里官宣 Qwen4 即将发布：Qwen4-Max 预览上线 Token Plan，同日开源 Qwen Code 1.0 Preview</h3>
+<p>@Alibaba_Qwen 于 11/11 10:01（02:01:09Z）官宣「Qwen4 is coming」，并称旗舰 <b>Qwen4-Max 已在阿里 Token Plan 开放预览</b>，千问办公（QwenWork）、Qoder、千问 App、QwenStudio 可抢先使用。官方口径是更深的知识、更丰富的世界理解、更强的编程与智能体能力，面向复杂编程、知识工作、前端与专业软件流程。</p>
+<p>阿里云 Model Studio 文档（Last Updated: Nov 11）给出可核规格：模型 ID <code>qwen4-max-preview</code>；<b>1M 上下文</b>；最大输出 393,216 tokens（思考与最终答案共用）；默认开启思考，可用 <code>reasoning_effort</code>；支持图文视频理解、工具调用、结构化输出，并兼容 OpenAI / Anthropic API。预览期为 <b>11/11 10:00–11/25 24:00（北京时间）</b>，期间不做变更，结束后该预览模型将退役；仅 Token Plan，不支持按量付费。官方未公布参数量、训练数据、正式评测表、是否开源权重，也未宣布 Qwen4 全家桶的正式发布日。</p>
+<p>同一窗口，GitHub <a href="https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview">QwenLM/qwen-code v1.0.0-preview</a> 于 11/11 03:55Z（11:55 CST）发布预览版（Apache-2.0 仓库，预发行标签）。官方说明把 Qoder 与 Qwen Code 的智能体/Harness 能力合到同一开源内核，提供 macOS/Linux/Windows 原生包，支持多模型提供商与自定义端点、会话恢复与非交互执行；现有稳定分支保留，接口与行为在 Preview 期间可能变化。阿里技术公众号将两件事一并官宣。</p>
+<div class="lim">限制：这是旗舰预览和编码智能体开源预览，不是 Qwen4 正式版或开源权重发布。文档中的 1M 上下文与「11/25 后退役」以官方帮助页为准；不要把营销海报或第三方评测图当成官方成绩单。Token Plan 折扣是商业促销，不是模型能力声明。</div>
+<div class="src">来源：<a href="https://x.com/Alibaba_Qwen/status/2120335993643684315">@Alibaba_Qwen</a> · <a href="https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview">Alibaba Cloud Model Studio 文档</a> · <a href="https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview">Qwen Code v1.0.0-preview</a> · 公众号「阿里技术」</div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag st">模型预览</span>百度发布 ERNIE 5.5 Flash Preview：首个后训练预览，API 已上千帆，权重计划 11/25 前开源</h3>
+<p>百度文心官方于 11/11 发布 ERNIE 5.5 Flash Preview，明确它是 11/5 已开源的 Flash-Base 的<b>首个后训练版本</b>：总参 280B、激活 14B 的 MoE，支持 1M 上下文。API 已在千帆上线，<b>权重计划于 11 月 25 日前开源</b>。官方展示了在虚幻引擎里 11 小时长程写出完整武侠游戏、批量小游戏、Blender/CAD 建模和科普视频等 Agent 工作流案例，并强调作品由模型在 Agent 框架中端到端完成。</p>
+<p>官方自己划清状态：这是后训练过程中的<b>中间预览</b>，可能仍有训练不足带来的缺陷，正式版将继续优化。@Baidu_Inc 同日在 X 转发了发布。</p>
+<div class="lim">限制：案例与基准以官方页面为准，属厂商自报；「中间预览」意味着能力与许可证细节仍可能在正式版/开源权重落地前变化。不要写成已经开源后训练权重，也不要与 11/5 的 Base 开源混为一次发布。</div>
+<div class="src">来源：<a href="https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/">文心 ERNIE 5.5 Flash Preview</a>（2026-11-11）· <a href="https://x.com/Baidu_Inc/status/2120391732248637734">@Baidu_Inc</a></div></div>
+
+<div class="card"><h3><span class="tag e1">官方确认</span><span class="tag nw">补报·消费硬件开售</span>妙动科技跟拍机器人 Beni 已于 11/10 现货开售，标准套装 4999 元——昨日窗口漏选</h3>
+<p>消费级机器人公司妙动（Mondo Robotics）宣布，首款多地形跟拍机器人 <b>Beni 自 2026 年 11 月 10 日起全球现货开售</b>：标准套装 <b>4999 元</b>，探索套装 5799 元；国内经京东即买即发，官网亦列出北美、欧盟、英国、澳大利亚、新西兰及中国配送。产品为双轮足便携跟拍机器人，官方强调自动跟随、避障与跌倒起身，并结合 4K 影像。它曾在 Kickstarter 获约 7926 名支持者、筹资超过 $500 万。团队背景包括前大疆与特斯拉 Optimus 相关负责人，并已获红杉、美团等投资（此为既有融资事实，不是本窗口新一轮）。</p>
+<p>开售发生在昨日早报窗口内（11/10–11/11 08:00），当时未入选，属于对「消费级 AI 硬件量产开售」规则的漏报，现按事件真实日期补录。</p>
+<div class="lim">限制：本条是补报，不是 11/11 08:00 之后才首次开售。价格与渠道以公司新闻稿/官网为准；「全球首款多地形跟拍机器人」是公司自称。众筹纪录与现货开售是两个阶段，不要写成今天才首次亮相。</div>
+<div class="src">来源：<a href="https://www.mondorobotics.com/zh-cn/blogs/news/mondo-robotics-debut-robot-beni-available-for-consumers">Mondo Robotics 官方新闻</a>（文内日期 2026-11-10）· 界面新闻等同步报道 · 本窗「极客公园」11/11 19:27 评测为发现线索</div></div>
+
+<h2 id="x">X 观点 · 主题抽象</h2>
+<div class="card"><h3>主题 A：黄仁勋「将被罢免」——报道、措辞与空窗风险被拧成同一件事</h3>
+<ul>
+<li>盯梢名单里反应最快的是把 WSJ 报道读成既成事实。<b>@GaryMarcus</b> 发「BREAKING: Nvidia is about to fire Jensen」，并转发盘后约跌 8%、以及「英伟达是否还会在下周把那 $100 亿给 Anthropic」的追问。这是评论者的外推，不是交易已取消的证据。</li>
+<li><b>@natolambert</b> 在更早的帖子里写下更冷静的利害：「Jensen 不再担任 CEO，对美国开源模型事业会非常非常不利。」稍后又以「大概已经在为下一件事募 $20 亿种子、投后 $1000 亿」的玩笑消化冲击——同一作者的两句话，说明市场同时在为治理风险和「黄仁勋本人仍会被资本追捧」定价。</li>
+<li><b>隐含分歧：</b>一边把独董调查 + 第二条职场关系 + 盘后跌幅读成「董事会已无选择」；另一边仍停在「周三开会、官方尚未发声」。把「准备罢免」写成「已经开火」，会提前透支一个还没闭环的事件。</li>
+</ul></div>
+<div class="card"><h3>主题 B：Anthropic 路演——账簿很热，叙事更刺耳</h3>
+<ul>
+<li>媒体侧的新事实是超额认购与「或成史上最大上市」。名单里批评最集中的仍不是「有没有人要股票」，而是路演承诺和治理。</li>
+<li><b>@GaryMarcus</b> 把 Dario 的 IPO 演讲比作「和 Elizabeth Holmes 说过的任何话一样满是胡说」，并转发「如果 Anthropic 真说了 AI 是赢家通吃，监管者应当极度担心」。这是他的定性，不是招股书原文的独立核对。</li>
+<li><b>隐含分歧：</b>看好的一方把数倍订单和芯片商 $260 亿按发行价认购读成「机构用真金白银确认 $1.4T 附近仍买得下去」；批评方把同一热度读成「开价已经偏保守，好让上市后上涨，而公众股东依然买不到控制权」。两句话可以同时成立。</li>
+</ul></div>
+<div class="card"><h3>主题 C：Google 一天两条线——「不必生成文字的决策模型」与「看见单个细胞的基因组模型」</h3>
+<ul>
+<li>@Google 把 Decisions API 解释得很干脆：多数模型在写文本或逐步推理，但工作流往往只需要一次快速判定；Decision 1 用校准过的置信度在 150–250ms 内返回，而不是逐词作答。这是产品分类主张：把「分类器/路由器」从聊天模型里拆出来。</li>
+<li><b>@demishassabis</b> 与 <b>@GoogleDeepMind</b>、<b>@pushmeet</b> 同步推出 AlphaGenome 2，强调同一段 DNA 在不同细胞里被不同阅读、以及「学术 API 今天就可用」。这是科学发布，和 Decisions 的工程控制平面几乎没有争点，只是同一天里 Google 把「快决策」和「细粒度生物预测」一起铺开。</li>
+<li>本窗盯梢名单对 Qwen4 / ERNIE 预览的原创评论不多；增量信息主要来自官方账号本身，而不是二次解读。</li>
+</ul></div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="pro"><b>正方 · 黄仁勋去职若发生，是治理底线而不是「AI 周期见顶」。</b>爆出与情报风险相关的关系和向自己汇报的高管的第二条关系后，董事会如果不动，独立调查的公信力会先破产。股价盘后波动首先反映的是关键人风险与继任真空，不必自动等于芯片需求消失。</div>
+<div class="con"><b>反方 · 在官方声明前把「即将开会」写成「已经开火」，会误导交易与供应链预期。</b>黄仁勋高度集权、没有公开继任者，本身就是这笔报道杀伤力大的原因；也因此更需要把 WSJ 消息、国会传唤传闻、股东诉讼和「Anthropic 私募会不会变」逐条拆开。没核到的取消，就还只是猜测。</div>
+</div>
+<p class="verdict"><b>判断：</b>把 WSJ/TC 当作高权重的公司治理风险预警是合理的；把免职当成已发生、或把盘后跌幅当成技术周期反转，都不被本窗证据支持。下一窗口应优先看英伟达是否发官方声明，而不是社交网络上的措辞升级。</p>
+<div class="grid">
+<div class="pro"><b>正方 · Anthropic 数倍超额说明 $70–$78 的开价至少在机构账簿上走得通。</b>芯片商按发行价认购 $260 亿、最大上市叙事、11/18–11/19 的明确时间表，把「还能不能发出去」从疑问推进到「以什么价发出去」。</div>
+<div class="con"><b>反方 · 热认购不能自动证明 $1.4T 完全稀释估值已被基本面锁死。</b>FT 的「或上调到 $1.5T」与彭博的「先开在 $1.4T 附近」互相打架；创始人套现与双层控制权、以及路演中的长期医学承诺，仍会被批评者写成治理与叙事折扣。</div>
+</div>
+<p class="verdict"><b>判断：</b>本窗可确认的是需求信号和文件结构，不是最终定价。把「史上最大上市」写成已完成的纪录，还为时过早。</p>
+
+<h2 id="pod">播客新集 · 核心观点</h2>
+<div class="card"><h3>a16z Show：互联网带宽繁荣能教给这一轮 AI 基建什么？｜Mike Volpi</h3>
+<p>新集于 11/11 11:00 UTC（19:00 CST）上线。Mike Volpi（曾深度参与思科在互联网建设期的战略）与 a16z 的 Raghu Raghuram、Guido Appenzeller 把当前 GPU、数据中心和电力投资，拿来对照上世纪 90 年代末的光纤扩张：即便市场回调，铺下去的基础设施仍可能保有长期价值。讨论覆盖英伟达与定制硅、网络，以及 GPU 经济的变化，并回顾思科的并购机器。Volpi 的主张是：这一轮技术周期的后果可能比上一轮更大——这是主持人与嘉宾的判断，不是对当前资本开支的预测或投资建议。</p>
+<div class="src">来源：<a href="https://a16z.simplecast.com/episodes/what-the-internet-boom-teaches-us-about-the-ai-buildout-mike-volpi-C_gHjXbG">What the Internet Boom Teaches Us About the AI Buildout | Mike Volpi</a>（2026-11-11 11:00 UTC）</div></div>
+<p class="sub">其余：硅谷 101 E258、Latent Space《Designing for Agents — Zeno Rocha》已在前两期覆盖。Lex Fridman #504 为俄乌战争专题，与本报主题关联弱。No Priors、Lenny’s 本窗无更新。The Vergecast 新集谈苹果与亚马逊产品发布节奏，不单列。Sequoia Training Data 源仍不可用。</p>
+
+<h2 id="gap">覆盖缺口与待观察</h2>
+<ul>
+<li><b>见但未入选：</b>彭博 11/11 长篇报道梳理 xAI/Grok 被用于把未成年人普通照片改成性虐待材料（CSAM）的多起集体诉讼——案件自 3 月起累积，不是本日新立案，故不单列新卡，但属重要安全与责任议题。Claroc 称约 94.7% 仍在线的 Grok 构建应用可被链接访问。Gemini 登陆 Apple CarPlay（官方）。美联航禁止个人 AI 代理代客订票。a16z「B2A 经济」评论。Anthropic MAMUBench。Google Labs Tabletop。OpenRouter 关于 MCP/CLI/Skills 与量化的工程实测。Plurai $1300 万种子轮。CoreWeave 更多依赖客户预付款。Meta 长期基础设施负责人将离职。OpenAI 收购旅行创业公司 Odessia 的 TechCrunch 报道发布时间在昨日截点前，本窗未作补报。MiniMax H3-Image、Cursor Projects、Claude Whiteboards 已在 11/11 早报处理。</li>
+<li><b>继续观察、不升格：</b>三星×谷歌×Gentle Monster 智能眼镜——官方文案已出现「1st Batch Pre-Order / November 12–15」、上市日 December 10，FAQ 称 KR/US 官网可预购；但本截点（11/12 08:00）前未能核到可下单状态已在截点前开放（本机稍后抓到的页面仍以邮箱订阅与「今秋上市」FAQ 为主，截点后抓取不能倒灌为开售）。国会要求黄仁勋作证、英伟达会后若有官方声明，均待下一窗口。</li>
+<li><b>微信公众号：</b>Wechat2RSS 目录 397（sync 正常），抓取 393 成功 / 4 失败（与昨日相同：n1nty、毕方安全实验室 XML 损坏；两个「卢瑟经济学安生杂谈」源 404），时窗内 94 篇、去重后 45 条 AI 相关候选。不能把有 feed 写成绝不漏文。已停用扫码登录链路。</li>
+<li><b>RSS／页面缺口：</b>Anthropic 与 Meta AI 官方 RSS 本窗仍非可用 XML（返回 HTML 错误页）；Reuters 科技 RSS 仍失败（拦截页 / TLS）。InBrief 中文页可读，只作发现线索。AIHOT <code>agent.txt</code> 本窗 404，改走 openapi 与 daily/items；11/12 日报与 items 按 published 窗口对齐，24h/all 共 216 条、几乎均落入本截点。ChatGPT 官方 release notes 页本窗为质询页，未能复核。Training Data（Sequoia）播客 RSS 仍失败。</li>
+<li><b>常用产品：</b>见文首对照。Codex 0.167.2 为稳定版补丁级更新，只作文首记录，不单开行业卡。</li>
+</ul>
+
+<footer>本页为工作日早报，截止北京时间 2026-11-12 08:00。事实以链出的一手来源为准；厂商自报、媒体转述与评论已在文内区分。部署于 <a href="https://betterxys.github.io/ai-briefing/2026-11-12/">betterxys.github.io/ai-briefing/2026-11-12/</a>。</footer>
+</div></body></html>
