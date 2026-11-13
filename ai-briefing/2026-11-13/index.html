@@ -1,0 +1,148 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-13</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+.note{background:#eef3ff;border:1px solid #d5e0f7;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#1e3a8a}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-11-13 周五</h1>
+<div class="sub">新闻截止：北京时间 11/13 08:00 ｜ 生成于 08:29（Asia/Shanghai）｜ 精选 7 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<div class="note">常用产品对照（相对 11/12 早报基线，只记正式新版本或实质新功能）：Grok Bot 官方 changelog 已于标注 Nov 11 的条目升至 <b>v1.0.1</b>（同条含 v1.0.0；会议可接入 Google Meet / Zoom / Microsoft Teams、共享连接器等），昨日 08:29 早报仍写 v0.79.3，9:55 起小时提醒已专项告知，本窗无更新的官方版本。Codex CLI 稳定版仍为 <b>0.167.2</b>（GitHub rust-v0.167.2，2026-11-11 22:44Z）；本窗又出现 rust-v0.170.0-alpha.3 / alpha.4（分别 published 2026-11-12T19:32:20Z / 22:59:08Z），官方预览说明仍薄，不作功能更新打扰。Cursor 官方 changelog 最新特性仍为 Voice Chat（2026-11-06），博客最新仍为 11/10 的 Projects 多人协作。WorkBuddy 更新日志最新正式条目仍为 5.11.0（2026-11-03，灰度中）。ChatGPT 官方 release notes：help.openai.com 本窗返回质询页；openai.com/products/release-notes/ 可读，未见新于 11/10 Business Hub 与 Advanced/Standard Voice 将于 12/11 停用的正式条目。</div>
+
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li><b>英伟达官方宣布 CEO 过渡：</b>黄仁勋辞去总裁、CEO 及董事职务，即刻生效；CFO Colette Kress 任interim CEO（并继续兼任 CFO）；Harvey C. Jones 出任董事会首任Chair。这是对昨日《华尔街日报》“董事会正准备罢免”报道之后的公司官方确认——官方用词是辞职，不是免职声明。</li>
+<li>Google 官宣 <b>Gemini 4 Hydrogen</b> 全球推送：面向日常编程与 agent 工作流的 Gemini 4 高效执行模型，API 标价在 1M 上下文内一口价 $1.50 / $7.50（每百万 input/output token，厂商自报），并进入 Search 与 Gemini 应用。</li>
+<li>OpenAI 推出 <b>Daybreak Defense Factory</b> 与 <b>Daybreak Red Team</b>：把前沿网络能力做成可申请的防御补丁与渗透测试产品（Red Team 为 early access）。</li>
+<li>SpaceX 官方宣布计划在得州 Starbase 一带与亚利桑那 Cochise County 建设超算园区，规划投资合计超过 <b>$740 亿</b>（计划口径，不是已完成投资）。</li>
+<li>国务院专题学习健全多层次社会保障体系；国内汽、柴油价格自 11/12 24 时起按机制下调。</li>
+<li>BBC 报道：美方代表在莫斯科与普京会谈后，转赴都柏林会见泽连斯基。会晤不等于已达成共同规则。</li>
+</ol>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">产品/模型</span>Google 发布 Gemini 4 Hydrogen：面向日常编码与 agent 工作流，并向所有人推送 Gemini 4</h3>
+<p>Google DeepMind 首席 AI 架构师 Koray Kavukcuoglu 于 11/12 发文，介绍 Gemini 4 Hydrogen：定位是“快速执行多样 agent 工作流”，与擅长长程推理的 Gemini 4 Carbon、Gemini 4 Argon 分工。官方称其在 Artificial Analysis Intelligence Index 上，默认 high thinking 为 51、超过 Argon 的 50，最高 xhigh 设置为 54；相对 Gemini 3.8 Flash，在 high 默认设置下完成任务快 2.5 倍，Terminal-Bench 4.1 为 57% 对 18.2%（均为官方评测，不是独立复现）。API 在整个 1M token 上下文窗口内统一定价：每百万 input $1.50、output $7.50（厂商自报，与按任务实际成本不是同一回事）。思考档为 low / medium / high（默认）/ 新增 xhigh。</p>
+<p>官方写明即日起全球滚动：开发者可在 AI Studio、Android Studio 与 Gemini API 使用，付费 Google AI Pro / Ultra 可在 Antigravity 中使用；企业侧进入 Gemini for business 与符合条件的 Google Sheets；所有用户可在 Gemini 应用（含模型下拉）和 Google Search 使用。Gemini 应用中，免费用户在自动模型选择判断适合时也可调用 Hydrogen。同期推出 Antigravity 的 Orchestrator：在同一轨迹里动态切换 Carbon 与 Hydrogen。官方称在 Terminal-Bench 4.0 上成功率接近 Carbon，平均少耗 24% 配额、快 19%。Orchestrator（Carbon）与（Argon）的计划档位不同，以 Antigravity 博文为准。</p>
+<p class="src">官方：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Introducing Gemini 4 Hydrogen</a>（Dated Nov 12）· <a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/">Search 升级博文</a> · <a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/">Antigravity：Hydrogen 与 Orchestrator</a> · <a href="https://deepmind.google/models/model-cards/gemini-4-hydrogen/">模型卡</a> · <a href="https://x.com/GoogleDeepMind/status/2120940338869055788">@GoogleDeepMind</a>（2026-11-12 18:02Z ≈ 11/13 02:02 CST）</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">安全产品</span>OpenAI 推出 Daybreak Defense Factory 与 Daybreak Red Team：把前沿网络能力做成连续防御工作流</h3>
+<p>OpenAI 总裁 Greg Brockman 于 11/12 在 X 宣布两款新的网络产品，并指向官方落地页。Daybreak Red Team（early access）用一组 agent 对 Web 应用做渗透测试、校验扫描器/漏洞赏金/披露报告中的发现，并复查补丁是否挡住利用；官方强调隔离环境与 Guardian 审查、由操作者控制范围。Daybreak Defense Factory 则把已验证发现转成可供工程师审阅的补丁与测试，并可与 Codex 协同改补丁。产品页写明工程师须审查并测试后再合并，不是自动上线。The Register 援引 11/12「Cyber at the Frontier」主题演讲，称 Brockman 表示企业安全将取决于其用于防御的前沿模型及使用方式；同期有非营利组织在旧金山高等法院起诉多家实验室、要求限制部署更强系统——后一项仅为媒体报道，本窗未读到起诉状原文，不单独成条。</p>
+<p>这是产品发布，不是“OpenAI 已能自动修好所有漏洞”。官方网络安全模型线此前已有 Daybreak Red / GPT 系列 Cyber 等访问控制；本次是面向安全团队的两款工作流产品上线（Red Team 仍为 early access）。</p>
+<p class="src">官方产品页：<a href="https://openai.com/daybreak/defense-factory/">Daybreak Defense Factory</a> · <a href="https://openai.com/daybreak/red-team/">Daybreak Red Team</a> · <a href="https://openai.com/cyber-at-the-frontier/">Cyber at the Frontier</a> · <a href="https://x.com/gdb/status/2121004237413142656">@gdb</a>（2026-11-12 22:16Z ≈ 11/13 06:16 CST）。媒体侧记：<a href="https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500">The Register 11/12</a>（标题与评论性表述是媒体立场，不代表官方原文）。</p>
+</div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag nw">公司治理</span>英伟达：黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO，Harvey Jones 出任首任董事长</h3>
+<p>英伟达董事会 11/12 发布新闻稿：Jensen Huang 已辞去总裁、首席执行官及董事职务，即刻生效。现任执行副总裁兼 CFO Colette Kress（2013 年加入）同意担任 Interim CEO，在寻得常任继任者之前继续兼任 CFO；董事会已启动常任 CEO 遴选，将同时考虑内部与外部候选人。董事会同时任命 Harvey C. Jones 为“首任”Chair of the Board（官方用词 first-ever Chair）；Jones 曾任 Synopsys CEO 及执行董事长。新闻稿称运营、客户承诺与产品路线图“预期不中断”，并确认财年 2027 第三季度业绩仍按原计划于 11/17 约 13:20 PT 公布、14:00 PT 财报电话会。官方感谢黄仁勋 33 年的贡献，但未在这份声明里详述辞职原因，也没有使用“罢免/开除”字样。</p>
+<p>这是对昨日早报头条的版本升级：11/12 早报依据《华尔街日报》报道“董事会正准备罢免、最早周三开会”，并标明尚非公司官方免职。今日已有公司新闻稿，事件从“可靠媒体报道、当事方未确认”转为“官方确认的辞职与过渡安排”。BBC 等后续报道使用 quits / resigns 等表述，与官方“resigned”一致。同一窗口内，TechCrunch 还报道民主党议员 Richard Neal、Ron Wyden 就英伟达对华芯片销售及与特朗普政府的安排致函商务部长要求保存记录——这是国会调查动作，不是对辞职本身的官方解释，也尚未看到商务部正式回应，故不另开一条。</p>
+<p class="src">官方：<a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">NVIDIA Announces CEO Transition</a>（Dated November 12, 2026；新闻室 RSS 约 11/12 21:48 CST，晚于昨日小时提醒末班 18:49）。相关：<a href="https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/">TechCrunch 关于民主党调查的报道</a>（e2）。昨日对照：<a href="https://betterxys.github.io/ai-briefing/2026-11-12/">11/12 早报</a>。</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">算力基建</span>SpaceX 宣布在得州与亚利桑那规划超过 $740 亿的超算园区（计划投资，不是已完成支出）</h3>
+<p>SpaceX 于 11/12 在官网 Updates 发布：将推进两处“supercompute”项目，合计“超过 $740 亿的计划美国投资”——得州 Rio Grande Valley / Starbase 一带计划投资超过 $240 亿的新超算设施，亚利桑那 Cochise County 则在推进约 $500 亿的园区。得州项目官方称已产生超过 3000 个建设岗位，运营后预计支持 500 个以上常设岗位，并将自发电、不从公共电网取电，另承诺 2.2 亿美元扩建布朗斯维尔水务；亚利桑那项目预计约 5500 个建设岗位、1000 个常设岗位，官方称拟用干冷、无计划工业抽取地下水，并与本地电力合作社合作。官方还把用途写成训练前沿智能、服务医疗/应急/制造/国家安全，以及为未来太空计算做技术验证。文中同时回顾此前已宣布的得州 Grimes County 约 $1000 亿 Terafab 芯片制造项目，那是另一项目，不要与本次 $740 亿超算园区混成一笔。</p>
+<p>这是公司规划与地方承诺，不是已经建成或已经花出 $740 亿；亚利桑那一侧官方用词是“pursuing”。电网、环评、地方许可与实际开工进度仍待后续核验。</p>
+<p class="src">官方：<a href="https://www.spacex.com/updates/xai-joins-spacex">SpaceX Updates，November 12, 2026</a>（本窗已读该页正文）。</p>
+</div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span>李强主持国务院第二十二次专题学习：健全多层次社会保障体系</h3>
+<p>11/12，国务院以“健全多层次社会保障体系，进一步织密扎牢社会保障安全网”为主题举行第二十二次专题学习。中国政府网与新华社稿称，李强强调持续优化完善社会保障制度，加快补齐短板：扩大企业年金覆盖面，提高个人养老金制度吸引力，支持商业健康保险发展，稳妥有序推进长期护理保险，并完善灵活就业人员社会保障、加强新就业形态人员权益保障。这是国务院专题学习与政策方向，不是当天新公布的一部条例或实施方案，后续仍看具体改革方案与时间表。</p>
+<p class="src">官方：<a href="https://www.gov.cn/yaowen/liebiao/202611/content_7085902.htm">中国政府网</a> · <a href="https://www.news.cn/politics/leaders/20261112/2bd3c677dff144e99b288d5dd4963dac/c.html">新华社</a>（2026-11-12）</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方授权发布</span>国内汽、柴油价格自 11/12 24 时起下调：汽油每吨降 645 元、柴油每吨降 625 元</h3>
+<p>新华社 11/12 报道，自 2026 年 11 月 12 日 24 时起，国内汽油价格每吨下调 645 元、柴油价格每吨下调 625 元，折合 92 号汽油、0 号柴油每升分别下降 0.51 元、0.54 元；并按本次调整测算，私家车加满一箱油大约少支出 26 元，大货车加满一箱大约少支出 270 元。生效时点是 11/12 日终（即 11/13 00:00），落在本期截止之前。本窗访问国家发改委“国内成品油价格”专题页时，可见列表未刷出 2026 年条目（页面内容停在 2021 年历史调整），因此这里采用新华社受权发布稿，未能回链到发改委通知原文页。这是按机制的例行调价，影响出行与物流成本，不能据此推断国际油价或国内通胀已经转向。</p>
+<p class="src">新华社：<a href="https://www.news.cn/fortune/20261112/221bc0abb2fc40f9824043ff4167e671/c.html">2026年11月12日国内成品油价格调整</a>。发改委专题入口（本窗列表未显示本期通知）：<a href="https://www.ndrc.gov.cn/xwdt/ztzl/gncpyjg/">国内成品油价格</a>。</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e2">媒体报道</span>BBC：美方代表在莫斯科会见普京后，转赴都柏林会见泽连斯基</h3>
+<p>BBC 11/13 报道，美国特使在莫斯科与俄总统普京会谈后，前往都柏林会见乌克兰总统泽连斯基。新华社国际要闻栏同步出现“美方代表赴俄见普京”的标题，与行程方向一致。本窗读到的是 BBC 标题与摘要，以及新华社首页标题，不是会谈纪要或共同声明；单方行程和会晤议程不等于已经谈成停火、领土或安全安排。泽连斯基方面有“涉及领土问题需在领导人层面讨论”等转述，仍属过程信息。Reuters / AP 全文本窗受访问限制，未能做第三家通讯社交叉。</p>
+<p class="src">BBC：<a href="https://www.bbc.co.uk/news/articles/cwrkgmymk55zo">US envoys meet Zelensky in Dublin after talks with Putin in Moscow</a>（RSS 约 11/13 05:00 CST）。外交部 11/12 记者会（毛宁）记录在案，中方称就中美元首互动等保持沟通：<a href="https://www.mfa.gov.cn/web/fyrbt_673021/jzhsl_673025/202611/t20261112_12058185.shtml">例行记者会原文</a>。</p>
+</div>
+
+<h2 id="x">X 观点 · 主题抽象</h2>
+<p class="sub">按盯梢名单与官方账号筛 11/12 08:00–11/13 08:00（CST）增量；只抽象共识/分歧，不把原帖逐条译成墙。部分批次受单次最多 25 条与结果截断限制，不是全名单无遗漏。</p>
+
+<div class="card">
+<h3>主题 A：黄仁勋辞职——官方用词很冷，评论把“辞职”拧成“放走创始人”</h3>
+<p>公司新闻稿只确认辞职、过渡人选和“业务不中断”，不解释董事会调查或私人丑闻。评论场则迅速把事件接上昨日 WSJ 的罢免叙事，以及 Lex Fridman 等把“让黄仁勋离开”比作苹果当年赶走乔布斯、且影响可能更大的说法；Rohan Paul 一类账号则用 Atari / Apple / Uber / OpenAI 董事会周期来论证“创始人本身就是战略”。这是观点和类比，不是对官方声明的补充事实。盯梢名单里也能看到与婚外情、情报指控有关的谈论，但热度或个人见闻不能当成调查结论。</p>
+</div>
+
+<div class="card">
+<h3>主题 B：Hydrogen 被官方写成“给所有人的 Gemini 4”</h3>
+<p>@GoogleDeepMind 与 @GeminiApp 的主帖围绕三件事：Hydrogen 比 3.8 Flash 更快、在官方引用的 AA 指数上越过 Argon、以及免费用户走自动模型选择。演示集中在 WebGL / 3D 可视化与应用内工具调用，强调的是“日常能跑完”而不是再发一个新的最强推理模型。这与官方博文里 Carbon/Argon 负责长程、Hydrogen 负责执行、Orchestrator 负责切换的结构一致。是否真能在免费档稳定用到 Hydrogen，仍取决于自动路由，而不是一句“全球所有用户”就能保证每次请求都打到该模型。</p>
+</div>
+
+<div class="card">
+<h3>主题 C：安全产品化——Brockman 发 Daybreak，Perplexity 把决策模型开源</h3>
+<p>@gdb 宣布 Defense Factory 与 Red Team，评论焦点是“防御也必须用前沿模型”，以及 early access、人工审查补丁这些边界。另一条产品线是 Perplexity 创始人 @AravSrinivas 宣布开源 Decider v1.3 与 Decider Flash v1.3，新增 locate（按描述返回文本片段），并在 OpenRouter 免费一周。这与 Google 已发布的 Decisions API 是同一类“少生成、多判定”的产品方向，但不是同一模型，也不应写成 Google 与 Perplexity 在做同一件事。未把 Decider 单独列入精选，以免冲淡当日更重大的官方模型与公司治理事件。</p>
+<p class="src">@AravSrinivas：<a href="https://x.com/AravSrinivas/status/2121020114321703210">Decider v1.3 开源</a>（2026-11-12 23:19Z）。官方说明见 <a href="https://www.perplexity.ai/hub/blog/perplexity-decider">Perplexity 博客</a>。</p>
+</div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="pro"><b>正方要点</b>
+<ul>
+<li>英伟达已给出可核验的职务与治理安排：辞职即刻生效、临时 CEO、董事会主席、寻访常任人选、财报日程不变。</li>
+<li>Hydrogen 的可用范围写得很具体（API / Search / 应用 / Antigravity 档位），并区分免费档自动路由与付费档。</li>
+<li>Daybreak 把“模型能做网络任务”收束成有范围控制、需人工合并的产品，比只有能力展示更接近可采购状态。</li>
+</ul>
+</div>
+<div class="con"><b>反方 / 不确定</b>
+<ul>
+<li>官方未说明黄仁勋辞职与此前独董调查、WSJ 罢免报道之间的程序关系；“辞职”与“被逼辞职”不是同一事实，现有官方文本不够用来下后者的结论。</li>
+<li>Hydrogen 与 Orchestrator 的速度、分数、配额数字都是厂商评测；AA 指数超过 Argon 1 分、xhigh 到 54，不等于全面超越，也不等于免费用户每次都能用到。</li>
+<li>SpaceX 的 $740 亿是计划投资，亚利桑那项目仍是“推进中”；地方许可、电力与环评尚未在这份更新里变成已批准清单。</li>
+</ul>
+</div>
+</div>
+<p class="verdict"><b>判断：</b>今日的硬事实是英伟达完成权力过渡、Google 把 Gemini 4 的高效档铺到消费与搜索侧、OpenAI 把网络能力产品化。治理原因、模型真实体验、超算能否按计划落地，都还要后续版本才能更新，不在今天的声明里一次性解决。</p>
+
+<h2 id="pod">播客新集 · 核心观点</h2>
+<div class="card">
+<h3>a16z Show：游戏的下一阶段——Mods、Agents 与无限世界｜Anish Acharya、Jonathan Lai</h3>
+<p>新集发布时间 11/12 19:00 CST，落在本窗口。两位 a16z 普通合伙人讨论 AI 如何缩短“一个想法到可玩版本”的距离：生成美术与代码、运行工具链，以及当几乎任何人都能做游戏时，模组、agent 与“无限世界”会怎样改写制作与发行。本窗依据节目简介凝练，未逐字听完整集音频。上一期 Mike Volpi 谈互联网带宽繁荣对 AI 基建的启示，已在 11/12 早报写过，不重复。</p>
+<p class="src"><a href="https://a16z.simplecast.com/episodes/the-next-era-of-games-mods-agents-and-infinite-worlds-cRTFWzHi">The Next Era of Games: Mods, Agents, and Infinite Worlds</a></p>
+</div>
+
+<h2 id="gap">覆盖缺口与待观察</h2>
+<ul>
+<li><b>见但未入选：</b>Perplexity 开源 Decider v1.3 / Flash v1.3（官方，但优先级低于 Hydrogen 与英伟达过渡）。TechCrunch 称民主党就英伟达对华芯片销售启动调查（已作为英伟达条的相关语境，不单列）。Anthropic 建议把 Claude Opus 5.5 当作知识工作日常主力（AIHOT 记 11/12 08:00，属产品使用建议，不是新模型发布）。Claude Code v2.1.323 实验性 Code Mode（GitHub 发布，偏工程补丁）。Meta Muse 向美国付费用户开放代拨商家电话（TechCrunch）。Liquid AI 发布 74M 流式音频编解码器 LiquidCodec。OpenRouter 多语言与 Agent 死循环防护教程。Meta 与供应链清洁制造协议。英伟达新闻室另有 GeForce NOW 游戏更新，不入选。</li>
+<li><b>已报、无实质新版本不重复：</b>Anthropic IPO 路演区间 $70–$78、计划 11/18 定价、11/19 交易——官方新闻页最新仍为 11/10 路演稿；The Verge 11/12 再次确认交易日，不构成新的定价或生效信息。Qwen4-Max 预览、ERNIE 5.5 Flash Preview、Gemini Decisions API、Praxis-1、AlphaGenome 2、OpenAI Q3 营收据报、妙动 Beni 开售，均已在 11/12 早报处理。央行 2026 年第三季度货币政策执行报告于 11/11 下午挂出，落在昨日窗口、昨日未单列；今日无新的工具创设，不作补报凑数。</li>
+<li><b>媒体访问限制：</b>Reuters 科技/国际 RSS 与栏目页返回验证码墙（请启用 JS / 反广告拦截），未能作为本窗独立通讯社来源。AP 主页与世界页、RSSHub 路由均为 Cloudflare 质询，不记为已覆盖。华盛顿邮报本窗抓取未成功落盘。FT、WSJ 主页已取到，但属门户/可能付费墙环境，本窗不以“已读全文”引用其独家正文。新华社国际/时政频道页可打开，列表偏客户端导航，具体稿件以能打开的政府网、新华社稿为准。</li>
+<li><b>官方 RSS 缺口：</b>Anthropic 与 Meta AI 官方 RSS 仍返回错误页，与近日相同；Anthropic 动态改走其新闻页（本窗可见最新正式稿仍为 11/10 路演）。OpenAI 新闻 RSS 本窗可用，窗口内多为客户故事与儿童安全研究声明，Daybreak 未出现在该 RSS 条目里，故以产品页和 @gdb 为准。</li>
+<li><b>AIHOT：</b>先读了当前 <code>/api/v1/agent</code> 说明与 <code>https://aihot.news/openapi-v1.json</code>。agent/latest 的 limit 上限为 30（首次误用 50 已按 30 重试成功）。<code>/api/v1/items</code> mode=all、window=24h、by=published 已分页拉取；摘要只作线索，关键事实已回官方原文。不声称查全库。接口故障不存在于重试之后的 latest/daily/search；hot 接口一次返回过无效请求，不把热点榜当作已完整覆盖。</li>
+<li><b>微信公众号：</b>Wechat2RSS 目录同步 395、去重后 397 源；抓取 393 成功 / 4 失败（n1nty、毕方安全实验室 XML 格式损坏；两个「卢瑟经济学安生杂谈」源 404），与昨日缺口同类。窗口内解析到 89 篇、筛选去重后 50 条 AI 相关候选。不能把有 feed 写成绝不漏文。未走扫码或 localhost:5000。</li>
+<li><b>X：</b>search_posts_all 对官方实验室账号与盯梢名单分组检索，start 2026-11-12T00:00:00Z、end 2026-11-13T00:00:00Z；单次最多 25 条，部分结果文件被截断，名单后段与翻页不完整。from:OpenAI 在该窗口返回 0 条，故 Daybreak 不以 OpenAI 官方账号帖为据。</li>
+<li><b>播客：</b>本窗新集主要是 a16z 上述一集。Dwarkesh 的 Substack 播客源提示未启用，改用 dwarkesh.com/feed，无窗口内新集。Training Data（Sequoia）源仍是占位“Coming soon”。Latent Space、Lenny、Lex、No Priors、Vergecast、硅谷 101 本窗无更高优先新集。</li>
+<li><b>中国政府网“最新政策/新闻发布”列表页</b>本窗可打开但条目提取不完整（疑似前端渲染），国务院与调价条目改以可打开的政府网稿、新华社稿和外交部记者会页为准。国家统计局数据发布页本窗可见最新仍为 10 月 CPI 等既有发布，窗口内无新的月度数据稿。美联储新闻/新闻稿页未发现 11/10–13 的新声明（“Last Update: November 12”仅为页面更新标记）。IMF、世界银行、IEA 列表页本窗未抓到明确的 11/12–13 重大新稿；EIA 有 11/12 关于阿拉斯加原油产量预测的简报，未达入选阈值。</li>
+</ul>
+
+<footer>
+本期工作目录：/workspace/ai-briefing/work/2026-11-13/ ｜ 截止 2026-11-13 08:00 Asia/Shanghai ｜ 生成 08:29 Asia/Shanghai ｜ 精选 7 条，不按栏目凑数 ｜ 全程本机采集与编写，无 Cloud Agent。
+</footer>
+</div></body></html>
