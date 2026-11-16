@@ -1,0 +1,145 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-16</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+.note{background:#eef3ff;border:1px solid #d5e0f7;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#1e3a8a}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-11-16 周一</h1>
+<div class="sub">新闻截止：北京时间 11/16 08:00 ｜ 生成于 08:28（Asia/Shanghai）｜ 周一涵盖周末 ｜ 精选 8 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<div class="note">常用产品对照（相对周五 11/13 18:52 小时窗基线，只记正式新版本或实质新功能）：Grok Bot 官方 changelog 仍为 <b>v1.0.1</b>（标注 Nov 11，同条含 v1.0.0）。Codex CLI 稳定版仍为 <b>0.169.0</b>（GitHub rust-v0.169.0，published 2026-11-13T08:37:05Z，周五 16:50 窗已提醒）；周末又出现 rust-v0.171.0-alpha.5 / alpha.6 / alpha.7（分别 published 2026-11-14T01:20:37Z、11-15T18:58:35Z、11-15T23:13:50Z），发布说明仍只有版本号，不作功能更新打扰。Cursor 官方 changelog 最新特性仍为 Voice Chat（2026-11-06），博客最新仍为 11/10 的 Projects 多人协作。WorkBuddy 官方更新日志最新正式条目已至 <b>5.11.3</b>（2026-11-15）：新增会话流快速问答入口，可在对话中发起推荐问答或切回 Agent 模式，并含多项修复；此前早报基线仍写 5.11.0（11/03，灰度中），页面上 5.11.1（11/03）与 5.11.2（11/10）亦已存在，属补记，不单列精选。ChatGPT 官方 release notes 页未见新于 11/10 Business Hub 的条目；本窗正式产品更新见下方 ChatGPT Wallet 官宣，不把 Wallet 与 release notes 页混为一谈。</div>
+
+<h2 id="top">今日最该看</h2>
+<ol class="top">
+<li>OpenAI 官宣 <b>ChatGPT Wallet</b>：美国 ChatGPT Pro（18 岁+）用户可让 dot 在每笔生物识别确认后完成支付，与 American Express、Mastercard、Visa 合作，支付使用网络 token，不向商家或智能体提供真实卡号。</li>
+<li>DeepSeek 官宣把 App 侧能力开放到 API：V4.1-Flash（<code>deepseek-flash</code>）内置搜索、文件、读链接、安全检查，另有独立 OCR / ASR / TTS；工具费用在 token 费之外，面向公众的应用须开启安全检查。</li>
+<li>OpenAI 向《财富》确认撤销独立机器人团队，研究人员并入 Mark Chen 负责的主研究组织，应用与硬件并入 Greg Brockman 的 Applied 组织；公司称这是为了加速、而非放弃机器人，并押注通用模型（含 GPT-6 Astra）可直接控机。</li>
+<li>SpaceX <b>Starship Flight 15</b> 首次完成轨道级上面级（Ship）返回并被发射塔机械臂捕获；助推器在自动中止后于墨西哥湾溅落。这是技术验证，不等于完全可重复使用已经实现。</li>
+<li>Apple <b>HomeView</b> 于 11/13 起在美、英、加、澳、印度、新西兰、新加坡开售，两种型号均为 $299（美国标价），搭载 Siri AI（官方写明在 HomeView 软件 27.2 为 beta）；欧盟暂不售，因 Siri AI 在欧盟 iOS 尚不可用。</li>
+<li>Microsoft 365 全球故障影响 Outlook、Teams、Copilot 等，BBC 称至少 70 国受影响；公司称与网络扩容有关，<b>不是</b>网络攻击或 AI/智能体事件。这与同日美国 FAA 全国地面停航是两件独立事件，不要合并归因。</li>
+<li>美国联邦航空局：11/13 约下午 3:30 ET 因通信与雷达数据异常实施全国地面停航，当日 8:15 ET 恢复放行；官方称约 12,462 架次被取消（其中大型航司约 9,082，并非全部由停航直接导致），空中约 3,500 架飞机均安全落地。FAA 表示目前没有网络攻击迹象，根因仍在与 L3Harris 调查中。</li>
+<li>llama.cpp 与 ggml 同步发布 <b>v1.0.0</b>（GitHub published 2026-11-13T10:20:19Z）：此后主版本号用于标记公共 C API / ABI 不兼容变更，面向本地推理的下游集成给出稳定接口承诺。</li>
+</ol>
+<p class="lim">周五早报未收入、但 11/13 09:52 小时窗已提醒的谷歌 Intelligent Eyewear 预购（官方 XR 博客 11/12 14:00 UTC；12/10 美/韩开售）本期不再展开。英伟达官方 CEO 过渡、Gemini 4 Hydrogen、OpenAI Daybreak、SpaceX 超算园区规划已在周五早报，无董事会新决定则不重复。</p>
+
+<h2 id="ai">AI 与 Agent</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">产品</span>OpenAI 推出 ChatGPT Wallet：dot 可在用户逐笔批准后完成支付</h3>
+<p>OpenAI 于 11/13 发布 <a href="https://openai.com/index/introducing-chatgpt-wallet/">ChatGPT Wallet</a>，称这是首个让智能体在<b>不接触用户真实卡号</b>的前提下完成支付、且每笔都需要安全核验的钱包，并保留合格争议下的卡组织奖励与保障。初始范围：美国境内、年满 18 岁的 ChatGPT Pro 订阅用户，使用合格的美国发行卡，在 dots 中逐步开放；官方写明将先从有限可用开始，再视实际使用扩展。流程是：用户预先绑定卡片，下单前核对商品、总额和所用卡，再以 Face ID 或指纹等批准；批准后由支付网络签发 token（含替代卡号、安全码和有效期），商户与智能体拿不到真实卡资料。公司同时发布面向商家的 Commerce Partner Playbook，提示网站不要误拦智能体、风控系统需识别这类合法交易；并点名与 Forter、Riskified、Sardine、Signifyd 及 Adyen、Checkout.com、Stripe 等合作。American Express、Mastercard、Visa 高管均有官方引语。官方也写了更远期设想——用户可按限额、品类或时段预授权，由智能体在加强保障下完成支付——那是计划，不是即日功能。</p>
+<p class="src">原文：<a href="https://openai.com/index/introducing-chatgpt-wallet/">openai.com/index/introducing-chatgpt-wallet/</a> ｜ 官方标注日期 2026-11-13 ｜ Greg Brockman（@gdb）帖 2026-11-13 17:32:45Z（北京时间 11/14 01:32）｜ 可用性：美国 ChatGPT Pro、有限滚动开放，不是全球 GA</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">产品/API</span>DeepSeek 把 App 能力开放到 API：搜索、文件、语音与安全检查可按参数启用</h3>
+<p>DeepSeek 官方文档 <a href="https://api-docs.deepseek.com/news/news261113/">The full DeepSeek App experience, now via API</a>（中文页：<a href="https://api-docs.deepseek.com/zh-cn/news/news261113/">全家桶应用 API</a>）宣布：此前 App 内的能力现可通过 API 调用。V4.1-Flash（模型名 <code>deepseek-flash</code>）在 Messages、Responses、Chat Completions 上支持服务端处理的工具调用与上下文拼接，包括网页/图片搜索（非 thinking 模式带引用）、多步推理中的 Deep Thinking Search、PDF/Office/图片等文件解析、自动读取用户消息中的链接，以及输入输出安全检查（检出风险时返回拒绝指示）。公开上线的应用必须开启安全检查；开发者仍须自行承担内容审核、适用的模型备案和 AI 生成内容标识。搜索、抓取、OCR、ASR、TTS 也可作为独立 API。官方明确：扩展能力在常规 token 费用之外另收工具使用费。官网上的价目表在本窗抓取的页面正文中未完整抽出具体数字，这里不转写未见数字；token 价与单次任务实际成本不是一回事。官方同时提供开源前端演示（<a href="https://github.com/deepseek-ai/chat-demo">chat-demo</a>）。@deepseek_ai 于 2026-11-13 14:24:44Z（北京时间 22:24，已过周五早报与当日最后一档小时提醒）发布同一消息。</p>
+<p class="src">原文：<a href="https://api-docs.deepseek.com/news/news261113/">api-docs.deepseek.com/news/news261113/</a> ｜ <a href="https://x.com/deepseek_ai/status/2121247896918253875">x.com/deepseek_ai/status/2121247896918253875</a> ｜ 官方确认，已可用（按文档启用参数），工具价未在本窗正文完整核出</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag nw">组织调整</span>OpenAI 撤销独立机器人团队，向《财富》确认并入通用模型与 Applied 组织</h3>
+<p>《财富》11/13 12:05 ET（北京时间 11/14 01:05）独家报道，OpenAI 已解散独立机器人团队。关键点是：公司在记者询问后<b>确认了重组</b>，并说机器人仍是长期核心方向，此举是为了加速而不是撤退。机器人研究并入首席研究官 Mark Chen 领导的主研究组织；应用机器人与硬件并入总裁 Greg Brockman 负责的 Applied 组织。发言人说，年初路径曾假设要依托 Sora 一类对物理世界有隐含理解的模型；此后包括 GPT-6 Astra 在内的通用前沿模型表现出可直接用于机器人，这才促成撤并。报道还写：Altman 仍以 2027 年首次公开演示人形机器人为目标；公司今年已在 CoRL 注册展位，记者到场时展位空置。卡内基梅隆大学的 Guanya Shi 对记者说，他将其解读为 OpenAI 认为机器人“不再是一个特殊问题”。MIT 教授、Walden Robotics 联合创始人 Russ Tedrake 则强调，机器人公司仍有实验室没有的现场部署数据。文中提到的 Nvidia 模拟操作基准上 Astra 智能体 74.8% 对“该榜单最佳专用模型 51.0%”，是报道转述的模拟结果，不是本报独立复现，也不能外推到真机。公司确认的是组织调整和“通用模型可用于机器人”这一判断，不是已经有可售的通用人形产品。</p>
+<p class="src">原文：<a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/</a> ｜ 2026-11-13 12:05 ET ｜ 证据：公司向《财富》确认，故标官方确认；细节以该报道为准</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">开源基础设施</span>llama.cpp 与 ggml 发布 v1.0.0，主版本号将标记公共 C API / ABI 破坏性变更</h3>
+<p>ggml-org 于 11/13 发布 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0">llama.cpp v1.0.0</a>（published 2026-11-13T10:20:19Z，北京时间 18:20，已过周五早报、略早于当日最后一档小时窗）及同步的 ggml v1.0.0，并在 Hugging Face 撰写<a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">官方博文</a>。核心不是又一次日常模型补丁，而是给已经大量被下游依赖的库补上语义化版本承诺：此后 MAJOR 表示 <code>./include</code> 中公共 C API 的破坏性变更，MINOR 为向后兼容功能，PATCH 为不改 API 的修复。发布说明还包括：移除已弃用公共 API、把 NextN/speculative API 提升到 <code>llama.h</code>、OCP FP8 KV cache、可配置的主机内存 MoE expert cache、外部 PLE shard 加载，以及若干新架构与 <code>llama-server</code> 的安全加固（SSRF、CORS、DNS rebinding、MCP 工具取消等）。博文称目前支持 150 种以上架构变体。这是本地推理生态的接口稳定化，不是新的前沿模型发布。</p>
+<p class="src">原文：<a href="https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0">github.com/ggml-org/llama.cpp/releases/tag/v1.0.0</a> ｜ <a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">huggingface.co/blog/ggml-org/llama-cpp-v1</a> ｜ published 2026-11-13T10:20:19Z</p>
+</div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag nw">航天</span>Starship Flight 15：上面级首次被发射塔捕获，助推器中止后溅落</h3>
+<p>据 Spaceflight Now 对 Flight 15 的记录：集成器于周五 11/13 下午 4:47 CST（北京时间 11/14 06:47）从得州 Starbase 升空；Ship 42 进入轨道并部署 26 颗 Version 3 Starlink 卫星，经过约 14 圈后在 11/14 下午 3:20 CST（2120 UTC，北京时间 11/15 05:20）返回，被发射塔机械臂捕获。这是轨道级运载火箭上面级返回地球并被塔台回收的首次。原计划 Super Heavy 助推器 B22 约在起飞 6.5 分钟后回到同一塔台，但制导系统触发自动中止，改飞墨西哥湾海上溅落并在触水前解体燃烧。SpaceX 解说随后澄清：中止是系统在发现助推器不在可捕获状态后的预期行为，而不是“GNC 出了故障”。公司创始人埃隆·马斯克在社交平台祝贺团队。本次验证了飞船回收路径，但 Version 3 助推器仍未完成成功回收，不能写成“全箭可重复使用已经闭环”。</p>
+<p class="src">记录与图像：<a href="https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/">spaceflightnow.com/.../starship-flight-15...</a> ｜ 发射 2026-11-13 16:47 CST；捕获 2026-11-14 15:20 CST ｜ 公司官方任务页：<a href="https://www.spacex.com/launches/starship-flight-15/">spacex.com/launches/starship-flight-15/</a></p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag st">消费硬件</span>Apple HomeView 11/13 开售：$299，Siri AI 在该设备上为 beta，欧盟暂缺席</h3>
+<p>苹果新闻室 11/13 宣布，<a href="https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/">HomeView 即日起开售</a>。7 英寸 Liquid Retina 屏幕，桌面版与壁挂版美国标价均为 $299；面向澳大利亚、加拿大、印度、新西兰、新加坡、英国和美国的苹果零售与在线商店。官方定位是家庭中枢：娱乐、FaceTime、家庭控制，并配备“能力明显更强、更可对话”的 Siri AI。设备可按人脸识别最多 6 人并切换个人内容；Siri AI 有屏幕感知，若与已开启 Apple Intelligence 且语言受支持的 iPhone/iPad 配对，可调用日历、信息等个人上下文并跨应用执行。必须读脚注：Siri AI 在 HomeView 软件版本 27.2 为 <b>beta</b>；部分依赖服务端模型的功能有每日额度，官方写明未来可能对扩大额度收费；欧盟暂不销售，因为 Siri AI 目前在欧盟 iOS 不可用，苹果称正在与欧方沟通。Siri AI 在 HomeView 上的英语可用地区包括美、澳、加、印度、新西兰、新加坡、南非和英国。独立体验（如 Ethan Mollick 公开评论认为 HomeView 仍会幻觉、对周围环境理解不足）只能说明个别评测条件，不能写成市场共识，也不替代官方功能说明。</p>
+<p class="src">原文：<a href="https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/">apple.com/newsroom/2026/11/apple-homeview-available-today/</a> ｜ 官方日期 2026-11-13 ｜ 状态：指定地区开售，Siri AI 为 beta，非欧盟 GA</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag nw">基础设施</span>Microsoft 365 全球故障：公司道歉并排除网络攻击与 AI/智能体，影响至少 70 国</h3>
+<p>BBC 11/13 直播报道，Microsoft 为持续近 24 小时的全球服务中断表示“deeply sorry”，并称问题“与网络攻击或 AI/智能体无关”，是在“更早的一次网络容量升级”中引入的技术故障。受影响服务包括 Outlook、Teams 和 Copilot，BBC 写明在至少 70 个国家无法使用；英国政府工作人员、加拿大医院与铁路乘客、美国部分法院和政府机构等均有中断报道，英国方面称 999 与一线 NHS 111 未受影响。公司当时表示正在逐步恢复、消化积压邮件并重新平衡流量，直播过程中尚不能给出完全恢复的精确时刻。此后多家媒体称服务在 11/14 已全面恢复；本报核到的是 BBC 直播中的公司表态与影响范围，完整恢复时刻以微软服务健康状态为准，不把“正在恢复”写成“从未中断”。这与当日美国航空系统地面停航没有被官方写成同一原因，必须分开记录。</p>
+<p class="src">BBC 直播：<a href="https://www.bbc.com/news/live/cq5y10ge3dp3t">bbc.com/news/live/cq5y10ge3dp3t</a> ｜ AP 同步跟踪：<a href="https://apnews.com/live/microsoft-services-global-outage-news-updates-11-13-2026">apnews.com/live/microsoft-services-global-outage-news-updates-11-13-2026</a> ｜ 事件 2026-11-13，恢复过程延续至 11/14</p>
+</div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span><span class="tag nw">航空/公共安全</span>FAA 实施约 4 小时 45 分钟全国地面停航，周日问答给出初步原因与取消量</h3>
+<p>美国联邦航空局在 11/15 发布的<a href="https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers">全国地面停航问答</a>中确认：11/13 约下午 3:30 ET（北京时间 11/14 04:30）因技术问题发布 nationwide ground stop，当日 8:15 ET（北京时间 11/14 09:15）系统稳定后恢复放行。初步调查称，FAA 遗留设备在 FTI 网络出现每 4–5 秒约 1,000 次连接尝试的数据洪泛后变得不稳定，干扰飞机通信与雷达馈送；两个可能源头是得州阿马里洛的雷达站，以及阿肯色州埃尔多拉多的无线电通信站——后者由现网服务商 L3Harris 在进行包括新路由器部署在内的施工。L3Harris 封禁这两处后网络趋稳，并预防性关闭了所有新路由器的广播功能，后来又在约 60 台同类路由器上关闭相同功能。17 个（共 22 个）区域航路交通管制中心出现不稳并扩散到部分进近管制。FAA 明确：根据现有证据，<b>没有</b>网络攻击或外部恶意行为迹象；这不是通信与雷达的完全中断，部分频率和雷达仍可用；空中约 3,500 架飞机均安全落地。关于取消量，官方写道：周五运营商取消约 <b>12,462</b> 架次，其中大型航司约 9,082 架次，并特别说明“并非所有取消都由这次地面停航直接导致”。根因仍在调查，恢复“缓慢而稳定”是 11/15 问答时的口径，不把它写成事故已有最终技术鉴定。</p>
+<p class="src">原文：<a href="https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers">faa.gov/newsroom/nationwide-ground-stop-questions-and-answers</a> ｜ 事件 2026-11-13 15:30–20:15 ET；官方问答标注 Sunday, November 15, 2026 ｜ Reuters 当时报道：<a href="https://www.reuters.com/world/us/faa-issues-national-ground-stop-due-extraordinary-circumstance-reasons-safety-2026-11-13/">reuters.com/.../faa-issues-national-ground-stop...</a></p>
+</div>
+
+<h2 id="x">X 观点 · 主题抽象</h2>
+<p class="sub">按盯梢名单与实验室官号筛 11/13 08:00–11/16 08:00（Asia/Shanghai）增量；只抽象共识/分歧，不把原帖逐条译成墙。单次搜索最多 25 条，部分批次有截断；官号查询中 <code>from:OpenAI</code> 本窗 0 条，不代表 OpenAI 没有官网更新（Wallet 走的是官网而不是这条检索）。</p>
+
+<div class="card">
+<h3>主题 A：智能体开始能付款，争论落在“每笔都要人点头”还是“网站和风控还没准备好”</h3>
+<p>@gdb 用一句话指向 ChatGPT Wallet 与三大卡组织的合作，讨论随即转到代理购物是否可信。@amasad 同时提到与 Visa 合作的 agentic commerce，并说还会有更多功能。共识是：支付被当成智能体“最后一公里”的关键能力。分歧是：官方设计坚持每笔生物识别批准、token 化卡号，评论则担心网站防火墙误伤智能体、银行风控把合法代理交易打成欺诈。个别产品演示或点赞量不能当成商家已普遍接通。</p>
+</div>
+
+<div class="card">
+<h3>主题 B：飞船捕获被看成“外星科技”，但评论不等于飞行结论</h3>
+<p>@demishassabis 称看到星舰降落前的音爆和捕获是他见过最酷的事情之一；@kevinweil、@rauchg 等也表达类似震撼。这是观看公开直播后的观感，可与 SpaceX 飞行结果交叉，但不能替代官方/专业媒体对助推器中止溅落的记录。把“飞船被抓住了”写成“全箭回收已经完成”，是评论里容易滑过去的一步。</p>
+</div>
+
+<div class="card">
+<h3>主题 C：家用助手的能力落差，以及时间线再次被拉近</h3>
+<p>@emollick 看完 HomeView 评测后认为，它仍会幻觉、对周围环境理解不足，和 Hydrogen 级模型已经能做的事不在一个档位；他把没有好模型的家庭中枢写成正在扩大的负担。这是个人产品体验，须标版本与条件，不是销量或口碑普查。时间线上，Dwarkesh Patel 发表长文，把超级智能预期前移到 2030 年前后，并预告与 Paul Christiano 的访谈；帖中转述 Christiano 认为“若无放缓，一年内出现极端超级智能的概率为 1/3”。访谈本身在截点前未见已播出的新集，只记预告。原帖只证明本人判断，不是实验室官方时间表。</p>
+</div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="pro">
+<b>正方：通用模型正在吞并“专用机器人脑”</b>
+<p>OpenAI 把独立机器人团队撤并，并告诉《财富》：包括 GPT-6 Astra 在内的通用模型已可直接用于控机，继续单独立项反而更慢。若这个判断成立，机器人创业公司“必须自研专用脑”的叙事会承压，实验室现有的大模型栈可能成为默认入口。</p>
+</div>
+<div class="con">
+<b>反方：真机数据、机上延迟和断网仍然存在</b>
+<p>Tedrake 指出，已经在工厂里干活的机器人能积累实验室没有的现场数据；Shi 也提醒，大模型往往更慢、更依赖云端，机上仍需要可离线运行的小模型。报道中的模拟基准数字不能外推到真机，更不能写成 OpenAI 已经放弃 2027 年人形演示目标——公司说的是换组织方式继续做。</p>
+</div>
+</div>
+<p class="verdict"><b>如何看：</b>组织调整是已确认事实；“通用模型足以替代专用机器人模型”是正在被测试的判断，不是已经完成的产业切换。对用户做机器人或具身评测时，应同时看真机部署数据、离线约束和通用模型的实际控制接口，而不是只看这次撤并本身。</p>
+
+<h2 id="pod">播客新集 · 核心观点</h2>
+<div class="card">
+<h3>Dwarkesh Patel：数学上的“雪崩”会落到 AI 研发本身——他现在预期 2030 年前后出现超级智能</h3>
+<p>11/13 18:37 UTC（北京时间 11/14 02:37）发布的长文兼口述节目 <a href="https://www.dwarkesh.com/p/rsi">The avalanche that hit math is coming for AI development</a>，副题是 “Why I now expect superintelligence by 2030”。这是作者的公开判断，不是实验室官方预测。</p>
+<p>他的更新是：今年早些时候还会说超级智能至少还要将近十年；近三个月他改口，认为再过几年、甚至可能再过几个月，AI 就会在 AI 研究本身上达到顶尖人类水平；一旦 AI 研究被自动化，进度会被压缩进短短一年，因此到 2030 年——“也可能早到明年”——会出现至少不输各领域顶尖专家的系统。支撑材料他引用了：METR 在 Anthropic 驻场三个月后认为，定义清晰任务上的整体进度约为一年前的两倍，且“目前这一加速的大部分很可能来自 Anthropic 大量用 AI 做研发”；OpenAI 9 月博文称，内部编码智能体使用量最高的 10% 研究者，日均花费从夏初约 $1,000 升至 8 月底超过 $7,000；Anthropic 称截至 8 月，Claude“主导”其超过 26% 的 AI 研发工作，而 2 月还不到 1%。这些是他援引的机构或公司材料，花费或内部占比不等于外部可复核的能力跃迁。类比上，他认为数学这个可验证领域已经出现“搜索—匹配式发现”，大量重要结果被当作发新模型前的副产品刷出，这种模式可能会落到 AI 研究本身，并进入递归自我改进。他也写到，即便是超级学习者也不能只待在数据中心里完成一切，仍需要真实世界经验，只是他认为获取这些经验的日历时间会短得多。文后已有读者直接反驳“日常工作里完全不是这个样子”，以及质疑把内部 agent 花费当作进步代理指标是否成立。预告中的 Paul Christiano 访谈在本窗截点前未见已发布新集，不提前当作本集内容。</p>
+<p class="src">原文：<a href="https://www.dwarkesh.com/p/rsi">dwarkesh.com/p/rsi</a> ｜ 2026-11-13 18:37:51+00:00 ｜ 个人评论/播客，不是官方时间表</p>
+</div>
+<p class="sub">本窗其他已见到的新集：Lenny's Podcast 11/15 对 Meta Muse 产品负责人和上线过程的回顾（<a href="https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most">链接</a>）；The Vergecast 11/13 讨论黄仁勋事件对产业与中美 AI 竞赛的影响（与周五已报新闻重叠，不在此复述）。硅谷 101、Latent Space、Lex Fridman、No Priors、Training Data 本窗未见更高优先的新集。Dwarkesh 的 Substack podcast feed 仍返回未启用。</p>
+
+<h2 id="gap">覆盖缺口与待观察</h2>
+<ul>
+<li><b>微信公众号：</b>Wechat2RSS 目录 397 源（含目录外已确认的「数字生命卡兹克」「暗涌Waves」），同步成功；抓取 393 成功 / 4 失败（n1nty、毕方安全实验室 XML 无法解析；两个「卢瑟经济学安生杂谈」源 404）。时窗内 210 篇，筛选后 105 条 AI 相关候选。失败源不等于这些账号没有更新，不能把有 feed 写成绝不漏文。未走扫码登录。</li>
+<li><b>AIHOT：</b>已读当前 <a href="https://aihot.news/api/v1/agent">agent 说明</a> 与 openapi-v1。使用了 /latest 的 24h 与 7d（selected 与 mode=all，后者仍受 30 条上限）、11/13–11/16 日报、热点列表；/search 与 items 通常只覆盖近 7 天，精选快照不是全库。摘要只作线索，关键事实已回官网或一手报道。</li>
+<li><b>官方/媒体访问：</b>Reuters、AP、FT、WSJ、华盛顿邮报部分入口仍常遇到挑战页或付费墙，本窗对 FAA、Microsoft、OpenAI、苹果、DeepSeek、SpaceX 等以官方或可读的专业报道为准，不把打不开写成没有新闻。Anthropic 与 Meta AI 官方 RSS 仍不稳定。新华社受权稿若能找到部门原文会回原文；本窗中国政策未另选已在 11/3 宣布、11/15 生效的央行外汇存款准备金率上调（4%→6%），避免把旧公告当成周末新政。</li>
+<li><b>X：</b>单次最多 25 条，名单未能穷尽；OpenAI 官号检索本窗 0 条。社交新闻聚类里出现的“Anthropic IPO 估值 1.4 万亿美元”实际是 11/10 前后已报道、并已写入 11/11 早报的路演区间，不是周末新定价。</li>
+<li><b>待观察，未达精选：</b>马斯克等联署请愿要求英伟达恢复黄仁勋职务（TechCrunch 11/14 等，请愿不等于董事会决定）；Google DeepMind 11/13 开源气象数据集 PARDIG 与 SatWeave（官方博文，科学基础设施，本窗让位于产品与公共事件）；乌克兰和谈在阿布扎比结束后无突破、美方再访莫斯科与都柏林——周五早报已报，周末未见经交叉确认的终局协议；李强 11/14 在曼谷会见泰国国王（外交部 11/15 稿），属行程发布，未单列。</li>
+</ul>
+
+<footer>
+工作目录 /workspace/ai-briefing/work/2026-11-16/ ｜ 截止 2026-11-16 08:00 Asia/Shanghai ｜ 周一涵盖周五 08:00 之后至本窗截止的周末 ｜ 生成于 08:28 Asia/Shanghai ｜ 全程本机，无 Cloud Agent
+</footer>
+</div>
+</body></html>
