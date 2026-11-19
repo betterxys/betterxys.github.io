@@ -1,0 +1,153 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-19</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+.verdict{margin-top:8px;font-size:14px}.verdict b{color:var(--acc)}ul{padding-left:20px;margin:6px 0}footer{font-size:12.5px;color:var(--mut);margin:30px 0 40px;border-top:1px solid var(--line);padding-top:12px}
+.banner{background:#fff4e8;border:1px solid #f0d9b5;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#7a4a00}
+.note{background:#eef3ff;border:1px solid #d5e0f7;border-radius:10px;padding:10px 12px;margin:12px 0;font-size:13.5px;color:#1e3a8a}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1>AI 行业早报 · 2026-11-19 周四</h1>
+<div class="sub">新闻截止：北京时间 11/19 08:00 ｜ 生成于 08:40（Asia/Shanghai）｜ 时窗为周三 08:00 至本窗截止 ｜ 精选 6 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<ul class="top" id="top">
+<li><b>Google 发布 Gemini 4 Neon</b>：已进入 Gemini API、AI Studio、Antigravity 与 Gemini App（Pro / Ultra）；官方标价输入 $3、输出 $15 / 百万 token。基准多为厂商转述。</li>
+<li><b>Anthropic IPO 定价 $83</b>：代码 ANT，官方称 11/19 登陆纳斯达克；交易与交割在截止时尚未发生。媒体在谈隐含市值，官方稿未给全市值。</li>
+<li><b>腾讯公布 2026 年三季报</b>：营收 2,073 亿元（同比 +8%），非国际财务报告准则经营溢利同比 −6%；资本开支同比 +225%。Hy4 / WorkBuddy 数据为公司自报。</li>
+<li><b>习近平在深圳出席 APEC 工商峰会</b>：外交部确认中俄美元首会晤安排在 11/19；截止前只核实到抵达与问候，会晤结果尚未公布。</li>
+<li><b>海湾再起交火</b>：BBC 称美军打击霍尔木兹海峡格什姆岛，科威特、巴林称拦截伊朗空袭；各方说法不一致。</li>
+<li><b>以军越过加沙「黄线」行动</b>：以方称拆除隧道，哈马斯称违反停火。单方伤亡数字未交叉核实。</li>
+</ul>
+
+<h2 id="ai">AI与Agent</h2>
+<div class="card">
+<h3><span class="tag e1">官方确认</span>Google 发布 Gemini 4 Neon，定位在 Carbon 与 Hydrogen 之间</h3>
+<p>2026-11-18 21:00 UTC（北京时间 11/19 05:00），Google 官方博客由 DeepMind SVP、首席 AI 架构师 Koray Kavukcuoglu 发文，推出 Gemini 4 Neon，定位是「前沿级智能 + 较快的端到端任务完成」，覆盖复杂软件工程、知识工作与科学流程。官方把 Gemini 4 家族拆成：Carbon 处理最难、长周期项目，Hydrogen 处理日常快速执行，Neon「在深度与效率之间取得平衡」。同一篇演示还提到 Gemini 4 Argon。</p>
+<p>可用性（官方表述为「rolling out today」）：Gemini API（Google AI Studio）、Gemini for business（API 与模型下拉菜单）、付费 Google AI Pro / Ultra 用户的 Google Antigravity，以及 Pro / Ultra 用户的 Gemini App。官方标价：输入 $3 / 百万 token（缓存输入 $0.15，称 95% 折扣），输出 $15 / 百万 token，上下文窗口 100 万 token。思考层级为四档，默认 <i>high</i>，另有更深的 <i>xhigh</i>。另有「Gemini 4 Neon for cyber」，官方写「未来数日向受信任的防御方」放量，属 Fairwind Program，不是即日对所有人开放。</p>
+<p>基准与成本数字来自官方稿，并夹杂「独立评测」转述，必须与厂商口径分开看：Artificial Analysis Intelligence Index 在 xhigh 下 61 分、总榜第 3；Vals Index 第 2（文中另给 70.9%）；Agent Arena Index 1,336 分、第 2（4,200+ 场真实会话）；Coding Agent Index 第 1（58.6）；并列举 Legal / Tax、Surge AI、Vending-Bench 2、Terminal-Bench Science 等名次。官方称默认 high 下每任务成本比 Carbon 低 32%，在 Vals 与 Agent Arena 的 Pareto 前沿上「大约比顶级竞品每任务成本低 50%–80%」。这些对比数字不是本报独立复测；token 标价也不等于每任务实际花费。</p>
+<p>同日 18:00 UTC，Google 另发 <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">Project Genie 更新</a>：符合条件的 Google AI Ultra 用户可使用 Genie 4（实时改环境、原生音频）及 Project Genie agent、社区画廊；Pro 用户可排队。官方同时写明这仍是前沿研究世界模型，并提到延迟、物理交互、长期场景稳定性等限制，输出带 SynthID。不单列为头条。</p>
+<p class="src">原始发布时间：2026-11-18 21:00 UTC（Neon）；2026-11-18 18:00 UTC（Genie 4）｜ <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Introducing Gemini 4 Neon</a> ｜ <a href="https://x.com/demishassabis/status/2123168218743554465">@demishassabis</a> ｜ <a href="https://x.com/OfficialLoganK/status/2123167791922741362">@OfficialLoganK</a></p>
+<p class="lim">Gemini 4 Carbon 已在 11/10 上线，本窗不作为新发布重报。官方页部分演示与成本数字为厂商自报或由其转述的第三方榜，独立体验仍取决于版本、思考层级与任务。</p>
+</div>
+
+<h2 id="ind">科技产业与市场</h2>
+<div class="card">
+<h3><span class="tag e1">官方确认</span>Anthropic IPO 定价每股 $83，代码 ANT，预定 11/19 开盘</h3>
+<p>2026-11-18，Anthropic, PBC 官方新闻稿宣布，Class A 普通股 IPO 定价每股 $83.00。发行规模为 9.80 亿股，其中公司发售 956,351,354 股，部分出售股东发售 23,648,646 股；公司不会获得出售股东部分的所得。股票「预计」于 2026-11-19 在纳斯达克全球精选市场以代码「ANT」开始交易，并「预计」于 2026-11-20 交割，须满足惯常交割条件。另授予承销商 30 天期权，最多再购 1.47 亿股。SEC 已于 11/18 宣布相关登记声明生效；承销联络为高盛与摩根士丹利。官方 @AnthropicAI 在 23:29 UTC（北京时间 11/19 07:29）同步发布上述信息。</p>
+<p>按官方股数与定价做算术（不是官方披露的募资净额，也未扣承销费用、不含绿鞋）：公司发售部分约 793.8 亿美元，全部 9.80 亿股约 813.4 亿美元；绿鞋若全部行使，再加约 122.0 亿美元。官方稿没有给出公司已发行总股本，也没有给出全市值。截止本窗（北京时间 11/19 08:00），美国市场尚未开盘，不能把「已定价」写成「已上市」或「已成交」。</p>
+<p>BBC（11/18 23:36–23:44 UTC）报道称，按此定价公司隐含价值超过 1.4 万亿美元，并称此前 $70–$78 询价对应最高约 1.3 万亿美元；一名不愿具名的早期投资人向 BBC 称发行超购逾 10 倍。BBC 还写公司有望从上市筹集逾 680 亿美元，另加 260 亿美元私募、合计约 940 亿美元。这些数字不见于 Anthropic 官方定价稿，只作为媒体口径，且其中部分来自匿名源；不能与上面的官方股数算术混成同一组「已确认募资」。</p>
+<p class="src">原始发布时间：官方稿日期 2026-11-18，修订时间 2026-11-18 23:26:25 UTC ｜ <a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic prices initial public offering</a> ｜ <a href="https://x.com/AnthropicAI/status/2123196808675405860">@AnthropicAI</a> ｜ 媒体：<a href="https://www.bbc.co.uk/news/articles/c6742m39xgzxo">BBC：poised for more than $1.4tn debut</a></p>
+<p class="lim">定价与生效登记是官方事实；开盘价、首日涨跌和全市值要等交易开始后才有。匿名「超购」与媒体隐含市值不是官方确认。</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e1">官方确认</span>腾讯公布 2026 年第三季度业绩：营收增、AI 相关开支明显上升</h3>
+<p>腾讯控股（港交所 00700 / 80700）于 2026-11-18 20:00（公司投资者页标注）发布截至 9 月 30 日止第三季度未经审核业绩。官方新闻稿主要数字：总收入人民币 2,073 亿元，同比 +8%；毛利 1,159 亿元，同比 +7%。非国际财务报告准则经营溢利 681 亿元，同比 −6%，经营利润率由去年 38% 降至 33%；剔除「新 AI 产品」后经营溢利 833 亿元，同比 +8%，利润率 40%、与去年持平。国际财务报告准则经营溢利 591 亿元，同比 −7%；净利润 651 亿元，同比 +0.3%；公司权益持有人应占盈利 636 亿元，同比 +0.8%。资本开支付款 651 亿元，同比 +225%；账面现金 5,257 亿元，净债务 137 亿元。自由现金流为负 691 亿元；公司称若剔除算力采购预付款，自由现金流应为正 169 亿元。当季在港回购约 1,590 万股，合计约 70 亿港元。</p>
+<p>分业务（官方）：增值服务 983 亿元，同比 +3%，其中国内游戏 476 亿元（+11%），国际游戏 189 亿元（−9%，恒定汇率 −4%）；营销服务 430 亿元，同比 +19%；金融科技及企业服务 637 亿元，同比 +9%，其中云服务同比 +35%。微信及 WeChat 合并月活 14.49 亿，同比 +2%。董事长马化腾在稿中称，Hy4「达到中国最先进模型水平」，Hy4 flash 降低推理成本；并称按用户每日大模型 token 消耗计，WorkBuddy「已成为中国最大的 AI 应用」。经营指标里写 WorkBuddy 超 1,000 万日活、合计每天消耗超 100 万亿 token，企业采用在增加。脚注把「新 AI 产品」主要列为 Hy、元宝、CodeBuddy、WorkBuddy 与小微。上述产品地位与 token 规模是公司自报，不是独立审计口径。</p>
+<p class="src">事件时间：2026-11-18 20:00（公司页标注，Asia/Shanghai）｜ <a href="https://static.www.tencent.com/website-2026-upload/Tencent-Announces-2026-Third-Quarter-Results-1800-6d9a2a.pdf">Tencent Announces 2026 Third Quarter Results</a>（官方新闻稿 PDF）｜ <a href="https://www.tencent.com/investors/announcements/">公告目录</a></p>
+<p class="lim">港交所公告 PDF（E700_3Qresults.pdf）本窗请求返回 HTTP 567，未能打开；数字以公司英文新闻稿为准。业绩为未经审核；「若剔除预付款则自由现金流为正」是公司备考，不等于已实现的现金流口径。Hy4 模型发布此前已报道，本条只收录财报中的新财务与经营数字。</p>
+</div>
+
+<h2 id="cn">中国与国际</h2>
+<div class="card">
+<h3><span class="tag e1">官方确认</span>习近平在深圳出席 APEC 工商峰会；中俄美元首会晤定在 11/19</h3>
+<p>外交部发言人郭嘉昆 11/18 例行记者会通报：当天上午，习近平主席在深圳出席 2026 年亚太经合组织工商领导人峰会开幕式并发表主旨演讲，提出四点建议——维护和平稳定、搭建开放合作桥梁、激发创新增长动力（含深化数字经济与人工智能合作、绿色转型）、拓展互利共赢路径，并表示支持成立世界湾区经济合作联盟。讲话还提到中国经济「向新向优向好」，以及「十五五」规划对亚太和全球的机遇表述。这是已发生的官方活动，不是预告。</p>
+<p>就「明天举行的中俄美元首会晤」，郭嘉昆两次重申：三国元首将就事关全球和平的重要问题深入交换意见，中方会及时发布会晤消息，不在记者会上预告是否讨论乌克兰或具体成果。会晤本身落在 11/19，大部分日程应在本窗截止（08:00）之后，本报不把尚未公布的会晤结果写成既成事实。问及英伟达临时 CEO 称不再向中国提供 Hopper 数据中心产品、H200 将停运时，郭嘉昆只说中方已多次阐明在美国输华芯片问题上的原则立场，没有新的政策口径。</p>
+<p>BBC（11/18 12:39 首发、16:10 UTC 更新）报道称，习近平在深圳机场迎接特朗普，两人在停机坪握手、拥抱；随后特朗普与普京在招待会前互致问候。克里姆林宫发言人佩斯科夫称，周三普京与特朗普尚未举行实质性会谈，只是问候，并称周四三方会晤「安排不超过一小时」。BBC 写周四特朗普与普京还可能举行单独会谈，乌克兰问题「可能」被讨论；泽连斯基对在基辅或欧洲代表缺席的情况下讨论停火方案表示担忧。BBC 称完整议程尚未公布，乌克兰、伊朗、核扩散、贸易与人工智能等只是外界「暗示」的可能议题，不是已公布的共同议程。BBC 并转述新华社引习近平称，愿在尊重、公平、平等基础上构建建设性、战略、稳定的关系——本报未单独打开对应新华社原文，只作 BBC 转述。</p>
+<p class="src">外交部记者会：2026-11-18 ｜ <a href="https://www.mfa.gov.cn/web/fyrbt_673021/jzhsl_673025/202611/t20261118_12061934.shtml">2026年11月18日外交部发言人郭嘉昆主持例行记者会</a> ｜ 媒体：<a href="https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo">BBC：Trump shakes hands with Putin and Xi</a>（2026-11-18 16:10 UTC 更新）</p>
+<p class="lim">单方会晤安排和机场礼仪不等于已达成共同规则或停火框架。截止后若中方发布会晤消息，应记入次日，不在本窗提前写结果。</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e2">媒体报道·当事方未确认</span>美军打击格什姆岛后，科威特、巴林称拦截伊朗空袭</h3>
+<p>BBC（2026-11-18 13:04:48 UTC）报道，科威特与巴林称在隔夜击退伊朗空袭。科威特军方称防空系统应对「无人机威胁」，未报告人员伤亡或损失；外交部谴责称公然侵犯主权。伊朗军方称目标是阿里·萨利姆空军基地的爱国者系统和发射平台（该基地驻有美军）。巴林军方称销毁数波伊朗空中攻击；BBC 写该国过去六天已报告四次攻击。卡塔尔称对邻国的攻击是「危险升级」。文章称，此轮交换发生在美军打击霍尔木兹海峡格什姆岛一处导弹发射场之后；美方官员称以精确弹药回应「针对美国人员与资产的侵略」，伊朗媒体报岛上有爆炸，并引当地官员称未造成基础设施损坏。</p>
+<p>航运方面，阿布扎比国家石油公司（Adnoc）称一艘油轮周二在海湾水道遇袭，一名船员失踪，其余撤离、11 人接受治疗。英国海事贸易行动中心（UKMTO）称一艘油轮在阿曼穆桑达姆半岛哈萨布以北约 13 海里被不明投射物击中并起火、火势已扑灭。伊朗则称两艘油轮和一艘 LNG 船在「授权航线」触雷起火。这些是对同一时段航运事故的不同说法，不能并成单一「已确认攻击方式」。BBC 把此轮交火放在约九个月冲突的背景里（文章写冲突始于今年 2 月底美以打击伊朗），并称 6 月曾有重开霍尔木兹海峡的初步协议、数周内破裂；海峡通行与油运恢复程度来自该文转述的分析，不是本报独立统计。</p>
+<p class="src">原始发布时间：2026-11-18 13:04:48 UTC ｜ <a href="https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o">Kuwait says it repelled first Iranian attack in two months after US strikes island</a> ｜ BBC；文中转述科威特、巴林、伊朗军方、美军官员、Adnoc、UKMTO、卡塔尔</p>
+<p class="lim">冲突报道交叉核对了多方声明，但仍是媒体综合，不是政府联合公报。单方战报不等于毁伤已经坐实；谈判破裂史不能外推为供给已经恢复或再次中断的最终口径。Reuters / AP 本窗不可读，未作为独立第二来源。</p>
+</div>
+
+<div class="card">
+<h3><span class="tag e2">媒体报道·当事方未确认</span>以军在加沙「黄线」以西发动地面行动，哈马斯称违反停火</h3>
+<p>BBC（2026-11-18 20:14 首发、22:34 UTC 更新）报道，以色列地面部队在加沙中部其控制区之外发起一次少见行动。以军称，此次「针对性」行动是与辛贝特联合「拆除黄线以西、对以军构成直接威胁的恐怖隧道」；协调组织 Cogat 阿拉伯语发言人当天下午宣布行动，并警告努塞拉特、布赖杰难民营以北居民远离，同时关闭南北向萨拉赫丁路一段。哈马斯称，军车越过黄线并疏散居民是对 2025 年 10 月停火协议的公然违反。BBC Verify 核对的视频显示，有人在萨拉赫丁路、黄线以西约 1.5 公里处因炮火奔跑。哈马斯下属民防称周三三次无人机袭击造成 3 人死亡；以军在被问及死亡报告时，只给了关于行动的一般性声明。停火以来的累计死亡数字分别来自哈马斯下属卫生部门（BBC 写联合国视其数字为可靠）和以军，不是经双方共同确认的最终口径。</p>
+<p class="src">原始发布时间：2026-11-18 20:14:57 UTC，更新 22:34:56 UTC ｜ <a href="https://www.bbc.co.uk/news/articles/cw8r7510degno">Israeli military launches rare ground operation in Gaza beyond Yellow Line</a> ｜ BBC，文中转述 IDF、Cogat、哈马斯及当地居民</p>
+<p class="lim">以方「拆除隧道 / 符合停火」与哈马斯「公然违约」是冲突声明，不是共同规则被改写的官方结论。单方伤亡数字未在本窗得到独立现场核实。</p>
+</div>
+
+<h2 id="x">X 观点</h2>
+<p class="sub">按盯梢名单筛 11/18 00:00 UTC 至 11/19 00:00 UTC 的原创与引用帖（不含转帖）。部分批次达到单次 25 条上限，OfficialLoganK 等账号回复占满首页，早期帖和高产线程仍可能截断。下列只抽象共识、分歧与证据，不做成帖子翻译墙。</p>
+
+<div class="card">
+<h3>Gemini 4 Neon：官方「平衡之选」对上价格敏感的一线反应</h3>
+<p>Demis Hassabis、Sundar Pichai、Logan Kilpatrick、Josh Woodward 都在窗口内以当事人身份宣布或转发 Neon。产品侧的共同说法是：它介于 Carbon 的「最强、更贵更慢」与 Hydrogen 的「日常速度」之间。Kilpatrick 在回复里把选用说得更具体：Carbon 比 Argon 更强，但也更耗 token、更慢，「能用 Carbon 再用」；Neon 被他称为「很好的模型」。François Chollet 单独称「这个价位的数字相当impressive」，这是评测者对官方成本叙事的正向反应，但只是一条原帖，不是市场共识。原帖只证明本人表态；点赞和演示视频不能代替独立复测。</p>
+</div>
+
+<div class="card">
+<h3>Anthropic 定价落地：上市倒计时与风险叙事并行</h3>
+<p>官方账号把事实钉在 $83 与「明天纳斯达克开盘」。盯梢名单里，Gary Marcus 把 IPO 和「人类未来」对举，并称「明天是转折点」——这是批评者的价值判断，不是对定价文件的勘误。名单内没有看到 Anthropic 创始人就定价再发新的实质口径。媒体侧（BBC 等）在讨论隐含市值与超购，那是另一层证据，不能从转发热度反推开盘结果。</p>
+</div>
+
+<div class="card">
+<h3>英伟达人事仍在讨论，没有新的董事会决定</h3>
+<p>Elon Musk、Palmer Luckey（经媒体转述）等公开表达希望黄仁勋回来；Satya Nadella 则在 DealBook 相关报道中称对英伟达及临时 CEO Colette Kress 的团队仍有信心。这与昨日报过的「董事会不打算让黄仁勋复职」并不矛盾：社交讨论和请愿仍在，官方人事口径本窗没有被新的公司声明推翻。不把请愿或名人表态写成董事会已改主意。</p>
+</div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="pro">
+<b>正方证据</b>
+<ul>
+<li>Neon 有官方博客、标价、可用范围和家族定位，Demis / Logan 等当事人同步宣布。</li>
+<li>Anthropic 给出定价、股数、代码、预计交易与交割日，SEC 登记声明已生效。</li>
+<li>腾讯给出完整季度财务与分部数字，并单独披露 AI 产品对利润和资本开支的影响。</li>
+<li>外交部书面确认了习近平 11/18 演讲和 11/19 三方会晤安排。</li>
+</ul>
+</div>
+<div class="con">
+<b>反方 / 限制</b>
+<ul>
+<li>Neon 的榜单名次与「每任务成本低 50%–80%」主要是官方转述，本报未做独立评测；cyber 版本仍是「未来数日、受信任防御方」。</li>
+<li>Anthropic 官方稿没有全市值；BBC 的 1.4 万亿美元和超购来自媒体及匿名源。截止时尚未开盘。</li>
+<li>腾讯 Hy4 / WorkBuddy 的「中国最大」与 token 规模是公司自报；自由现金流备考口径不能当成法定现金流。</li>
+<li>海湾与加沙条目依赖 BBC 综合的各方声明，Reuters / AP 本窗不可读；战损和停火是否被破坏没有共同确认。</li>
+</ul>
+</div>
+</div>
+<p class="verdict"><b>判断：</b>本窗可立即核验的，是 Neon 已按官方范围放量、Anthropic 已定价待开盘、腾讯把 AI 开支写成看得见的利润率和资本开支变化。对个人工作流，眼前能试用的是 Gemini 4 Neon（以及 Ultra 的 Genie 4），价格与任务成本仍要自己测；Anthropic 上市只改变融资与信息披露节奏，不自动改变 Claude 的产品能力。国际侧，深圳三方会晤的结果要等官方通报，不能用机场握手或单方议程猜测写成协议。</p>
+
+<h2 id="pod">播客</h2>
+<div class="card">
+<h3>新集：The Missing Layer for Personal AI｜First Person Labs 的 Ken Liu</h3>
+<p>2026-11-18 11:00 UTC，本报所订 <i>Acquired</i> 源（Simplecast）放出一集 a16z 节目：First Person Labs 联合创始人 Ken Liu 对谈，官方简介的核心是——智能体越来越强，但每个新智能体仍要重新了解「你是谁」；若偏好、优先级、关系和数字上下文能随身迁移，个人层是否应独立于单一模型或应用。本报依据节目标题与官方摘要撰写，<b>未完整听完音频</b>，不编造现场原话。</p>
+<p class="src"><a href="https://a16z.simplecast.com/episodes/the-missing-layer-for-personal-ai-first-person-labs-ken-liu-wu4i8Q00">The Missing Layer for Personal AI | First Person Labs’ Ken Liu</a> ｜ 2026-11-18 11:00 UTC</p>
+</div>
+<div class="card">
+<h3>新集：The Vergecast｜GTA VI is the love story of our times</h3>
+<p>2026-11-18 14:53 UTC，The Vergecast 推出《GTA VI is the love story of our times》。官方简介写：游戏在时隔 13 年、据称十亿美元量级预算和极高预期之后推出，Andrew Webster 暂停游玩，讲述 Vice City 的体验，并给出「It's fantastic」的评价。「十亿美元量级预算」来自节目简介中的 “reported”，不是本报核过的公司财报。本报未完整听完音频。GTA VI 同步出现在 BBC 等新闻中，但不单列为一则要闻头条。</p>
+<p class="src">The Vergecast《GTA VI is the love story of our times》｜ 2026-11-18 14:53 UTC ｜ 节目源：https://feeds.megaphone.fm/vergecast ｜ guid 4be531a2-6e7b-11f1-94bf-977600909d00 ｜ 简介所附评测：<a href="https://www.theverge.com/games/1035801/grand-theft-auto-6-review">The Verge: GTA VI review</a></p>
+</div>
+
+<h2 id="gap">覆盖缺口与未单列说明</h2>
+<ul>
+<li>Wechat2RSS：目录同步成功，清单 397 源（公开目录约 395 + 既有额外源）；抓取 393 成功、4 失败（n1nty、毕方安全实验室 XML 不规范；两个「卢瑟经济学安生杂谈」源 404）。时窗内 98 篇，筛选去重后 48 条 AI 相关候选。不能把「有 feed」写成绝不漏文。未再走扫码登录链路。</li>
+<li>AIHOT：按 <code>page.nextCursor</code> 分页，mode=all / 7d / by=published 共 1,322 条（14 页，末页 22 条，hasMore=false），落入本时窗或相关约 266 条；selected / 7d 143 条（2 页，时窗或相关 33 条）；all / 24h 224 条（3 页，末页 24 条，hasMore=false）。/latest 的 mode=all 仍受 30 条上限；items/search 通常近 7 天；selected 是精选不是全库。</li>
+<li>Anthropic、Meta AI 官方 RSS 仍 404（Anthropic 定价稿由官网新闻页直接打开）；OpenAI.com 新闻/产品页 403（RSS 可读，芯片设计等正文页未打开）。IEA RSS、中国政府网「最新政策」RSS 404，已改查页面与外交部、央行、政府网稿。腾讯港交所公告 PDF 返回 HTTP 567，改用公司新闻稿 PDF。</li>
+<li>Reuters 技术源 401、其他 Reuters 源 SSL 中断；AP RSSHub 403；FT 403、华盛顿邮报超时；华尔街日报首页可打开但正文受访问限制，本报只用到可见标题（含 Anthropic 定价高于预期等），不声称读过付费全文。关键国际条目以官方稿或可读的 BBC 核对。</li>
+<li>X 搜索单次最多 25 条，部分批次截断；实验室官号检索被 Kilpatrick 高频回复挤占，已另查 Google / Anthropic 官方账号。</li>
+<li>未再单列：NVIDIA 官方博客 11/18 14:00 UTC 称 ASUS、Dell、MSI 的 RTX Spark 紧凑台式机「即日起上市」（最多 128GB 统一内存，面向本地智能体与微调），属硬件开售，重要性低于上述头条，见 <a href="https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/">RTX Spark Compact Desktops Out Now</a>；OpenAI RSS 同日还有芯片设计、Codex sandbox、Figaro 合作等稿，正文页 403，不升格为头条。Gemini 4 Carbon（11/10）与既有黄仁勋人事、H200 停运中国等，无新的公司官方口径，不重报。Codex CLI 稳定版 0.170.0（GitHub published 2026-11-18T03:40:48Z）已在昨 11:51 大事提醒中通报，changelog 偏维护，不挤占头条；本窗 GitHub API 限流，未再拉完整 release 列表。Grok Bot 官方 changelog 现列 v1.2.3（Nov 18，「Tool permissions and routine reconnect cards」，并含 1.2.1 / 1.2.2），属产品小版本，见 <a href="https://x.ai/changelog/bot">x.ai/changelog/bot</a>。Cursor 官方 changelog 最新特性仍为 Voice Chat（2026-11-06）。央行 11/18 与加拿大财政部、央行签署《中加金融工作组工作规范》，属机制文件，不单列。Dwarkesh Substack 播客源仍 404，站点源本窗无新集。</li>
+</ul>
+
+<footer>
+工作目录：/workspace/ai-briefing/work/2026-11-19/ ｜ 新闻截止 2026-11-19 08:00 Asia/Shanghai ｜ 生成 2026-11-19 08:40 Asia/Shanghai ｜ 本页只服务该日早报，不代表查阅了全部公开网页。
+</footer>
+</div>
+</body></html>
