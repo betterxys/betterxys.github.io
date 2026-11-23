@@ -1,0 +1,138 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-23</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}nav a{font-size:13px;padding:4px 10px;border-radius:99px;color:var(--ink2)}nav a:hover{background:#ebe7de}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+footer{color:var(--mut);font-size:12.5px;padding:24px 0 40px}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1 id="top">AI 行业早报 · 2026-11-23</h1>
+<div class="sub">新闻截止：北京时间 11/23 08:00 ｜ 生成于 08:35（Asia/Shanghai）｜ 时窗为周五 08:00 至本窗截止，周一涵盖周末 ｜ 精选 7 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交线索·待核</span></div>
+
+<h2>今日要点</h2>
+<ul class="top">
+<li><a href="#n1">Lean/Mathlib 社区声明：认定 Alpöge 的黎曼猜想 Lean 证明通过其四条核验标准</a>；随后有预印本质疑，截止时未见该声明撤回。</li>
+<li><a href="#n2">OpenAI 首席科学家公开预训练 perplexity，并提议行业共同开发上限</a>。</li>
+<li><a href="#n3">周五美股科技股大跌，标普与道指进入调整；Anthropic 回吐约一半首日涨幅，英伟达跌 13.7%</a>。</li>
+<li><a href="#n4">台积电据路透暂停部分中国客户 16nm 及以下订单</a>；公司称将遵守美国新规。</li>
+<li><a href="#n5">特朗普口头威胁禁止或重税美企在海外建 AI 数据中心</a>，当时称内阁也是第一次听到，尚非已落地政策。</li>
+<li><a href="#n6">COP31 周日收场未达成气候协议</a>，为有记录以来最长的联合国气候大会。</li>
+<li><a href="#n7">民主党在北卡州重计后拿下一席，众议院多数至少 258 席</a>，为 1992 年以来最大。</li>
+</ul>
+
+<h2 id="ai">AI与Agent</h2>
+
+<div class="card" id="n1">
+<h3><span class="tag e1">官方确认（形式化核验声明）</span>Lean/Mathlib 社区声明认定 Alpöge 的黎曼猜想证明通过其核验标准</h3>
+<p>11/20，Anthropic 数学家 Levent Alpöge 在个人站点发布黎曼猜想的 Lean 证明库（社区声明称约 1700 万行），并称在约六周里得到 Claude 协助；所用是非公开版本。BBC 当天报道时，陶哲轩表示“消化过程还需要时间”。11/21 13:55 UTC（北京时间 21:55），Lean 与 Mathlib 社区发表联合声明，并写明获 Lean FRO 与 Mathlib Initiative 背书：对证明正确“有充分信心”，且四条标准均已满足——定理陈述就是 Mathlib 中经专家审看的 <code>RiemannHypothesis</code>；库可复现编译；两套独立比较工具确认所证即该陈述；导出的原始证明通过 Lean 官方内核以及 <code>con-leche</code>、<code>con-ron</code> 等独立检查器。《卫报》11/21 起报道称有两组机构做了独立核验。</p>
+<p>这是形式化核验意义上的社区声明，不等于整个数学共同体已经消化证明思路，也不等于“AI 单独解决了问题”。Alpöge 是具名作者，模型角色来自他的自述。截止前，Jenny Lorraine Nielsen 的预印本《The Invalidity of Alpöge's Proposed Proof…》提出质疑，认为几何相关谓词可能被写成恒真；公开讨论里，该谓词是否位于通向主定理的依赖路径上仍有争议。至 11/23 08:00，未见 Lean 社区撤回或修订 11/21 声明。本报读到的是社区博客、BBC、《卫报》及二次转述，未通读 1700 万行库或该预印本全文。</p>
+<p class="src">原文：<a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean community blog：Lean verification of the Riemann Hypothesis</a>（2026-11-21 13:55 UTC）｜作者说明：<a href="https://alpo.ge/remark.pdf">alpo.ge/remark.pdf</a>｜核验材料汇总：<a href="https://math.mit.edu/~drew/grh/">math.mit.edu/~drew/grh/</a>｜<a href="https://www.bbc.co.uk/news/articles/c6pqr2g7w059o">BBC 11/20 报道</a>｜<a href="https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai">《卫报》11/21–22</a>｜事件：11/20 发布，11/21 社区声明</p>
+<p class="lim">局限：形式化通过不等于思路已被广泛解释；预印本质疑尚未形成与 Lean 声明同级的结论，不能写成“证明已被推翻”或“已成定论”。</p>
+</div>
+
+<div class="card" id="n2">
+<h3><span class="tag e1">官方确认</span>OpenAI 首席科学家公开预训练 perplexity，并提议行业共同开发上限</h3>
+<p>11/22，OpenAI 首席科学家 Jakub Pachocki 发表官方文章 <em>Perplexity and Intelligence</em>，把预训练压缩/预测进度视为理解能力涌现的主轴，并公开该公司内部持有集上的 log-perplexity（交叉熵）轨迹：文中举例 GPT-3.5 约 0.99、GPT-4 约 0.91，目前已到 0.8 以下，并称在网络安全与数学等方向看到“变革性”能力。他建议把 perplexity 作为实验室之间可比较的共同尺度，用于安全标准；并提议在理解与监控（例如找到思维链监控的后继方案）达到明确里程碑之前，行业承诺不越过以 perplexity 等指标标定的共同上限。文中还写到，一旦模型达到约 0.76，他们看到数学开放题上的突然进展，并认为“最早 2027 年”预训练算法研究也可能出现类似加速；同时提示评估觉察和现有对齐审计可能继续变差。</p>
+<p>Sam Altman 在 11/22 17:12 UTC（北京时间 11/23 01:12，仍在截止前）发帖称，“这是 OpenAI 近来发布的最重要的东西”，希望行业就共同上限达成一致；Greg Brockman 亦转发支持把透明度作为行业安全门槛的基础。这是倡议和内部指标披露，不是已经生效的跨公司约束，也不是新模型发布。</p>
+<p class="src">原文：<a href="https://openai.com/index/perplexity-and-intelligence">OpenAI：Perplexity and Intelligence</a>（页面标注 November 22, 2026；RSS 为 11/22 08:00 北京时间）｜<a href="https://x.com/sama/status/2124551594691932405">Sam Altman</a>｜<a href="https://x.com/gdb/status/2124582684840399311">Greg Brockman</a></p>
+<p class="lim">局限：各实验室训练数据和评测集不同，Pachocki 本人也列出了跨实验室比较的困难。0.68–0.7 窗口会涌现何种能力，文中写明“我不知道”。2027 年加速是外推，不是时间表。</p>
+</div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card" id="n3">
+<h3><span class="tag e1">官方确认（行情）</span><span class="tag e2">SEC 会计调查为匿名源</span>周五科技股大跌，标普与道指进入调整，Anthropic 回吐约一半首日涨幅</h3>
+<p>BBC 报道，周五美股主要指数收盘均大跌：标普 500 跌 3.7%、道琼斯工业平均指数跌 1.9%、纳斯达克综合指数跌 5.3%；标普与道指都被推入较近期高点下跌 10% 或以上的调整区间。Anthropic 周四曾从发行价 83 美元、开盘约 111.50 美元收于 97.17 美元（约 +17%）；周五盘中一度跌逾 12% 至约 85 美元，收盘跌 8.5%，回吐约一半首日涨幅（约合收于 88.9 美元附近）。英伟达收跌 13.7%。BBC 写明，跌幅扩大发生在路透报道美国证交会正在审视英伟达会计问题之后，且“BBC 未独立确认”该调查；路透称消息来自两名知情人士，证交会拒评，英伟达当时未立即回应。特斯拉与 SpaceX 均跌逾 7.6%；SpaceX 的背景是公司宣布发债，为其所称有记录以来最大的英伟达芯片采购融资。欧洲主要股指跟跌，韩国综合指数与日经 225 约跌 5%，台湾股市周五约跌 6%、当周跌幅超过 17%，报道称是 1990 年以来最大的单周跌幅。</p>
+<p>这是对已报道的 Anthropic 上市首日的后续价格事实，加上周五更广泛的科技股调整。路透所称 SEC 会计调查仍是未获官方确认的第二类证据，不能写成已被监管机构公开立案说明的最终结论。</p>
+<p class="src">原文：<a href="https://www.bbc.co.uk/news/articles/c6808ym10vzgo">BBC：Tech stock sell-off drags markets down as Anthropic shares slide</a>（2026-11-20 美股交易日，BBC 稿 11/21 刊出）｜路透标题页（本报打开为 401，未读全文）：<a href="https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">US SEC’s Nvidia probe is examining potential accounting issues, sources say</a>（路透标注 2026-11-20 19:13 UTC）</p>
+<p class="lim">局限：单日或单周行情不等于趋势反转；SEC 调查的具体焦点、是否正式执法，当事方均未公开确认。</p>
+</div>
+
+<div class="card" id="n4">
+<h3><span class="tag e2">可靠媒体·公司未详述订单范围</span>台积电据报暂停部分中国客户 16nm 及以下订单</h3>
+<p>《台湾新闻》11/20 14:20 转述路透两名知情人士：在美国商务部收紧规则后，受影响的中国芯片设计客户若无美国出口许可或例外，制造 16 纳米及更先进工艺的订单被暂停，一般只能使用 28nm、40nm 等成熟制程，且不能使用高带宽内存（HBM）或先进封装。报道称，台积电过去可按客户设计与算力自行判断是否适用豁免，新规下不再能沿用原筛查路径放行。路透还称，新规前仍有中国 AI 芯片设计商使用台积电 7nm，但路透未能独立核实芯片如何制造。《台湾新闻》引中央社：台积电周五拒绝对市场传闻置评，但表示已知悉美国商务部工业与安全局新规，并将遵守所有适用法律法规。《金融时报》另报，新规取消了非 AI 用途先进芯片的一项豁免，可能波及小米、Oppo、Vivo 等手机处理器，许可证料将获批但可能拖慢排产——这一层仍是行业人士对执行的预判。</p>
+<p class="src">原文：<a href="https://www.taiwannews.com.tw/news/6478978">Taiwan News：TSMC suspends some advanced chip orders from China</a>（2026-11-20 14:20，转述 Reuters，并引 CNA 的公司表态）｜路透原报本报未直接打开全文</p>
+<p class="lim">局限：16nm 暂停的覆盖名单、存量订单如何处理，公司没有公布明细；对消费电子芯片的影响取决于后续许可证，不是已经全面断供。</p>
+</div>
+
+<div class="card" id="n5">
+<h3><span class="tag e1">官方确认（口头表态）</span>特朗普威胁禁止或重税美企在海外建设 AI 数据中心</h3>
+<p>BBC 报道，特朗普在结束亚洲行程后的记者会上说，不会允许美国公司在“国外”建设数据中心，并威胁对这样做的科技公司征收“极高的税”（tremendous tax），理由是“否则中国会全部拿走”。他同时说，自己还没对团队讲过，“他们现在才听到”，细节很少。Meta、Google 等已有海外数据中心协议；BBC 点名 Google 在芬兰的投资，以及 Meta 在阿尔伯塔、Anthropic 在新斯科舍的租赁意向。这是总统口头倡议，不是已签署的禁令或税法。数据中心选址也是 11/3 中期选举中的争议议题，不少民主党候选人主张更严的本地建设规则。</p>
+<p class="src">原文：<a href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko">BBC：Trump threatens ban on US firms building AI data centres overseas</a>（稿件标注 20 November 2026）</p>
+<p class="lim">局限：如何执行、是否覆盖已签约项目、与国内地方限制如何并存，都未说明。口头表态不能写成政策已生效。</p>
+</div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card" id="n6">
+<h3><span class="tag e1">官方确认</span>COP31 周日收场，未达成气候协议</h3>
+<p>联合国新闻 11/22 报道：在土耳其安塔利亚举行的 COP31 于周日结束，两周谈判外加两天加时后仍未达成气候协议，成为有记录以来最长的联合国气候大会。秘书长古特雷斯称之为“令人深感失望”的挫折，并说“谈判室里或许没有共识，科学上没有含糊”；他指出化石燃料仍是全球变暖的主要驱动，并警告不要在灭火的同时继续浇油。BBC 补充：最终草案未直接出现“fossil fuels”字样，仅间接回指 2023 年 COP28“转型离开化石燃料”的表述，欧盟（爱尔兰部长 Darragh O'Brien 为代表）、太平洋岛国等认为文本弱化了既有承诺；产油国则反对在文本中点名煤油气。另一个焦点是适应资金：去年 COP30 曾同意将相关融资增至三倍，但今年文本没有具体数字和基数，发展中国家担心给富国留下过大弹性。上一次主要政治协议如此破裂，是 2009 年哥本哈根。</p>
+<p class="src">原文：<a href="https://news.un.org/en/story/2026/11/1168855">UN News：COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’</a>（22 November 2026）｜<a href="https://www.bbc.com/news/articles/cqwy06zrd26lo">BBC：COP31 climate talks fail to reach deal amid fossil fuel and money rows</a></p>
+<p class="lim">局限：会议结束不等于各国国内气候政策同步停止；后续是否另寻论坛或双边安排，当时尚未写出新的约束性文本。</p>
+</div>
+
+<div class="card" id="n7">
+<h3><span class="tag e1">官方确认（选举结果）</span>民主党在北卡州重计后拿下一席，众议院多数至少 258 席，为 1992 年以来最大</h3>
+<p>BBC 报道，北卡罗来纳州第 5 选区在周日完成计票并经重计：民主党人 Chuck Hubbard 以 330 票优势击败自 2005 年起任职的共和党众议员 Virginia Foxx（99% 计票）；胜差低于 1%，依法重计后 Foxx 于周日发表败选声明，Hubbard 称已与她通话并得到交接承诺。民主党在众议院至少赢得 258 席，共和党至少 173 席，仍有 4 场待决（田纳西、明尼苏达，以及路易斯安那 12 月决选）。BBC 写明，自 1992 年克林顿当选、民主党同样拿到 258 席以来，两党都未曾取得这么大的众议院多数；民主党也已拿下参议院。这与 11/3 中期选举的大方向一致，新事实是这场最接近的北卡席位于周日被正式确认，从而使“至少 258 席”能够成立。白宫和国会的具体立法清单不会因此自动通过：特朗普仍可否决法案。</p>
+<p class="src">原文：<a href="https://www.bbc.com/news/articles/c6vg29g7dlyno">BBC：Democrats win largest House majority since 1992 after flipping North Carolina seat</a>（报道称周日计票并宣布；RSS 为 11/23 04:26 北京时间）</p>
+<p class="lim">局限：4 场待决可能继续微调席次，但不改变民主党已获得 1992 年以来最大众议院多数这一核心事实。多数不等于立法已经通过。</p>
+</div>
+
+<h2 id="x">X 观点</h2>
+<div class="card">
+<p>本窗盯梢以主题归纳，不堆帖子译文。</p>
+<p><b>共同上限是否该现在就订。</b> Pachocki 的文章是本窗实验室侧最明确的政策倡议。Altman 称之为 OpenAI“近来最重要的发布”，希望行业就共同上限达成一致；Brockman 强调透明度可以成为行业安全门槛的基础。共识是：预训练进度值得公开、跨实验室需要可比较的尺子。分歧和难点也在原文里：评测集不同、指标不直接等于下游任务，以及“先停在哪一条线”仍要各实验室自己答应。</p>
+<p><b>形式化证明与“真的懂了”。</b> 黎曼猜想一事在周末迅速从“尚未核验的宣称”变成“Lean 社区发表核验声明”，随即又出现对空洞谓词的质疑。一条常见的正面读法是：可检查的形式化证明让核验可以并行、可复现；一条常见的保留是：体量极大的机器证明即使通过内核，仍要追问定义是否在说数学家以为的那个命题，以及思路能否被人类讲解。两者并不自动互相取消。</p>
+<p><b>上市与估值折扣同时出现。</b> Anthropic 首日被当作行业情绪测试，周五又随科技股一起回撤。一种看法是首日说明“纯 AI 实验室可以上市”；另一种看法是，只要芯片、资本开支和监管风险仍在定价里，单次 IPO 撑不起更广泛的风险偏好。这是观察，不是对股价的预测。</p>
+</div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="card pro"><b>形式核验提供了可复查的公共对象。</b> Lean 声明列了陈述对照、复现编译和多种内核/检查器，并把导出证明与源代码隔开。这比只贴一篇 PDF 更利于第三方复跑，也让后续质疑可以对准具体定义和依赖路径，而不是停留在“信或不信作者”。</div>
+<div class="card con"><b>通过检查器仍可能争定义是否在说原来的命题。</b> 预印本和公开讨论提出“恒真谓词”问题后，关键变成它是否位于主定理依赖路径上。在社区未修订声明、本报也未复核全部依赖之前，既不应把声明写成最终数学史结论，也不应把一篇未经同行评审的预印本写成已经证伪。</div>
+</div>
+<div class="grid">
+<div class="card pro"><b>共同 perplexity 上限是可操作的协调提议。</b> 它试图抓住“能力从压缩进度涌现”这一实验室内部真正盯着的量，并事先约定监控跟不上时先不越过某条线，比只喊“谨慎部署”更具体。</div>
+<div class="card con"><b>没有共同数据集和执行机制，上限难以成为硬约束。</b> 文中已承认跨实验室比较的困难；倡议本身也不等于监管或同业协议。把 2027 年可能的算法加速当成时间表，会超出原文的外推力度。</div>
+</div>
+
+<h2 id="pod">播客</h2>
+<div class="card">
+<h3>硅谷 101｜E259 机械神教与反人性策略：华尔街量化巨头的AI之路</h3>
+<p>11/23 07:00（北京时间，截止前）更新。节目讨论华尔街一批低调整、高利润的量化与做市机构：它们把市场当作可研究的客观现象，尽量减少个人主观判断，因此算力成为核心运营开支，也是这轮 AI 里囤算力、抢人才、投资实验室最积极的买家之一。节目名单包括 Jane Street、XTX Markets、DRW、Citadel Securities、Hudson River Trading、幻方量化、Renaissance、Susquehanna、Jump、Virtu 等；嘉宾为 Atlas Wang、Wei Wu。这是行业工作方式的观察，不是某一家的业绩公告。</p>
+<p class="src"><a href="https://sv101.fireside.fm/273">sv101.fireside.fm/273</a></p>
+</div>
+<div class="card">
+<h3>The Vergecast｜The week everything fell apart</h3>
+<p>11/20 18:00（北京时间）上线，仍在本窗。讨论当周银行系统、航空停飞、Outlook 等故障是否只是“普通事故叠在一起”。同一主题也出现在白宫网络安全总监人事报道里，本条只作播客记录，不另写成一条新闻。</p>
+<p class="src">RSS 标题页未给出稳定单集网页；节目名与时间来自 The Vergecast 官方源。</p>
+</div>
+<p class="sub">Latent Space、Dwarkesh 站点源、No Priors、Lex Fridman、Training Data 本窗无新集。Dwarkesh Substack 播客源仍 404。Acquired/a16z 有 DHH谈 Agent 时代操作系统、以及一集 2018 年互联网史重播，不单列。</p>
+
+<h2 id="gap">覆盖缺口与未单列</h2>
+<div class="card">
+<ul>
+<li><b>已报、不重发：</b>Anthropic 上市首日定价与收盘（11/20 早报）；中俄美元首会晤及和平宣言；Gemini Mac computer use；加州司法部长调查英伟达；国际法院罗兴亚判定；普京称不再谈海上停火。Codex CLI 0.171.0、ChatGPT Health 与 11/19 新手机端、Codex VS Code 26.1117.31558、混元 Hy4 旗舰权重已在 11/20 小时提醒中覆盖。GPT-6.2 Astra/Sol 为 11/17 发布，不作为本窗新头条。</li>
+<li><b>官方产品核验：</b>Grok Bot 官方 changelog 仍为 v1.2.3（Nov 18）。Codex 稳定版仍为 0.171.0，本窗仅有 0.173.0-alpha 预览、正文多只含版本号。Cursor 官方 changelog 未见晚于 Voice Chat（11/05–11/06）的新特性头条；博客目录仍可见 11/13 安全事件更新与 11/10 Projects。WorkBuddy 官方日志最新正式条目仍为 5.11.3（2026-11-15）。</li>
+<li><b>入选但未单列：</b>ChatGPT Space 11/20 起向 18 岁及以上 Plus 用户全球推送（<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">官方 release notes</a>），可协作做页面和演示文稿，Free 用户打不开分享页；重要性低于上述七条。OpenAI 另发 MedChemBench 与“对抗性蒸馏”防护文。Signal 限制移动端截屏以防系统级 AI 读取屏幕。白宫国家网络总监 Sean Cairncross 被免、Kirsten Davies 接任：特朗普周五称其“不够好”，Rubio 在 X 公布继任，BBC 称“尚无官方确认免职文件”。11/19 参议院 48–51 未通过结束对伊朗军事行动的战争权力决议，发生在上期截止前、上期未单列，本窗因周末更大事件不再补作头条。</li>
+<li><b>Wechat2RSS：</b>目录同步成功，清单 397；抓取 393 成功 / 4 失败（n1nty、毕方安全实验室 XML 损坏；两个“卢瑟经济学安生杂谈”源 404，与上期相同）。时窗内 205 篇，筛后 94 条 AI 相关候选。不能把有 feed 写成绝不漏文。</li>
+<li><b>媒体与官方入口：</b>Reuters 站点与 RSS 为 401 或 SSL 失败，本报对路透稿多转引 BBC、《台湾新闻》等已打开文本，不声称读过路透全文。AP 站点与 RSSHub 403；FT 403；华盛顿邮报超时；IMF、IEA、中国政府网“最新政策”RSS 404。Anthropic 与 Meta AI 官方 RSS 仍 404。WSJ 首页已请求，不把付费墙后的正文当作已读。</li>
+<li><b>AIHOT：</b>按当前公开接口分页，items mode=all、7 日、按 published 计 1351 条，selected/7d 133 条，all/24h 70 条；/latest mode=all 仍有条数上限；selected 不是全库；items/search 通常仅近 7 天。不是查全库。</li>
+<li><b>X：</b>search_posts_all 单次最多 25 条，实验室官号与部分名单第一页已取，更早或更低活跃账号可能被截断。Elon 高频回复仍会挤占混合检索。</li>
+<li><b>工具库：</b>长期库上次完整更新为 2026-11-21 11:49–12:06（Asia/Shanghai），当时 15 项种子均无 daily_eligible 的新发现或推荐升降。本轮距该快照约 44.5 小时，未完成新的官方历史日桶与深挖轮转，因此早报省略「工具与开源变化」节，不把缺少新快照写成 24 小时零增长。入口仍为长期 Page。</li>
+<li>国内政府网、外交部记者会、统计局、央行页面已抓取，本窗未发现足以替换上述国际与产业头条的新的重大政策或数据口径；上期已报的深圳三边会晤不重写。</li>
+</ul>
+</div>
+
+<footer>本页为 2026-11-23 工作日早报的最终交付文本。候选与版本记录另存工作目录，不把抓取日志当作正文。https://betterxys.github.io/ai-briefing/2026-11-23/</footer>
+</div>
+</body></html>
