@@ -1,0 +1,138 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 行业早报 · 2026-11-24</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#14120f;--ink2:#3d3a34;--mut:#6b665c;--line:#e2ddd2;--acc:#0b5fff;--pro:#0d7a6f;--pros:#e6f5f3;--con:#9a4e00;--cons:#fff4e8}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 "PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}.w{max-width:960px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:rgba(246,244,239,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);z-index:9}nav .w{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;white-space:nowrap}
+nav a{color:var(--ink2);font-size:13px;padding:4px 8px;border-radius:8px}nav a:hover{background:#efeae0}
+h1{font-size:26px;margin:24px 0 4px}h2{font-size:19px;margin:30px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}h3{font-size:16px;margin:0 0 6px}
+.sub{color:var(--mut);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;vertical-align:2px}
+.e1{background:#e6f5f3;color:#0d7a6f}.e2{background:#fef6e0;color:#9a6700}.e3{background:#fdeceb;color:#b42318}.st{background:#e8f0ff;color:#0b5fff}.nw{background:#f4efff;color:#6941c6}
+.top li{margin:6px 0}.src{font-size:12.5px;color:var(--mut)}.lim{font-size:13px;color:var(--ink2);border-left:3px solid var(--line);padding-left:8px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+.pro{background:var(--pros);border-radius:10px;padding:10px 12px}.con{background:var(--cons);border-radius:10px;padding:10px 12px}.pro b{color:var(--pro)}.con b{color:var(--con)}
+footer{color:var(--mut);font-size:12.5px;padding:24px 0 40px}
+</style></head><body>
+<nav><div class="w"><a href="#top">今日要点</a><a href="#ai">AI与Agent</a><a href="#ind">产业与市场</a><a href="#cn">中国与国际</a><a href="#x">X 观点</a><a href="#pk">正反辨析</a><a href="#pod">播客</a><a href="#gap">覆盖缺口</a></div></nav>
+<div class="w">
+<h1 id="top">AI 行业早报 · 2026-11-24</h1>
+<div class="sub">新闻截止：北京时间 11/24 08:00 ｜ 生成于 08:25（Asia/Shanghai）｜ 时窗为周一 08:00 至本窗截止 ｜ 精选 7 条 ｜ 证据等级：<span class="tag e1">官方确认</span><span class="tag e2">媒体报道·当事方未确认</span><span class="tag e3">社交/聚合线索待核</span></div>
+
+<h2>今日要点</h2>
+<ul class="top">
+<li><a href="#n1">英伟达董事会一致恢复黄仁勋总裁、CEO 及董事职务</a>；美股周一反弹，英伟达收涨 31.48%。</li>
+<li><a href="#n2">智谱正式发布旗舰模型 GLM-5.4</a>（第一代 Loop Transformer；Coding Plan 已开放，API 与开源权重仍待完成安全评估）。</li>
+<li><a href="#n3">Anthropic 推出 Claude Ship 测试版</a>，可按团队策略审查、修复并审批 GitHub 拉取请求。</li>
+<li><a href="#n4">OpenAI 与思科开源 Linux 运行时 Shirudo</a>，用 eBPF 在补丁到位前为运行中系统加临时防护。</li>
+<li><a href="#n5">美国商务部据 BBC 称计划将新加坡 Megaspeed 列入实体清单</a>，生效时间未写明；本报未打开商务部原文。</li>
+<li><a href="#n6">古特雷斯在布里奇顿 AI 安全峰会呼吁启动多边 AI 风险管理框架讨论</a>，这是倡议而非已谈成的条约。</li>
+<li><a href="#n7">安理会讨论冬季对乌克兰电网与黑海航运的打击</a>；乌方称在利比亚班加西击沉俄护卫舰，联合国利比亚团要求独立调查。</li>
+</ul>
+
+<h2 id="ai">AI与Agent</h2>
+
+<div class="card" id="n2">
+<h3><span class="tag e1">官方确认</span>智谱发布旗舰模型 GLM-5.4：Loop Transformer，对标「泛 Coding」</h3>
+<p>11/23 17:42（北京时间），智谱官方公众号发布《GLM-5.4：瞄向泛Coding，首个Loop Transformer带来的惊喜》；Z.ai 同步刊出技术博文，X 账号 @Zai_org 于 18:27 转发。公司称这是把已预训练的 GLM-5 基座改造成 Loop Transformer 的第一代旗舰：对其中 28 层做两轮权重共享循环，参数规模写为 750B，并自称智能水平可达到 2T–3T 级模型的效果。官方说明，循环不是从零预训练，而是在已有基座上继续训练，以较小算力开销提高有效深度；并介绍了门控渐进更新、跨循环 KV 共享加滑动窗口、稀疏注意力索引复用等部署改动。推断速度自称闲时最高约 200 tokens/s、高峰约 70–80 tokens/s。</p>
+<p>可用性上：即日起向 GLM Coding Plan 全量用户开放，并写明同步上线 ZCode、Trae、WorkBuddy、Qoder 等编码平台；API「将在完成安全评估后开放」，权重「计划以负责任的方式开源」。博文自己列出主要局限：模型容易陷入过长的「马拉松式思考」，尽管这种反复自纠会提高准确率。本条已在 11/23 17:56 的小时大事提醒中告知，早报按截止规则收入，不当作新的首次发现。</p>
+<p class="src">原文：<a href="https://z.ai/blog/glm-5.4">Z.ai：GLM-5.4: Toward Generalized Coding with Our First Loop Transformer</a>（页面标注 2026-11-23）｜<a href="https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ">智谱公众号原文</a>（2026-11-23 17:42 Asia/Shanghai）｜<a href="https://x.com/Zai_org/status/2124811995912286352">@Zai_org</a>（2026-11-23 10:27 UTC）</p>
+<p class="lim">局限：2T–3T 对照、基准分数和「泛 Coding」示例均为厂商自报，不是独立评测。API 与权重在截止时仍未开放；WorkBuddy 被列为联合首发平台，并不构成 WorkBuddy 自身的新版本。</p>
+</div>
+
+<div class="card" id="n3">
+<h3><span class="tag e1">官方确认</span>Anthropic 推出 Claude Ship 测试版：审查、修复并按策略审批 PR</h3>
+<p>11/23，Anthropic 官方文章宣布 Claude Ship 即日起以测试版上线。它由已经正式提供的 Code Review，以及两个测试版智能体 PR Steward、Claude Approvals 组成。Code Review 可按 Quick / Standard / Deep 对拉取请求做多角度检查并回帖；PR Steward 负责失败的 CI、合并冲突和评审意见，设计上「不批准、不合并」，每次推送后说明改了什么以及如何撤销；Claude Approvals 读取仓库里的策略文件，对策略允许的常规变更可以自行批准，高风险变更仍要求人审，官方建议先用观察模式，再考虑把它纳入分支保护。</p>
+<p>开发者可在 Claude Code 里用 <code>/ship</code> 对单个 PR 走完流程；管理员也可以按仓库打开自动流转。可用范围是 Claude Team 与 Enterprise、且仓库在 GitHub 上。按 token 计费，管理员可为 Code Review 和 PR Steward 设置支出上限；Zero Data Retention、HIPAA 配置和客户管理密钥的组织不可用。合格 Enterprise 客户可在 2027-01-15 前领取至少 1 万美元、须在领取后 30 天内用完的额度，条款另计。TechCrunch 稿件时间为 11/23 14:05 PST（北京时间 11/24 06:05，仍在截止前）。</p>
+<p class="src">原文：<a href="https://claude.com/resources/articles/introducing-claude-ship">Anthropic：Introducing Claude Ship</a>（November 23, 2026）｜产品页：<a href="https://claude.com/product/claude-ship">claude.com/product/claude-ship</a>｜<a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a>（2026-11-23 14:05 PST）</p>
+<p class="lim">局限：测试版不等于默认替人合并。官方写明可能漏过缺陷与安全问题；能否合并仍取决于开发者权限和仓库分支规则。文中「合并 PR 翻倍、回退下降 40%」是 Claude Code 团队在更大流程中的内部观察，不是对外承诺的普遍效果。</p>
+</div>
+
+<div class="card" id="n4">
+<h3><span class="tag e1">官方确认</span>OpenAI 与思科开源 Shirudo：用 eBPF 为运行中的 Linux 系统加临时防护</h3>
+<p>11/23，OpenAI 发布官方文章，宣布与思科推出开源 Linux 运行时 Shirudo（日语「盾」）。目标是在补丁测试和滚动部署仍需数日乃至数周时，先加载经过操作员批准的 eBPF「盾」，挡住暴露漏洞的行为，同时尽量放行合法请求，而不必为了防护而重启服务。官方列举四项能力：在线防护、给防御方智能体的可编程控制（部署仍由安全团队决定）、盾的签名与 eBPF 验证器检查，以及用 TPM 留下可核验的加载/卸载记录。文章举了一个受控实验：用 Codex 生成的盾，在无需重启的情况下挡住了对运行中 Elasticsearch 的 Java4Shell 利用尝试。许可证为 BSD 2-Clause，BPF 程序双许可 BSD 与 GPL。Greg Brockman 在文中和 X 上转述了同一发布。</p>
+<p>同日较晚，OpenAI 官号又介绍 GPT-6 Cyber 在一次运行中帮助验证 948 个可本地提权的 Linux 内核漏洞并生成供审查的补丁。但这篇研究报告页面标注日期为 2026-11-04，正文写的是「即将推出的网络模型」流水线，不能当作本窗新发表的论文；只作为与 Shirudo 同一防御主题的既有研究被再次传播，不单列为新头条。</p>
+<p class="src">原文：<a href="https://openai.com/index/introducing-shirudo">OpenAI：OpenAI and Cisco introduce Shirudo</a>（November 23, 2026；RSS 为 11/24 05:20 北京时间）｜<a href="https://x.com/OpenAI/status/2124980590717911527">@OpenAI</a>｜研究旧文（11/4，不作为本窗新发布）：<a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">A thousand fewer paths to root</a></p>
+<p class="lim">局限：受控实验成功不等于生产环境可直接托管给智能体自动下发盾。官方强调操作员批准和签名验证；长期「自适应基础设施」是方向，不是已经交付的默认能力。</p>
+</div>
+
+<h2 id="ind">科技产业与市场</h2>
+
+<div class="card" id="n1">
+<h3><span class="tag e1">官方确认（董事会决议与收盘行情）</span><span class="tag e2">总统“说服董事会”为当事人口述</span>英伟达董事会恢复黄仁勋职务，美股周一随之反弹</h3>
+<p>英伟达 11/23 新闻稿（官方 RSS 时间为北京时间 21:55）宣布：董事会一致投票，即日起恢复黄仁勋担任总裁、首席执行官及董事。董事会称，在与其多轮讨论后对其坦诚和领导能力表示满意；决策过程中听取了美国政府高层意见，并据此认为复职不构成国家安全风险。董事长 Harvey C. Jones 留任；CFO Colette Kress 在代理 CEO 结束后继续任首席财务官。公司重申：此前因「有报道称黄仁勋成为外国情报工作的目标」已成立全部由独立董事组成的调查委员会并聘请独立律师，调查将进行到结束，黄本人表示配合。新的国家安全与出口管制委员会、以及拟设的首席合规官招聘也一并写出。SEC 8-K 记载最早事件日为 11/22，新闻稿日期为 11/23。</p>
+<p>这是对 11/12 辞职、11/13 早报已报官方交接的逆转；11/20 前后「董事会不恢复其职务」的报道至此被公司行动推翻。调查并未宣布结束。特朗普对 CNBC 称自己「说服了」董事会、「做成了这笔交易」；白宫随后对媒体强调他「全程参与」。这些是总统和白宫的表态，不是英伟达新闻稿里的决策程序说明，不能写成已经公开的法定任命程序。</p>
+<p>周一美股随公告反弹。Yahoo Finance 行情：英伟达收于 165.05 美元，涨 31.48%（开 167.04、高 171.50、低 156.93）。CNBC 引用的收盘为：标普 500 涨 4.73% 报 7237.17，纳斯达克综合指数涨 6.51% 报 24089.56，道琼斯工业平均指数涨 3.01%、1447.98 点，报 49595.31；称这是两指数自 2025 年 4 月以来最好的单日表现。BBC 写纳斯达克涨 6.5%、标普约 4.75%，并称英伟达市值回升近 1 万亿美元，但较一个月前仍约低 21%。CNBC 还写美光涨 19%、AMD 涨近 7%。单日反弹不能写成趋势已经转多，也不能写成调查或出口管制风险已经解除。</p>
+<p class="src">原文：<a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director">NVIDIA Newsroom 新闻稿</a>（November 23, 2026）｜<a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm">SEC 8-K</a>（事件日 11/22，报送 11/23）｜行情：<a href="https://finance.yahoo.com/quote/NVDA/history/">Yahoo Finance NVDA</a>｜指数收盘：<a href="https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html">CNBC</a>｜综述：<a href="https://www.bbc.co.uk/news/articles/cq62pn6j42jko">BBC</a></p>
+<p class="lim">局限：独立董事调查仍在进行；新闻稿未宣布新的纪律或合规结论。总统口述不能替代公司决议文本。本报打开了 CNBC、BBC 与 Yahoo 行情，路透站点为 401，不声称读过路透全文。个人生活细节不是本条的判断依据，只保留与公司治理、国家安全调查直接相关的官方表述。</p>
+</div>
+
+<div class="card" id="n5">
+<h3><span class="tag e2">可靠媒体转述政府部门，本报未打开原文</span>美国商务部据报计划将新加坡 Megaspeed 列入实体清单</h3>
+<p>BBC 11/23 报道：美国商务部宣布计划将新加坡公司 Megaspeed Ltd 及其子公司 Speedmatrix 列入限制在美买卖商品的实体清单，但未写明具体生效时间。BBC 称，该部门表示已对 Megaspeed 调查近两年，怀疑其协助把英伟达先进 AI 芯片转入中国；公司以数据中心开发为主，在中国有大量业务，阿里巴巴曾被报道为其重要客户。中国方面否认相关间谍指控，并警告不要以此为「技术封锁」的借口。BBC 已向商务部、白宫和 Megaspeed 求证。本报检索未见已打开的商务部/BIS 原文，也不能把「计划列入」写成清单已经生效。</p>
+<p class="src">原文：<a href="https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo">BBC：US to blacklist Asian AI firm Megaspeed after Nvidia scandal</a>（23 November 2026；RSS 11/24 07:16 北京时间）</p>
+<p class="lim">局限：这是媒体转述的「打算列入」，生效日、许可政策例外和覆盖主体范围均未在本报核到的官方文本中写出。与黄仁勋复职同日出现，但不等于调查已经结案，也不等于对其他客户的供货已经切断。</p>
+</div>
+
+<h2 id="cn">中国与国际</h2>
+
+<div class="card" id="n6">
+<h3><span class="tag e1">官方确认（呼吁启动讨论）</span>古特雷斯在布里奇顿峰会呼吁讨论多边 AI 风险管理框架</h3>
+<p>联合国新闻 11/23 报道：秘书长古特雷斯在巴巴多斯举行的布里奇顿 AI 安全特别峰会闭幕时，呼吁成员国开始讨论一项多边人工智能风险管理框架。他说，AI 正在推动「人类历史上最大的权力转移」，针对风险的保护仍然碎片化，政府往往在「追赶」。他提出的「共同基础」包括：共享安全措施、共同测试方法、明确的保障与标准、基本透明度要求、对先进模型的独立评估与监督，以及帮助各国落地的能力支持。与巴巴多斯总理莫特利的对话中，他还说权力正从国家转向少数公司和个人，二战后建立的机构包括联合国「今天并未充分装备」应对这一转变。今年 7 月首次全球 AI 治理对话中，111 个与会国此前从未参加过任何 AI 讨论。他年底卸任，这篇讲话是倡议成员国启动讨论，不是已经谈判完成的条约或核查机制。</p>
+<p class="src">原文：<a href="https://news.un.org/en/story/2026/11/1168861">UN News：UN chief urges talks on global AI safety framework, warns of historic shift in power</a>（23 November 2026）</p>
+<p class="lim">局限：倡议清单不等于成员国已同意文本，也没有执行机构和时间表。不能把这次峰会写成全球监管已经落地。</p>
+</div>
+
+<div class="card" id="n7">
+<h3><span class="tag e1">官方确认（安理会举行会议、联合国呼吁调查）</span><span class="tag e2">击沉舰艇为乌方声明、俄方未直接证实</span>安理会讨论对乌克兰电网与黑海航运的打击；班加西港袭击待查</h3>
+<p>联合国新闻与安理会会议报道（SC/16517）写明：安理会周一召开会议，讨论冬季俄方对乌克兰能源系统的打击如何使平民缺少供电、供热与供水，以及对黑海航运的袭击如何影响粮食外运和更远地区的粮价。联合国人权监测机构记录 10 月乌克兰平民死亡 372 人，同比上升 95%。报道并提到：乌克兰当局称周末在基辅州的袭击造成至少 15 人死亡；中旬黑海有希腊、利比里亚和索马里籍货船遇袭，两艘沉没，其中一艘载有小麦。</p>
+<p>同一窗口，乌克兰总统泽连斯基称，乌方海军无人机周日在利比亚班加西海军基地击沉一艘俄罗斯护卫舰，并打击一艘俄货船；芬兰国防军称，周六在芬兰湾遇袭、驶往加里宁格勒的俄货船「可能」与乌克兰有关。克里姆林宫警告「地区紧张升级」，但未直接评论利比亚遇袭。联合国利比亚支助团（UNSMIL）要求对班加西港及近海袭击进行独立调查。单方战报在交叉核验完成前，不能写成已经共同确认的击沉事实。</p>
+<p class="src">原文：<a href="https://news.un.org/en/story/2026/11/1168859">UN News：Winter attacks on Ukraine's power grid and Black Sea shipping</a>（23 November 2026）｜安理会报道：<a href="https://press.un.org/en/2026/sc16517.doc.htm">UN Press SC/16517</a>｜班加西调查呼吁：<a href="https://news.un.org/en/story/2026/11/1168857">UN News：Libya: UN mission urges probe into Benghazi port attacks</a>｜<a href="https://www.bbc.co.uk/news/articles/cr894gjz0j0yo">BBC：Russian warship hit by Ukrainian drones in Libya, Zelensky says</a></p>
+<p class="lim">局限：安理会开会不等于达成新的停火或护航安排。班加西击沉是乌方声明加联合国呼吁调查，俄方未直接证实；两篇转述同一声明也不构成独立双重确认。累计或单月伤亡数据不能外推为全年最终口径。</p>
+</div>
+
+<h2 id="x">X 观点</h2>
+<div class="card">
+<p>本窗盯梢以主题归纳，不堆帖子译文。实验室官号检索已取满第一页 25 条（下一页为 0，可视为该查询已尽）。</p>
+<p><b>黄仁勋复职被当成供应链信心信号，而非调查结束。</b> Sam Altman 发了一句 “Jensen!”；英伟达研究者 Jim Fan 和 Hugging Face 的 Clement Delangue 把复职读成「回来干活 / Jensen 2.0」。这是公开站台和情绪，证明的是这些人当时怎么表态，不能当成市场共识，更不能当成独立董事调查已经收尾。</p>
+<p><b>编码工作流的下一步：审查与合并，而不只是写代码。</b> Claude Ship 把评审、修 CI 和按策略审批写进同一产品；GLM-5.4 则把「泛 Coding」和 Loop 架构当作自己的主叙事。一个常见判断是：当模型已经能写大量代码，瓶颈会移到评审和合并纪律。分歧在范围和证据：Ship 目前限于 Team/Enterprise 与 GitHub，官方还建议审批先走观察模式；GLM 的能力对照和速度数字仍是厂商自报，API 与权重都还没开放。</p>
+<p><b>不要把当日其他高声量讨论写成新事实。</b> Yann LeCun 继续在回复里争论 LLM 的错误是否可恢复，这是他一贯立场的延续，不是新的产品或论文发布。Perplexity 的 Aravind Srinivas 强调用户在切到 Gemini 4 Neon，并称尚未默认路由——这是商家自己的流量叙述。OpenAI 研究旧文在官号再次传播，也不等于 11/4 的报告重新发表。</p>
+</div>
+
+<h2 id="pk">正反辨析</h2>
+<div class="grid">
+<div class="card pro"><b>复职以董事会一致决议和政府意见入文，市场给出了可核对的价格。</b> 新闻稿、8-K 和收盘数据是清楚的：职务即刻恢复，调查委员会、出口管制委员会和合规官招聘被一并写下，说明公司至少在治理形式上没有宣布「翻篇」。</div>
+<div class="card con"><b>调查未结束，总统「说服董事会」也不能写成法定程序。</b> 「不构成国家安全风险」来自董事会对政府意见的转述，不是调查报告的结论。单日市值回升很大，但相对近期高点仍有缺口；把反弹写成风险出清，会超出已公开的事实。</div>
+</div>
+<div class="grid">
+<div class="card pro"><b>Agent 开始进入「谁有权合并」这一层，而不是只生成补丁。</b> Claude Ship 把审批写成仓库里的策略文件，并明确建议先观察再接入分支保护；Shirudo 则把「盾」的部署权留在操作员手里。这两条都比「模型会写代码」更接近真实生产约束。</div>
+<div class="card con"><b>可用范围和计费会迅速限制谁真的能打开这些开关。</b> Ship 排除 ZDR/HIPAA/CMEK，并按 token 计费；GLM-5.4 的 API 与权重仍待安全评估。内部评审指标和厂商基准，都不能直接当成你这边仓库或任务的预期收益。</div>
+</div>
+
+<h2 id="pod">播客</h2>
+<div class="card">
+<h3>The a16z Show｜The One-Person Biotech：OpenAI Life Sciences</h3>
+<p>11/23 19:00（北京时间；源时间为 11:00 UTC）更新。OpenAI 的 Joy Jiao、Ashoka Rajendra 与 a16z 的 Jay Rughani、Jorge Conde 讨论：当科学工作不再只受「人类注意力」限制时，药物发现与开发可能如何变化。节目回溯 OpenAI 生命科学工作，从科学推理谈到收购 Orchestra Bio，并设想智能体检索生物数据、协助临床试验和监管/生产流程，以及未来是否可能由少数人并行推进多个生物技术项目。这是讨论和方向陈述，不是新的产品发布或临床结果公告；Orchestra Bio 收购此前已有官方说明。</p>
+<p class="src"><a href="https://a16z.simplecast.com/episodes/the-one-person-biotech-openai-life-sciences-TrZddFUB">a16z.simplecast.com 单集页</a>（采集入口原标注为 Acquired 源，实际频道名为 The a16z Show）</p>
+</div>
+<p class="sub">本窗另一新集为 The Vergecast《Mike Schur has five minutes to get your attention》，讨论喜剧首集与新剧 <em>Dig</em>，与本期行业选题无关，不单列。Latent Space、硅谷 101、Dwarkesh 站点源、No Priors、Lex Fridman、Training Data 无新集。Dwarkesh Substack 播客源仍 404。上期已报的 Vergecast《The week everything fell apart》不重写。</p>
+
+<h2 id="gap">覆盖缺口与未单列</h2>
+<div class="card">
+<ul>
+<li><b>已报、不重发：</b>11/23 早报的 Lean/Mathlib 黎曼声明与后续预印本质疑、OpenAI perplexity 倡议、周五科技股调整与 Anthropic 回撤、台积电据报暂停部分中国 16nm 及以下订单、特朗普口头威胁限制海外 AI 数据中心、COP31 未达成协议、民主党众议院多数。GPT-6.2 Astra/Sol（11/17）、ChatGPT Health 与 11/19 新手机端、ChatGPT Space（11/20 向 Plus 推出）、混元 Hy4 旗舰权重、Composer 2.5 通俗说明，均已覆盖。GLM-5.4 已在 11/23 17:56 小时提醒中告知，本报按日更规则收入，不重复打扰口径。</li>
+<li><b>截止后、留待后续：</b>GitHub 上 Codex CLI 稳定标签 <code>rust-v0.172.0</code> 的 published 时间为 2026-11-24T00:03:55Z（北京时间 08:03:55），晚于 08:00 截止约 4 分钟，本报不作为本期正式版本头条，交后续小时提醒或明日早报核对发行说明与 changelog。</li>
+<li><b>官方产品核验：</b>Grok Bot 官方 changelog 仍为 v1.2.3（Nov 18）。Cursor 官方 changelog 最新特性仍为 Voice Chat（2026-11-06）；博客按时间可见的最新仍为 11/13 安全事件更新。WorkBuddy 官方日志最新正式条目仍为 5.11.3（2026-11-15）；页面上的 11/23 字样是文档站构建时间，不是新版本。ChatGPT 官号本窗宣布：12/23 将在 Chat 停用 GPT-5.6 Sol，并在 Work 与 Codex 停用 GPT-5.6 Sol 与 Terra；同时开始推送面向日常对话优化的 GPT-6.2 Sol。这是明确的产品计划，重要性低于上述七条，故不单列。</li>
+<li><b>入选但未单列：</b>Google 官方博客 11/23 起在 Search AI Mode 的 Personal Intelligence 中可选接入 Wallet（只读、不能划转或投资），Drive 与 Gemini 应用将在未来数周跟上。DeepMind 11/24 00:59（北京时间）发表用 Gemini 4 智能体团队加 Lean 形式化验证寻找更快量子算法的博客。Sierra 据 TechCrunch 称完成 17.5 亿美元 F 轮、估值 300 亿美元。俄勒冈与弗吉尼亚州总检察长据 The Verge 称周一分别起诉 SpaceX，涉及 Grok 生成的深度伪造内容；本报未打开起诉状，不展开。联合国另有加沙人权发展和纪念性讲话，不挤占上述国际条。央行行长潘功胜 11/23 会见欧央行、欧委会和欧元集团相关负责人，属会见通报，未见新的政策口径。微信「差评」等提到的特斯拉 FSD V15、纳维–斯托克斯「被解决」等未获官方或可靠交叉来源，不采用。</li>
+<li><b>Wechat2RSS：</b>目录同步成功，清单 397（公开目录 395 + 既有额外源）；抓取 393 成功 / 4 失败（n1nty、毕方安全实验室 XML 损坏；两个「卢瑟经济学安生杂谈」源 404，与上期相同）。时窗内 84 篇，筛后 47 条 AI 相关候选（含 8 条兼及安全）。不能把有 feed 写成绝不漏文。</li>
+<li><b>媒体与官方入口：</b>Reuters 站点与 RSS 为 401 或 SSL 失败，不声称读过路透全文。AP 站点与 RSSHub 403；FT 403；华盛顿邮报超时；IMF、IEA、世界银行、中国政府网「最新政策」RSS 无效或 404（IMF/IEA 新闻页可打开，但不能冒称 RSS 成功）。Anthropic 与 Meta AI 官方 RSS 仍 404，Claude Ship 已从官网文章核对。新华社英文 RSS 仍为过时条目。WSJ 首页可打开并见到标题，付费墙后正文不当作已读。</li>
+<li><b>AIHOT：</b>按当前公开接口分页到边界：items mode=all、7 日、按 published 计 1307 条（14 页），selected/7d 120 条，all/24h 169 条；/latest mode=all 仍有条数上限；selected 不是全库；items/search 通常仅近 7 天。不是查全库。</li>
+<li><b>X：</b>search_posts_all 单次最多 25 条；实验室官号查询第一页已尽（次页 0 条）。盯梢名单只抽查了核心实验室负责人一组，其余批次未全取，低活跃账号可能被遗漏。</li>
+<li><b>工具库：</b>长期库上次完整更新为 2026-11-21 11:49–12:06（Asia/Shanghai）。本轮距该快照约 68–69 小时，未完成新的官方历史日桶与深挖轮转，也没有已记录的 daily_eligible 新变化，因此省略「工具与开源变化」节；不能把缺少新快照写成 24 小时零增长。入口仍为长期 Page：<a href="https://cursor.com/canvas/store-92c891a6-af57-419b-a307-20c8187cdf81/5db155c8-0b5d-440f-b2fe-ff702b3c5c07">分类工具库</a>。</li>
+<li>中国政府网最新政策列表页本次抓取未列出可引用条目，外交部 11/23 例行记者会目录已见到，未见足以替换上述头条的新的重大政策或数据口径；不把页面可访问写成已读完全部问答。</li>
+</ul>
+</div>
+
+<footer>本页为 2026-11-24 工作日早报的最终交付文本。候选与版本记录另存工作目录，不把抓取日志当作正文。https://betterxys.github.io/ai-briefing/2026-11-24/</footer>
+</div>
+</body></html>
